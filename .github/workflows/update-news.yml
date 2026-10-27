@@ -1,4 +1,4 @@
-name: Atualizar notícias e campeonatos
+name: Atualizar notícias, campeonatos e vídeos
 
 on:
   schedule:
@@ -33,13 +33,16 @@ jobs:
       - name: Buscar próximos campeonatos
         run: python scripts/fetch_campeonatos.py
 
+      - name: Buscar vídeos novos de aulas
+        run: python scripts/fetch_videos.py
+
       - name: Commit e push
         run: |
           # O e-mail noreply do seu usuário faz o commit contar no seu gráfico
           git config user.name "${{ github.repository_owner }}"
           git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
-          git add data/news.json data/campeonatos.json
+          git add data/news.json data/campeonatos.json data/videos.json data/video_channels.json
           git diff --staged --quiet && echo "Sem novidades" && exit 0
-          git commit -m "📰 Notícias e campeonatos de $(TZ=America/Sao_Paulo date +'%d/%m/%Y')"
+          git commit -m "📰 Notícias, campeonatos e vídeos de $(TZ=America/Sao_Paulo date +'%d/%m/%Y')"
           git pull --rebase
           git push

@@ -1,4 +1,4 @@
-// Quiz da Cohab: 5 perguntas sorteadas, resposta comentada e uma faixa no final
+// Quiz de jiu-jitsu em níveis de faixa: da branca (fácil) à preta (muito difícil)
 (() => {
   const box = document.getElementById("quiz");
   const el = (tag, cls, text) => {
@@ -8,70 +8,207 @@
     return e;
   };
   const shuffle = (list) => list.map((v) => [Math.random(), v]).sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+  const store = {
+    get: () => { try { return JSON.parse(localStorage.getItem("quiz-faixas")) || {}; } catch { return {}; } },
+    set: (v) => { try { localStorage.setItem("quiz-faixas", JSON.stringify(v)); } catch { /* sem armazenamento */ } },
+  };
 
-  // Perguntas fixas: [pergunta, resposta certa, erradas, explicação]
-  const FIXED = [
-    ["Em que ano a Cohab começou a dar aulas de jiu-jitsu?", "1998", ["1995", "2002", "2007"], "A primeira aula foi em setembro de 1998, no centro esportivo da Cohab José Bonifácio."],
-    ["Quem foi o primeiro aluno da Cohab?", "Dan, hoje Mestre Dan", ["Sérgio Moraes", "Diogo Almeida", "Fábio Gurgel"], "O professor Tony começou com um único aluno: o Everdan, o Dan."],
-    ["Quem entregou a faixa preta ao Mestre Dan, em 2005?", "Fernando Tererê", ["Fábio Gurgel", "Hélio Gracie", "Rolls Gracie"], "Foi o Tererê; o Eduardo Telles anunciou e o André Galvão amarrou a faixa."],
-    ["Qual atleta é chamado de “O Orgulho da Cohab”?", "Sérgio Moraes", ["Guilherme Augusto", "Dimitrius Souza", "Paulinho Baraúna"], "Nascido na Cohab 2, Sérgio Moraes foi campeão mundial e lutou no UFC."],
-    ["Com qual equipe a Cohab foi parceira de 2007 a 2018?", "Alliance", ["Gracie Barra", "Checkmat", "Atos"], "Nesse período a equipe se chamou Cohab Alliance Jiu-Jitsu."],
-    ["Como se chama o projeto social da Cohab?", "Nasci pra Vencer", ["Tatame Solidário", "Jiu-Jitsu para Todos", "Nova Geração"], "O projeto leva jiu-jitsu gratuito a crianças e jovens desde 1998."],
-    ["Em que bairro de São Paulo fica a Cohab Team?", "Itaquera", ["São Mateus", "Tatuapé", "Brás"], "A equipe nasceu na Cohab José Bonifácio, em Itaquera."],
-    ["Quantas unidades a Cohab tem no Brasil?", "16", ["4", "9", "30"], "São 16 unidades no Brasil, além das filiais em outros países."],
-    ["Em qual destes países a Cohab NÃO tem filial?", "Portugal", ["Argentina", "Chile", "Peru"], "As filiais fora do Brasil ficam na Argentina, no Chile, no Equador e no Peru."],
+  // Fotos livres do Wikimedia Commons: [arquivo, autor, licença]
+  const PHOTOS = {
+    royce: ["Royce Gracie 2.jpg", "Peter Gordon", "CC BY 2.0"],
+    helio: ["Helio Gracie in 2004.jpg", "Satorijits", "CC BY-SA 3.0"],
+    carlos: ["Carlos Gracie (1951) (cropped).tif", "Correio da Manhã", "domínio público"],
+    rickson: ["Rickson gracie 20080608.jpg", "Zekerags", "domínio público"],
+    renzo: ["RenzoCropped.jpg", "Chris Hutt", "CC BY 3.0"],
+    roger: ["RogerGracie.JPG", "Kerri Roberts", "CC BY-SA 3.0"],
+    maeda: ["Mitsuyo Maeda c1910.jpg", "autor desconhecido", "domínio público"],
+    kano: ["Jigoro-Kano-BW-4375px.jpg", "autor desconhecido", "domínio público"],
+    lo: ["Leandro Lo Worlds IBJJF 2022.jpg", "Lu'nivers Athletics", "CC BY-SA 4.0"],
+    dern: ["Mackenzie Dern.png", "Canal Faixa Preta", "CC BY 3.0"],
+    gabi: ["Gabi Garcia.png", "Bruno Massami", "CC BY 3.0"],
+    guarda: ["Brazilian Jiu-jitsu-Closed guard.jpg", "MartialArtsNomad.com", "CC BY 2.0"],
+    mataleao: ["Rear naked choke.jpg", "Exército dos EUA", "domínio público"],
+    triangulo: ["Triangle choke.jpeg", "Zoran Jerkovic", "CC BY-SA 4.0"],
+    armlock: ["Armlock juji-gatame armbar.jpg", "Wikimedia Commons", "domínio público"],
+    kimura: ["Brazilian Jiu-jitsu Kimura lock from guard.jpg", "Linsey Williams / Exército dos EUA", "domínio público"],
+    katagatame: ["Arm triangle choke.jpg", "Eric Langley", "CC BY 2.0"],
+    transicao: ["BJJ, brazilian-jiujitsu 04.jpg", "Yossigur", "CC BY-SA 4.0"],
+  };
+
+  // Cada pergunta: [pergunta, resposta certa, erradas, explicação, foto?]
+  const LEVELS = [
+    {
+      id: "branca", name: "Faixa branca", tag: "Fácil", color: "#f2f2f2", ink: "#111",
+      questions: [
+        ["Qual é o cumprimento mais usado no tatame?", "Oss", ["Hajime", "Arigatô", "Salve"], "“Oss” serve para cumprimentar, agradecer e dizer que entendeu."],
+        ["Quantos pontos vale a montada?", "4", ["2", "3", "6"], "A montada vale 4 pontos, assim como a pegada nas costas."],
+        ["Quantos pontos vale uma raspagem?", "2", ["1", "3", "4"], "Sair de baixo e terminar por cima vale 2 pontos."],
+        ["Quantos pontos vale a passagem de guarda?", "3", ["2", "4", "5"], "Passar a guarda e estabilizar ao lado vale 3 pontos."],
+        ["Como se avisa que desistiu de uma finalização?", "Batendo (tapinhas)", ["Levantando a mão", "Gritando “chega”", "Saindo do tatame"], "Bate-se no parceiro ou no chão. Quem aplica deve soltar na hora."],
+        ["Qual é a primeira faixa do jiu-jitsu adulto?", "Branca", ["Amarela", "Cinza", "Azul"], "Todo mundo começa na branca. Cinza e amarela são faixas infantis."],
+        ["Qual faixa vem depois da azul?", "Roxa", ["Marrom", "Verde", "Preta"], "A ordem adulta é branca, azul, roxa, marrom e preta."],
+        ["Como se chama a roupa de treino de tecido grosso?", "Kimono", ["Rash guard", "Dobok", "Collant"], "O kimono (gi) permite pegadas na gola e na manga."],
+        ["Qual é esta posição?", "Guarda fechada", ["Montada", "Cem quilos", "Meia-guarda"], "Quem está por baixo prende o adversário com as pernas cruzadas nas costas dele.", "guarda"],
+        ["Qual finalização está sendo aplicada?", "Mata-leão", ["Triângulo", "Guilhotina", "Kimura"], "O mata-leão é um estrangulamento pelas costas, com o braço em volta do pescoço.", "mataleao"],
+        ["Quem é este lutador, campeão do primeiro UFC, em 1993?", "Royce Gracie", ["Rickson Gracie", "Anderson Silva", "Royler Gracie"], "Royce venceu o UFC 1 finalizando adversários bem maiores.", "royce"],
+        ["Por cima ou por baixo: onde fica quem está “na guarda”?", "Por baixo", ["Por cima", "De pé", "De costas"], "Quem faz a guarda fica por baixo, controlando com as pernas."],
+      ],
+    },
+    {
+      id: "azul", name: "Faixa azul", tag: "Médio", color: "#1f4fbf", ink: "#fff",
+      questions: [
+        ["Qual finalização é esta?", "Triângulo", ["Armlock", "Omoplata", "Mata-leão"], "No triângulo, as pernas prendem o pescoço e um braço do adversário.", "triangulo"],
+        ["Qual finalização é esta?", "Armlock", ["Kimura", "Americana", "Triângulo"], "O armlock (juji-gatame) estica o cotovelo do adversário.", "armlock"],
+        ["Qual chave está sendo aplicada da guarda?", "Kimura", ["Americana", "Armlock", "Guilhotina"], "A kimura torce o ombro para trás, com os dois braços.", "kimura"],
+        ["Quem é este mestre, que adaptou o jiu-jitsu para depender de alavanca e não de força?", "Hélio Gracie", ["Carlos Gracie", "Jigoro Kano", "Rorion Gracie"], "Hélio era franzino e ajustou as técnicas para o mais fraco vencer o mais forte.", "helio"],
+        ["Quem é esta campeã mundial de jiu-jitsu que foi lutar no UFC?", "Mackenzie Dern", ["Gabi Garcia", "Ronda Rousey", "Beatriz Mesquita"], "Mackenzie Dern foi campeã mundial na faixa preta antes de ir para o MMA.", "dern"],
+        ["Quem é esta atleta, multicampeã mundial e do ADCC no peso pesado?", "Gabi Garcia", ["Mackenzie Dern", "Kyra Gracie", "Leticia Ribeiro"], "Gabi Garcia é uma das maiores campeãs da história do jiu-jitsu.", "gabi"],
+        ["Quantos pontos vale o joelho na barriga?", "2", ["3", "4", "1"], "Joelho na barriga vale 2 pontos."],
+        ["Quantos pontos vale a pegada nas costas?", "4", ["2", "3", "5"], "Com os dois ganchos por dentro, vale 4 pontos."],
+        ["Em que ano foi o primeiro UFC?", "1993", ["1989", "1996", "2001"], "O UFC 1 foi em novembro de 1993, nos Estados Unidos."],
+        ["A kimura leva o nome de quem?", "Masahiko Kimura, judoca japonês", ["Um lutador de sumô", "Um aluno de Hélio Gracie", "O criador do judô"], "Kimura venceu Hélio Gracie com essa chave em 1951."],
+        ["O que é a meia-guarda?", "Prender só uma perna do adversário", ["Guarda com uma mão só", "Guarda de joelhos", "Metade da luta por baixo"], "Na meia-guarda, quem está por baixo prende uma perna do adversário entre as suas."],
+        ["Qual é a idade mínima para a faixa azul?", "16 anos", ["12 anos", "14 anos", "18 anos"], "A azul é a primeira faixa adulta, a partir dos 16 anos."],
+        ["Para que servem as vantagens?", "Desempatar a luta", ["Valem 1 ponto cada", "Dar tempo extra", "Anular uma punição"], "Vantagem é quando quase pontuou. Com pontos iguais, vence quem tem mais."],
+      ],
+    },
+    {
+      id: "roxa", name: "Faixa roxa", tag: "Difícil", color: "#6a2fb3", ink: "#fff",
+      questions: [
+        ["Quem é este judoca japonês, o “Conde Koma”, que levou a luta ao Brasil?", "Mitsuyo Maeda", ["Jigoro Kano", "Masahiko Kimura", "Yukio Kato"], "Maeda chegou ao Brasil em 1914 e ensinou Carlos Gracie.", "maeda"],
+        ["Quem é este, fundador do judô e do Kodokan?", "Jigoro Kano", ["Mitsuyo Maeda", "Gichin Funakoshi", "Morihei Ueshiba"], "Kano criou o judô em 1882 reunindo escolas de jujutsu.", "kano"],
+        ["Quem é este Gracie, considerado por muitos o melhor da família?", "Rickson Gracie", ["Royce Gracie", "Renzo Gracie", "Roger Gracie"], "Rickson ficou famoso por ser invicto em desafios e no vale-tudo.", "rickson"],
+        ["Quem é este Gracie, dono de academia famosa em Nova York?", "Renzo Gracie", ["Ralph Gracie", "Roger Gracie", "Royler Gracie"], "Na academia dele treinaram nomes como John Danaher e Georges St-Pierre.", "renzo"],
+        ["Em que cidade Maeda se fixou no Brasil?", "Belém", ["Rio de Janeiro", "São Paulo", "Manaus"], "Foi em Belém do Pará que ele conheceu a família Gracie."],
+        ["Onde foi a luta Hélio Gracie x Kimura, em 1951?", "No Maracanã", ["No Pacaembu", "No Ibirapuera", "Em Tóquio"], "A luta lotou o Maracanã, no Rio de Janeiro."],
+        ["Em que ano foi fundada a CBJJ?", "1994", ["1985", "1998", "2003"], "A Confederação Brasileira de Jiu-Jitsu nasceu em 1994."],
+        ["Em que cidade foi o primeiro Mundial de Jiu-Jitsu, em 1996?", "Rio de Janeiro", ["São Paulo", "Los Angeles", "Abu Dhabi"], "O Mundial só foi para a Califórnia anos depois."],
+        ["Quem fundou a CBJJE, em 2007?", "Moisés Muradi", ["Carlos Gracie Jr.", "Fábio Gurgel", "Carlson Gracie"], "A CBJJE é uma das ligas em que a Cohab mais compete."],
+        ["Este professor demonstra a transição para qual finalização?", "Armlock (juji-gatame)", ["Triângulo", "Kimura", "Estrangulamento de gola"], "Ele está girando para esticar o braço do parceiro: o juji-gatame.", "transicao"],
+        ["Qual é o tempo mínimo na faixa azul antes da roxa?", "2 anos", ["1 ano", "3 anos", "6 meses"], "A IBJJF exige pelo menos 2 anos de faixa azul."],
+        ["Quem entregou a faixa preta ao Mestre Dan, em 2005?", "Fernando Tererê", ["Fábio Gurgel", "Hélio Gracie", "Rolls Gracie"], "Foi o Tererê; o André Galvão amarrou a faixa."],
+        ["Com qual equipe a Cohab foi parceira de 2007 a 2018?", "Alliance", ["Gracie Barra", "Checkmat", "Atos"], "Nesse período a equipe se chamou Cohab Alliance Jiu-Jitsu."],
+      ],
+    },
+    {
+      id: "marrom", name: "Faixa marrom", tag: "Muito difícil", color: "#6b3e1e", ink: "#fff",
+      questions: [
+        ["Quem é este, o primeiro da família a aprender com Maeda?", "Carlos Gracie", ["Hélio Gracie", "George Gracie", "Gastão Gracie"], "Carlos aprendeu em Belém e passou a arte aos irmãos.", "carlos"],
+        ["Quem é este faixa preta, neto de Carlos Gracie, famoso por finalizar quase todo mundo no Mundial?", "Roger Gracie", ["Ryron Gracie", "Kron Gracie", "Rener Gracie"], "Roger foi 10 vezes campeão mundial, famoso pelos estrangulamentos da montada.", "roger"],
+        ["Quem é este campeão, morto em 2022 e lembrado como um dos maiores da sua geração?", "Leandro Lo", ["Lucas Lepri", "Rafael Mendes", "Marcus Buchecha"], "Leandro Lo foi oito vezes campeão mundial.", "lo"],
+        ["Em que ano Jigoro Kano fundou o Kodokan?", "1882", ["1868", "1900", "1914"], "O Kodokan nasceu em Tóquio em 1882."],
+        ["Em que ano Mitsuyo Maeda chegou ao Brasil?", "1914", ["1908", "1925", "1930"], "Depois de rodar o mundo lutando, Maeda chegou ao Brasil em 1914."],
+        ["Em que ano Rolls Gracie morreu?", "1982", ["1975", "1990", "1993"], "Rolls morreu jovem, num acidente de asa-delta, em 1982."],
+        ["Qual técnica de inversão ficou famosa com os irmãos Mendes?", "Berimbolo", ["Toreando", "Omoplata", "Lapela"], "O berimbolo leva às costas a partir da guarda De La Riva."],
+        ["Qual é a idade mínima para a faixa preta?", "19 anos", ["16 anos", "18 anos", "21 anos"], "A faixa preta só pode ser dada a partir dos 19 anos."],
+        ["Qual destas NÃO é uma faixa infantil?", "Roxa", ["Cinza", "Amarela", "Laranja"], "As infantis são cinza, amarela, laranja e verde."],
+        ["De que cores é a faixa coral do 7º grau?", "Vermelha e preta", ["Vermelha e branca", "Preta e branca", "Toda vermelha"], "A vermelha e branca vem no 8º grau; a toda vermelha no 9º e 10º."],
+        ["Qual destas finalizações é uma chave de pé?", "Chave de calcanhar (heel hook)", ["Omoplata", "Ezequiel", "Kimura"], "A chave de calcanhar torce o joelho a partir do pé; é proibida para faixas mais baixas."],
+        ["Que estrangulamento é este, feito com o próprio braço do adversário?", "Katagatame (triângulo de mão)", ["Triângulo de pernas", "Guilhotina", "Ezequiel"], "O braço do adversário fica preso contra o próprio pescoço.", "katagatame"],
+        ["Em que ano o Mestre Dan recebeu a faixa preta?", "2005", ["1998", "2002", "2010"], "Dan foi o primeiro aluno da Cohab e virou faixa preta em 2005."],
+      ],
+    },
+    {
+      id: "preta", name: "Faixa preta", tag: "Lenda", color: "#111111", ink: "#fff",
+      questions: [
+        ["Que judoca japonês Hélio Gracie enfrentou em 1951, antes de lutar com Kimura?", "Yukio Kato", ["Mitsuyo Maeda", "Masahiko Kimura", "Yasuhiro Yamashita"], "Hélio empatou com Kato e depois o finalizou na revanche."],
+        ["Quem jogou a toalha na luta Hélio x Kimura?", "Carlos Gracie", ["O próprio Hélio", "O árbitro", "Rolls Gracie"], "Hélio não bateu; o irmão Carlos jogou a toalha para salvar o braço dele."],
+        ["Em que ano Carlos Gracie abriu sua academia no Rio?", "1925", ["1914", "1932", "1951"], "A academia dos Gracie no Rio abriu em 1925."],
+        ["Por quantos segundos é preciso estabilizar uma posição para pontuar?", "3 segundos", ["1 segundo", "5 segundos", "10 segundos"], "A posição precisa ser mantida por 3 segundos para valer pontos."],
+        ["Quantos pontos vale pegar as costas com só um gancho?", "Nenhum", ["2", "3", "4"], "Sem os dois ganchos por dentro, a pegada nas costas não pontua (pode dar vantagem)."],
+        ["Empate em pontos e vantagens; o atleta A tem uma punição e o B nenhuma. Quem vence?", "O atleta B", ["O atleta A", "Vai para a decisão dos árbitros", "Os dois são desclassificados"], "Com pontos e vantagens iguais, vence quem tem menos punições."],
+        ["Quem criou o ADCC, em 1998?", "Sheik Tahnoon bin Zayed", ["Carlos Gracie Jr.", "Dana White", "Rorion Gracie"], "O sheik de Abu Dhabi criou o torneio depois de treinar jiu-jitsu."],
+        ["Que lutas Rolls Gracie misturou ao jiu-jitsu?", "Wrestling, judô e sambo", ["Boxe, muay thai e karatê", "Capoeira, kung fu e taekwondo", "Sumô, aikidô e kendô"], "Rolls trouxe quedas e chaves de outras lutas e modernizou o jogo."],
+        ["Qual é a graduação da faixa vermelha?", "9º e 10º grau", ["7º grau", "8º grau", "6º grau"], "A vermelha é a graduação máxima, para quem dedicou a vida à arte."],
+        ["Quem deu a primeira aula da Cohab, em 1998?", "Professor Tony", ["Mestre Dan", "Mestre Fluído Caiman", "Sérgio Moraes"], "O professor Tony começou com um único aluno: o Dan."],
+        ["Na faixa preta do Mestre Dan, quem amarrou a faixa?", "André Galvão", ["Fernando Tererê", "Eduardo Telles", "Fábio Gurgel"], "O Tererê entregou, o Eduardo Telles anunciou e o André Galvão amarrou."],
+        ["Qual atleta é chamado de “O Orgulho da Cohab”?", "Sérgio Moraes", ["Guilherme Augusto", "Dimitrius Souza", "Paulinho Baraúna"], "Nascido na Cohab 2, Sérgio Moraes foi campeão mundial e lutou no UFC."],
+        ["Quantos graus a faixa preta recebe antes da faixa coral?", "6 graus", ["4 graus", "5 graus", "10 graus"], "A preta vai do 1º ao 6º grau; no 7º grau vem a coral vermelha e preta."],
+      ],
+    },
   ];
+  const PER_ROUND = 8;
+  const PASS = 6;
 
-  async function buildQuestions() {
-    const qs = FIXED.map(([q, right, wrong, why]) => ({ q, right, options: shuffle([right, ...wrong]), why }));
-    try {
-      const d = await fetch("data/cohab-conquistas.json").then((r) => r.json());
-      const titles = d.team.filter((t) => t.pos === 1).length;
-      const wrong = shuffle([titles - 3, titles - 1, titles + 2, titles + 4].filter((n) => n > 0)).slice(0, 3);
-      qs.push({
-        q: "Em quantos campeonatos a Cohab já foi campeã geral por equipe?",
-        right: String(titles), options: shuffle([titles, ...wrong].map(String)),
-        why: `Foram ${titles} títulos de campeã geral, e a lista cresce toda semana.`,
-      });
-      const pan = d.team.filter((t) => /pan-americano/i.test(t.event)).sort((a, b) => b.year - a.year)[0];
-      if (pan) {
-        const right = `${pan.pos}º lugar`;
-        const others = ["1º lugar", "2º lugar", "3º lugar", "5º lugar"].filter((o) => o !== right).slice(0, 3);
-        qs.push({
-          q: `Em que lugar a Cohab ficou no ${pan.event} ${pan.year}?`,
-          right, options: shuffle([right, ...others]),
-          why: `Ficou em ${pan.pos}º lugar geral, com ${pan.gold} ouros.`,
-        });
-      }
-    } catch { /* sem os dados, segue só com as perguntas fixas */ }
-    return shuffle(qs).slice(0, 5);
+  // Perguntas com os dados atuais da Cohab entram nos níveis roxa e preta
+  fetch("data/cohab-conquistas.json").then((r) => r.json()).then((d) => {
+    const titles = d.team.filter((t) => t.pos === 1).length;
+    const wrong = shuffle([titles - 3, titles - 1, titles + 2, titles + 4].filter((n) => n > 0)).slice(0, 3);
+    LEVELS[2].questions.push(["Em quantos campeonatos a Cohab já foi campeã geral por equipe?", String(titles), wrong.map(String),
+      `Foram ${titles} títulos de campeã geral, e a lista cresce toda semana.`]);
+    const pan = d.team.filter((t) => /pan-americano/i.test(t.event)).sort((a, b) => b.year - a.year)[0];
+    if (pan) {
+      const right = `${pan.pos}º lugar`;
+      LEVELS[4].questions.push([`Em que lugar a Cohab ficou no ${pan.event} ${pan.year}?`, right,
+        ["1º lugar", "2º lugar", "3º lugar", "5º lugar"].filter((o) => o !== right).slice(0, 3),
+        `Ficou em ${pan.pos}º lugar geral, com ${pan.gold} ouros.`]);
+    }
+  }).catch(() => { /* sem os dados, segue só com as perguntas fixas */ });
+
+  function photo(key) {
+    const [file, author, license] = PHOTOS[key];
+    const fig = el("figure", "quiz-photo");
+    const img = el("img");
+    img.src = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=480`;
+    img.alt = "Foto da pergunta";
+    const cap = el("figcaption");
+    const a = el("a", "", `Foto: ${author} · ${license}`);
+    a.href = `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, "_"))}`;
+    a.target = "_blank";
+    a.rel = "noopener";
+    cap.append(a);
+    fig.append(img, cap);
+    return fig;
   }
 
-  const BELTS = [
-    { name: "Faixa branca", color: "#f2f2f2", text: "Todo campeão começou assim. Que tal ler a história da Cohab e tentar de novo?" },
-    { name: "Faixa branca", color: "#f2f2f2", text: "Bom começo! Dá uma olhada na história da equipe e volte para subir de faixa." },
-    { name: "Faixa azul", color: "#1f4fbf", text: "Mandou bem! Você já conhece o básico da Cohab." },
-    { name: "Faixa roxa", color: "#6a2fb3", text: "Muito bom! Dá para ver que você acompanha a equipe." },
-    { name: "Faixa marrom", color: "#6b3e1e", text: "Quase lá! Você sabe muito sobre a Cohab." },
-    { name: "Faixa preta", color: "#111111", text: "Oss! 🥋 Você é da casa. Sabe tudo da Cohab." },
-  ];
+  function menu() {
+    const best = store.get();
+    box.replaceChildren();
+    const start = el("div", "quiz-start");
+    start.append(
+      el("h2", "", "Escolha sua faixa"),
+      el("p", "muted", `Cada nível tem ${PER_ROUND} perguntas sobre história, regras, posições, lendas do jiu-jitsu e a Cohab. Acerte ${PASS} para passar de faixa.`),
+    );
+    const list = el("div", "quiz-levels");
+    LEVELS.forEach((lv, i) => {
+      const b = el("button", "quiz-level");
+      b.type = "button";
+      const stripe = el("span", "quiz-level-belt");
+      stripe.style.background = lv.color;
+      stripe.dataset.belt = lv.id;
+      const name = el("strong", "", lv.name);
+      const tag = el("span", "muted", lv.tag);
+      const score = best[lv.id];
+      const badge = el("span", "quiz-level-best", score === undefined ? "" : `${score >= PASS ? "✅" : "🔁"} ${score}/${PER_ROUND}`);
+      b.append(stripe, name, tag, badge);
+      b.addEventListener("click", () => play(i));
+      list.append(b);
+    });
+    start.append(list);
+    box.append(start);
+  }
 
-  async function start() {
-    const questions = await buildQuestions();
+  function play(levelIndex) {
+    const lv = LEVELS[levelIndex];
+    const questions = shuffle(lv.questions).slice(0, PER_ROUND).map(([q, right, wrong, why, img]) =>
+      ({ q, right, options: shuffle([right, ...wrong]), why, img }));
     let i = 0, score = 0;
 
     const show = () => {
       box.replaceChildren();
-      const { q, right, options, why } = questions[i];
+      const { q, right, options, why, img } = questions[i];
       const head = el("div", "quiz-head");
-      head.append(el("span", "muted", `Pergunta ${i + 1} de ${questions.length}`), el("span", "quiz-score", `${score} ✓`));
+      const level = el("span", "quiz-tag", lv.name);
+      level.style.background = lv.color;
+      level.style.color = lv.ink;
+      head.append(level, el("span", "muted", `Pergunta ${i + 1} de ${questions.length}`), el("span", "quiz-score", `${score} ✓`));
       const bar = el("div", "quiz-bar");
       const fill = el("i");
       fill.style.width = `${(i / questions.length) * 100}%`;
       bar.append(fill);
       const list = el("div", "quiz-options");
       const note = el("p", "quiz-why");
-      const next = el("button", "button quiz-next", i + 1 < questions.length ? "Próxima →" : "Ver minha faixa →");
+      const next = el("button", "button quiz-next", i + 1 < questions.length ? "Próxima →" : "Ver resultado →");
       next.hidden = true;
       options.forEach((opt) => {
         const b = el("button", "quiz-option", opt);
@@ -91,36 +228,57 @@
         list.append(b);
       });
       next.addEventListener("click", () => { i++; i < questions.length ? show() : finish(); });
-      box.append(head, bar, el("h2", "quiz-q", q), list, note, next);
+      box.append(head, bar, el("h2", "quiz-q", q));
+      if (img) box.append(photo(img));
+      box.append(list, note, next);
     };
 
     const finish = () => {
-      const belt = BELTS[score];
+      const passed = score >= PASS;
+      const best = store.get();
+      best[lv.id] = Math.max(score, best[lv.id] ?? 0);
+      store.set(best);
+      const nextLevel = LEVELS[levelIndex + 1];
       box.replaceChildren();
       const card = el("div", "quiz-result");
       const beltEl = el("div", "quiz-belt");
-      beltEl.style.background = belt.color;
+      beltEl.style.background = lv.color;
       beltEl.append(el("span"));
+      const text = passed
+        ? (nextLevel ? `Oss! 🥋 Você passou na ${lv.name.toLowerCase()}. Pronto para a ${nextLevel.name.toLowerCase()}?` : "Oss! 🥋 Você é uma lenda do jiu-jitsu. Passou no nível mais difícil!")
+        : `Faltou pouco: precisa de ${PASS} acertos para passar. Leia a página de jiu-jitsu e tente de novo.`;
       card.append(
         el("p", "muted", `Você acertou ${score} de ${questions.length}`),
-        el("h2", "", belt.name),
+        el("h2", "", passed ? `${lv.name} aprovada!` : `${lv.name}: ainda não`),
         beltEl,
-        el("p", "", belt.text),
+        el("p", "", text),
       );
       const actions = el("div", "quiz-actions");
-      const again = el("button", "button", "Jogar de novo");
+      if (passed && nextLevel) {
+        const up = el("button", "button", `Ir para a ${nextLevel.name.toLowerCase()} →`);
+        up.type = "button";
+        up.addEventListener("click", () => play(levelIndex + 1));
+        actions.append(up);
+      }
+      const again = el("button", passed && nextLevel ? "share-btn" : "button", "Jogar de novo");
       again.type = "button";
-      again.addEventListener("click", start);
-      const share = el("button", "share-btn", "Compartilhar resultado ↗");
+      again.addEventListener("click", () => play(levelIndex));
+      const back = el("button", "share-btn", "Escolher outra faixa");
+      back.type = "button";
+      back.addEventListener("click", menu);
+      const share = el("button", "share-btn", "Compartilhar ↗");
       share.type = "button";
       share.addEventListener("click", () => window.siteShare?.({
-        title: "Quiz da Cohab",
-        text: `Tirei ${belt.name.toLowerCase()} no Quiz da Cohab Team (${score}/${questions.length})! Quanto você sabe?`,
+        title: "Quiz de jiu-jitsu da Cohab",
+        text: `Fiz ${score}/${questions.length} no nível ${lv.name.toLowerCase()} do quiz de jiu-jitsu da Cohab Team! Consegue mais?`,
         url: location.href,
       }));
-      const more = el("a", "share-btn", "Ler a história da Cohab");
-      more.href = "historia.html";
-      actions.append(again, share, more);
+      actions.append(again, back, share);
+      if (!passed) {
+        const more = el("a", "share-btn", "Estudar a história");
+        more.href = "jiujitsu.html";
+        actions.append(more);
+      }
       card.append(actions);
       box.append(card);
     };
@@ -128,5 +286,5 @@
     show();
   }
 
-  box.querySelector(".quiz-go").addEventListener("click", start);
+  menu();
 })();
