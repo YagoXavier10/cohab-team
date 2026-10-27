@@ -56,7 +56,7 @@
     const start = el("div", "quiz-start");
     start.append(
       el("h2", "", "Escolha sua faixa"),
-      el("p", "muted", `Cada nível tem ${PER_ROUND} perguntas sobre história, regras, posições, lendas do jiu-jitsu e a Cohab. Acerte ${PASS} para passar de faixa.`),
+      el("p", "muted", `Cada nível tem ${PER_ROUND} perguntas sobre jiu-jitsu, judô, a Cohab e conhecimentos gerais. Acerte ${PASS} para passar de faixa.`),
     );
     const list = el("div", "quiz-levels");
     LEVELS.forEach((lv, i) => {
