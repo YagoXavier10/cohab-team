@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jogos · Cohab Team</title>
-  <meta name="description" content="Jogos de jiu-jitsu da Cohab Team: quiz em níveis de faixa e o jogo das posições contra o relógio.">
+  <meta name="description" content="Jogos de jiu-jitsu da Cohab Team: luta ao vivo contra um amigo, quiz em níveis de faixa e o jogo das posições contra o relógio.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=15">
   <script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
@@ -37,6 +37,14 @@
   <main class="container">
     <section class="rk-profile" id="rk-profile" aria-live="polite"></section>
     <div class="games">
+      <a class="game-card game-card-live" href="luta.html">
+        <span class="game-art" aria-hidden="true">🥊</span>
+        <span class="game-new">Ao vivo</span>
+        <h2>Luta ao vivo</h2>
+        <p class="muted">Desafie um amigo, cada um no seu celular. A mesma pergunta aparece para os dois e quem acerta primeiro pontua. Placar de campeonato, finalização e revanche.</p>
+        <span class="game-best" data-best="lt"></span>
+        <span class="feature-cta">Lutar</span>
+      </a>
       <a class="game-card" href="posicoes.html">
         <span class="game-art" aria-hidden="true">⏱️</span>
         <span class="game-new">Novo</span>
@@ -104,6 +112,8 @@
       if (arSt) document.querySelector('[data-best="ar"]').textContent = `⭐ ${arSt}/15 estrelas`;
       const rm = JSON.parse(localStorage.getItem("rm-recorde")) || 0;
       if (rm) document.querySelector('[data-best="rm"]').textContent = `🏆 Seu recorde: ${rm.toLocaleString("pt-BR")} pontos`;
+      const lt = JSON.parse(localStorage.getItem("lt-vitorias")) || 0;
+      if (lt) document.querySelector('[data-best="lt"]').textContent = `🏆 ${lt} ${lt === 1 ? "vitória" : "vitórias"} ao vivo`;
       if (passed.length) document.querySelector('[data-best="quiz"]').textContent = `🥋 Você já passou na faixa ${passed.at(-1)}`;
     } catch (e) { /* sem armazenamento */ }
   </script>
@@ -114,8 +124,8 @@
   </footer>
 
   <script src="ranking-config.js?v=1" defer></script>
-  <script type="module" src="ranking.js?v=3"></script>
-  <script src="jogos.js?v=3" defer></script>
+  <script type="module" src="ranking.js?v=6"></script>
+  <script src="jogos.js?v=5" defer></script>
   <script src="chat.js?v=7" defer></script>
   <script src="fx.js?v=3" defer></script>
 </body>

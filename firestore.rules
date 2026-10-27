@@ -13,7 +13,8 @@ service cloud.firestore {
           'regras': 6000,
           'arbitro': 15,
           'caminho': 21,
-          'quiz': 40
+          'quiz': 40,
+          'luta': 10000
         }.get(game, -1);
       }
 
@@ -30,6 +31,90 @@ service cloud.firestore {
       allow update: if request.auth != null && request.auth.uid == uid && valid()
         && request.resource.data.score >= resource.data.score;
       allow delete: if false;
+    }
+
+    // Luta ao vivo: salas com código de 4 dígitos que valem por 1 hora.
+    // Azul cria, Branco entra; só os dois lutadores mexem na sala e cada um só responde por si.
+    match /salas/{codigo} {
+      function sala() { return resource.data; }
+      function nova() { return request.resource.data; }
+      function mudou() { return nova().diff(sala()).affectedKeys(); }
+      function lutador() { return request.auth.uid == sala().azul || request.auth.uid == sala().branco; }
+      function nickOk(n) { return n is string && n.size() >= 3 && n.size() <= 16; }
+      function vence() { return sala().criada + duration.value(1, 'h'); }
+
+      function criar() {
+        return codigo.matches('[0-9]{4}')
+          && nova().keys().hasOnly(['azul', 'branco', 'nickAzul', 'nickBranco', 'status', 'perguntas', 'rodada',
+            'inicio', 'criada', 'vistoAzul', 'vistoBranco', 'vencedor', 'motivo', 'revanche'])
+          && nova().azul == request.auth.uid && nickOk(nova().nickAzul)
+          && nova().branco == null && nova().nickBranco == null
+          && nova().status == 'espera' && nova().rodada == 0
+          && nova().perguntas is list && nova().perguntas.size() == 10
+          && nova().criada == request.time && nova().inicio == request.time
+          && nova().vistoAzul == request.time && nova().vistoBranco == null
+          && nova().vencedor == null && nova().motivo == null && nova().revanche == null;
+      }
+      // Branco entra na sala e a luta começa
+      function entrar() {
+        return sala().status == 'espera' && sala().branco == null && request.auth.uid != sala().azul
+          && mudou().hasOnly(['branco', 'nickBranco', 'status', 'inicio', 'vistoBranco'])
+          && nova().branco == request.auth.uid && nickOk(nova().nickBranco)
+          && nova().status == 'luta' && nova().inicio == request.time && nova().vistoBranco == request.time;
+      }
+      // próxima pergunta (uma de cada vez e nunca antes de 3 segundos)
+      function avancar() {
+        return lutador() && sala().status == 'luta'
+          && mudou().hasOnly(['rodada', 'inicio'])
+          && nova().rodada == sala().rodada + 1 && nova().rodada < 10
+          && request.time > sala().inicio + duration.value(3, 's')
+          && nova().inicio == request.time;
+      }
+      // "ainda estou aqui": serve para dar W.O. em quem sumiu
+      function visto() {
+        return (request.auth.uid == sala().azul && mudou().hasOnly(['vistoAzul']) && nova().vistoAzul == request.time)
+          || (request.auth.uid == sala().branco && mudou().hasOnly(['vistoBranco']) && nova().vistoBranco == request.time);
+      }
+      function terminar() {
+        return lutador() && sala().status == 'luta'
+          && mudou().hasOnly(['status', 'vencedor', 'motivo'])
+          && nova().status == 'fim'
+          && nova().vencedor in ['azul', 'branco', 'empate']
+          && nova().motivo in ['pontos', 'finalizacao', 'vantagens', 'punicoes', 'empate', 'wo'];
+      }
+      function revanche() {
+        return lutador() && sala().status == 'fim' && sala().revanche == null
+          && mudou().hasOnly(['revanche'])
+          && nova().revanche is string && nova().revanche.matches('[0-9]{4}');
+      }
+
+      allow get: if true;
+      // listar só serve para achar salas vencidas e apagar
+      allow list: if request.query.limit <= 10 && resource.data.criada < request.time - duration.value(1, 'h');
+      allow create: if request.auth != null && criar();
+      allow update: if request.auth != null && request.time < vence() && nova().criada == sala().criada
+        && (entrar() || avancar() || visto() || terminar() || revanche());
+      // sala vencida qualquer um apaga; sala esperando adversário quem criou pode cancelar
+      allow delete: if request.auth != null
+        && (request.time > vence() || (request.auth.uid == sala().azul && sala().status == 'espera'));
+
+      // uma resposta por lutador em cada pergunta, com a hora do servidor (quem acertou primeiro)
+      match /jogadas/{jogada} {
+        function s() { return get(/databases/$(database)/documents/salas/$(codigo)).data; }
+        function venceu() { return request.time > s().criada + duration.value(1, 'h'); }
+
+        allow read: if true;
+        allow create: if request.auth != null && s().status == 'luta' && !venceu()
+          && ((request.auth.uid == s().azul && jogada == string(s().rodada) + '-azul')
+            || (request.auth.uid == s().branco && jogada == string(s().rodada) + '-branco'))
+          && request.resource.data.keys().hasOnly(['rodada', 'escolha', 'em'])
+          && request.resource.data.rodada == s().rodada
+          && request.resource.data.escolha is int
+          && request.resource.data.escolha >= 0 && request.resource.data.escolha <= 3
+          && request.resource.data.em == request.time
+          && request.time < s().inicio + duration.value(27, 's');
+        allow delete: if request.auth != null && venceu();
+      }
     }
   }
 }

@@ -10,6 +10,7 @@ export const GAMES = {
   arbitro: { name: "Árbitro por um dia", short: "Árbitro", unit: "estrelas" },
   caminho: { name: "Caminho da finalização", short: "Caminho", unit: "estrelas" },
   quiz: { name: "Quiz de jiu-jitsu", short: "Quiz", unit: "acertos" },
+  luta: { name: "Luta ao vivo", short: "Luta ao vivo 🥊", unit: "vitórias", one: "vitória" },
 };
 
 // se o navegador bloquear o armazenamento (aba anônima, privacidade), guarda na memória enquanto a página estiver aberta
@@ -68,6 +69,9 @@ async function firebase(cfg) {
   return {
     online: true,
     me: user.uid,
+    user,
+    fs,
+    db,
     async best(game) {
       const snap = await timeout(fs.getDoc(fs.doc(scores(game), user.uid)), T);
       return snap.exists() ? snap.data().score : null;
@@ -150,6 +154,7 @@ function localBests() {
     arbitro: sum(store.get("ar-estrelas", {})),
     caminho: sum(store.get("cm-estrelas", {})),
     quiz: sum(store.get("quiz-faixas", {})),
+    luta: store.get("lt-vitorias", 0),
   };
 }
 export async function sync() {
@@ -162,6 +167,8 @@ export { localBests };
 
 export async function top(game, n = 20) { return (await ready).top(game, n); }
 export async function rank(game, score) { return (await ready).rank(game, score); }
+// conexão com o Firebase para a Luta ao vivo (null se estiver sem ranking online)
+export async function cloud() { const b = await ready; return b.online ? { fs: b.fs, db: b.db, uid: b.me, user: b.user } : null; }
 export async function info() { const b = await ready; return { online: b.online, me: b.me, configured, problem }; }
 
 // ---------- selo para a tela final dos jogos ----------
@@ -172,9 +179,11 @@ const el = (tag, cls, text) => {
   return e;
 };
 
+// "1 vitória", "2 vitórias"
+export const unit = (game, n) => (n === 1 && GAMES[game].one) || GAMES[game].unit;
+
 export function badge(game, score) {
   const box = el("div", "rk-badge");
-  const g = GAMES[game];
   const send = async () => {
     box.replaceChildren(el("span", "muted", "Enviando para o ranking…"));
     try {
@@ -186,8 +195,8 @@ export function badge(game, score) {
       const line = el("p");
       line.append(el("span", "rk-medal", pos <= 3 ? ["🥇", "🥈", "🥉"][pos - 1] : "🏅"));
       line.append(document.createTextNode(best > score
-        ? ` Seu recorde de ${best.toLocaleString("pt-BR")} ${g.unit} segue no ranking`
-        : ` ${nick()} entrou no ranking com ${best.toLocaleString("pt-BR")} ${g.unit}`));
+        ? ` Seu recorde de ${best.toLocaleString("pt-BR")} ${unit(game, best)} segue no ranking`
+        : ` ${nick()} entrou no ranking com ${best.toLocaleString("pt-BR")} ${unit(game, best)}`));
       if (online) line.append(document.createTextNode(`: você está em ${pos}º lugar.`));
       else line.append(document.createTextNode(off ? " (guardado neste aparelho; sem conexão com o ranking online agora)." : "."));
       const link = el("a", "rk-link", "Ver o ranking →");
@@ -227,5 +236,5 @@ export function badge(game, score) {
   return box;
 }
 
-window.cohabRanking = { GAMES, nick, setNick, checkNick, submit, sync, top, rank, info, badge, localBests };
+window.cohabRanking = { GAMES, nick, setNick, checkNick, submit, sync, top, rank, info, badge, localBests, cloud, unit };
 window.dispatchEvent(new Event("cohab-ranking"));

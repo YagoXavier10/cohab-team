@@ -99,7 +99,7 @@
           const empty = el("li", "rk-empty");
           empty.append(document.createTextNode("Ninguém pontuou ainda. "));
           const a = el("a", "", "Seja o primeiro →");
-          a.href = { "posicoes-relogio": "posicoes.html", "posicoes-morte": "posicoes.html", regras: "regras.html", arbitro: "arbitro.html", caminho: "caminho.html", quiz: "quiz.html" }[current];
+          a.href = { "posicoes-relogio": "posicoes.html", "posicoes-morte": "posicoes.html", regras: "regras.html", arbitro: "arbitro.html", caminho: "caminho.html", quiz: "quiz.html", luta: "luta.html" }[current];
           empty.append(a);
           list.append(empty);
           return;
@@ -108,7 +108,7 @@
           const li = el("li", r.id === me ? "rk-row me" : "rk-row");
           li.append(el("span", "rk-pos", i < 3 ? ["🥇", "🥈", "🥉"][i] : `${i + 1}º`),
             el("span", "rk-nick", r.nick + (r.id === me ? " (você)" : "")),
-            el("span", "rk-score", `${Number(r.score).toLocaleString("pt-BR")} ${g.unit}`));
+            el("span", "rk-score", `${Number(r.score).toLocaleString("pt-BR")} ${R.unit(current, Number(r.score))}`));
           list.append(li);
         });
         // se você não aparece no top 20, mostra sua posição embaixo
@@ -118,7 +118,7 @@
           if (asked !== current) return;
           const li = el("li", "rk-row me");
           li.append(el("span", "rk-pos", `${pos}º`), el("span", "rk-nick", `${R.nick()} (você)`),
-            el("span", "rk-score", `${mine.toLocaleString("pt-BR")} ${g.unit}`));
+            el("span", "rk-score", `${mine.toLocaleString("pt-BR")} ${R.unit(current, mine)}`));
           list.append(el("li", "rk-gap", "⋯"), li);
         }
       } catch (e) {
