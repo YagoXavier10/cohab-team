@@ -56,23 +56,37 @@ service cloud.firestore {
       function lutador() { return request.auth.uid == sala().azul || request.auth.uid == sala().branco; }
       function vence() { return sala().criada + duration.value(1, 'h'); }
 
-      // cada pergunta é "faixa:número:ordem" do banco oficial; nunca texto livre
-      function pq(p, i, faixas) { return p[i] is string && p[i].matches('(' + faixas + '):[0-9]{1,2}:[0-3]{4}'); }
-      function perguntasOk(p) {
+      // cada pergunta é do banco oficial, nunca texto livre:
+      // jiu-jitsu = "faixa:número:ordem"; outros temas = "tema:nível:número:ordem" (nível f, m ou d)
+      function temaOk(t) { return t in ['jiujitsu', 'judo', 'futebol', 'brasil', 'ciencia', 'mundo', 'olimpiadas', 'animais', 'matematica', 'comidas', 'saopaulo', 'mix']; }
+      function temaRe(t) {
+        return {
+          'judo': 'judo', 'futebol': 'futebol', 'brasil': 'brasil', 'ciencia': 'ciencia', 'mundo': 'mundo', 'olimpiadas': 'olimpiadas',
+          'animais': 'animais', 'matematica': 'matematica', 'comidas': 'comidas', 'saopaulo': 'saopaulo',
+          'mix': '(judo|futebol|brasil|ciencia|mundo|olimpiadas|animais|matematica|comidas|saopaulo)'
+        }.get(t, '@');
+      }
+      function pq(p, i, faixas, nivel, t) {
+        return p[i] is string
+          && ((t in ['jiujitsu', 'mix'] && p[i].matches('(' + faixas + '):[0-9]{1,2}:[0-3]{4}'))
+            || p[i].matches(temaRe(t) + ':' + nivel + ':[0-9]{1,2}:[0-3]{4}'));
+      }
+      function perguntasOk(p, t) {
         return p is list && p.size() == 10
-          && pq(p, 0, 'branca|azul') && pq(p, 1, 'branca|azul') && pq(p, 2, 'branca|azul') && pq(p, 3, 'branca|azul')
-          && pq(p, 4, 'roxa|marrom') && pq(p, 5, 'roxa|marrom') && pq(p, 6, 'roxa|marrom')
-          && pq(p, 7, 'preta') && pq(p, 8, 'preta') && pq(p, 9, 'preta');
+          && pq(p, 0, 'branca|azul', 'f', t) && pq(p, 1, 'branca|azul', 'f', t) && pq(p, 2, 'branca|azul', 'f', t) && pq(p, 3, 'branca|azul', 'f', t)
+          && pq(p, 4, 'roxa|marrom', 'm', t) && pq(p, 5, 'roxa|marrom', 'm', t) && pq(p, 6, 'roxa|marrom', 'm', t)
+          && pq(p, 7, 'preta', 'd', t) && pq(p, 8, 'preta', 'd', t) && pq(p, 9, 'preta', 'd', t);
       }
 
       function criar() {
         return codigo.matches('[0-9]{4}')
-          && nova().keys().hasOnly(['azul', 'branco', 'nickAzul', 'nickBranco', 'status', 'perguntas', 'rodada',
+          && nova().keys().hasOnly(['azul', 'branco', 'nickAzul', 'nickBranco', 'status', 'tema', 'perguntas', 'rodada',
             'inicio', 'criada', 'vistoAzul', 'vistoBranco', 'vencedor', 'motivo', 'revanche'])
+          && temaOk(nova().get('tema', 'jiujitsu'))
           && nova().azul == request.auth.uid && nickOk(nova().nickAzul)
           && nova().branco == null && nova().nickBranco == null
           && nova().status == 'espera' && nova().rodada == 0
-          && perguntasOk(nova().perguntas)
+          && perguntasOk(nova().perguntas, nova().get('tema', 'jiujitsu'))
           && nova().criada == request.time && nova().inicio == request.time
           && nova().vistoAzul == request.time && nova().vistoBranco == null
           && nova().vencedor == null && nova().motivo == null && nova().revanche == null;
