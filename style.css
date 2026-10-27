@@ -1307,3 +1307,39 @@ body.pg-playing .chatbot { display: none; }
   .rm-demo-card, .rm-result:not(:empty), .ar-event { animation: none; }
   .rm-card, .rm-card.out { transition: opacity .2s ease; }
 }
+
+/* Nickname e ranking */
+.rk-profile { margin-top: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 16px 18px; }
+.rk-hello { display: flex; align-items: center; gap: 12px; }
+.rk-hello > div { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.rk-hello strong { font-size: 1.2rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-hello .muted { font-size: .8rem; }
+.rk-avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font: 700 1.3rem "Space Grotesk", Inter, sans-serif; background: #b3121b; color: #fff; flex-shrink: 0; }
+.rk-form > div:first-child { display: flex; flex-direction: column; gap: 2px; }
+.rk-form .muted { font-size: .88rem; }
+.rk-inline-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.rk-inline-row input { flex: 1 1 200px; min-width: 0; font: inherit; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+.rk-inline-row .button { font: inherit; font-weight: 700; border: 0; cursor: pointer; }
+.rk-error { margin: 6px 0 0; min-height: 1.2em; color: #b3121b; font-size: .88rem; }
+.rk-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; }
+.rk-head h2 { margin: 0; }
+.rk-head p { margin: 0; font-size: .85rem; }
+.rk-list { list-style: none; padding: 0; margin: 8px 0 0; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+.rk-row { display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 10px; padding: 11px 16px; }
+.rk-row + .rk-row, .rk-gap + .rk-row { border-top: 1px solid var(--border); }
+.rk-row:nth-child(-n+3) .rk-pos { font-size: 1.4rem; }
+.rk-row.me { background: #b3121b14; font-weight: 700; }
+.rk-pos { font: 700 1rem "Space Grotesk", Inter, sans-serif; text-align: center; }
+.rk-nick { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-score { font-family: "Space Grotesk", Inter, sans-serif; font-weight: 700; white-space: nowrap; }
+.rk-empty, .rk-gap { padding: 16px; text-align: center; color: var(--muted); }
+.rk-gap { padding: 2px; border-top: 1px solid var(--border); }
+.rk-badge { margin: 16px auto 0; max-width: 460px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border); background: var(--bg); text-align: left; }
+.rk-badge p { margin: 0; }
+.rk-medal { font-size: 1.2rem; }
+.rk-link { display: inline-block; margin-top: 6px; font-weight: 700; color: var(--text); }
+.rk-inline label { font-weight: 700; font-size: .92rem; }
+@media (max-width: 520px) {
+  .rk-hello .share-btn { padding: 6px 10px; font-size: .8rem; }
+  .rk-row { grid-template-columns: 38px 1fr auto; padding: 10px 12px; }
+}

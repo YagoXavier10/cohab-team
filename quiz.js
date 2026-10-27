@@ -335,6 +335,9 @@
         more.href = "jiujitsu.html";
         actions.append(more);
       }
+      const total = Object.values(store.get()).reduce((a, b) => a + b, 0);
+      const rk = window.cohabRanking?.badge("quiz", total);
+      if (rk) card.append(rk);
       card.append(actions);
       box.append(card);
     };

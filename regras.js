@@ -285,6 +285,8 @@
     const more = el("a", "share-btn", "Ver a pontuação");
     more.href = "jiujitsu.html#pontos";
     actions.append(again, share, more);
+    const rk = window.cohabRanking?.badge("regras", s.score);
+    if (rk) card.append(rk);
     card.append(actions);
     if (s.misses.length) {
       const rev = el("div", "pg-review");

@@ -553,6 +553,11 @@
       }));
       actions.append(share);
     }
+    if (won) {
+      const total = Object.values(progress()).reduce((a, b) => a + b, 0);
+      const rk = window.cohabRanking?.badge("caminho", total);
+      if (rk) card.append(rk);
+    }
     card.append(actions);
     box.append(card);
     actions.querySelector("button").focus({ preventScroll: true });

@@ -410,6 +410,8 @@
       url: location.href,
     }));
     actions.append(again, other, share);
+    const rk = window.cohabRanking?.badge(`posicoes-${s.mode}`, s.score);
+    if (rk) card.append(rk);
     card.append(actions);
 
     // revisão do que errou, para aprender

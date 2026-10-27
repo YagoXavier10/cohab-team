@@ -337,6 +337,9 @@
       url: location.href,
     }));
     actions.append(again, all, share);
+    const totalStars = Object.values(progress()).reduce((a, b) => a + b, 0);
+    const rk = window.cohabRanking?.badge("arbitro", totalStars);
+    if (rk) card.append(rk);
     card.append(actions);
     if (g.errors.length) {
       const rev = el("div", "pg-review");
