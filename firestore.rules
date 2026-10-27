@@ -25,7 +25,10 @@ service cloud.firestore {
           'arbitro': 15,
           'caminho': 21,
           'quiz': 40,
-          'luta': 10000
+          'luta': 10000,
+          'torre': 2000,
+          'esquiva': 1000000,
+          'palavras': 10000
         }.get(game, -1);
       }
 
@@ -151,6 +154,206 @@ service cloud.firestore {
           && request.time > s().inicio + duration.value(1500, 'ms')
           && request.time < s().inicio + duration.value(27, 's');
         allow delete: if request.auth != null && venceu();
+      }
+    }
+
+    // Desafios relâmpago (tatame-online): minijogos para 2 a 8 jogadores, sala com código de 4 dígitos e 1 hora de validade.
+    // Quem cria é o anfitrião; cada jogador só mexe no próprio cadastro e só envia o próprio resultado.
+    match /relampago/{codigo} {
+      function sala() { return resource.data; }
+      function nova() { return request.resource.data; }
+      function mudou() { return nova().diff(sala()).affectedKeys(); }
+      function vence() { return sala().criada + duration.value(1, 'h'); }
+      function host() { return request.auth.uid == sala().host; }
+      function jogador() { return exists(/databases/$(database)/documents/relampago/$(codigo)/jogadores/$(request.auth.uid)); }
+      // cada desafio é "tipo:semente"; de 3 a 7 desafios
+      function dq(d) { return d is string && d.matches('(reflexo|memoria|conta|contar|mira|cor):[0-9]{1,9}'); }
+      function desafiosOk(l) {
+        return l is list && l.size() >= 3 && l.size() <= 7
+          && dq(l[0]) && dq(l[1]) && dq(l[2])
+          && (l.size() < 4 || dq(l[3])) && (l.size() < 5 || dq(l[4]))
+          && (l.size() < 6 || dq(l[5])) && (l.size() < 7 || dq(l[6]));
+      }
+      function criar() {
+        return codigo.matches('[0-9]{4}')
+          && nova().keys().hasOnly(['host', 'status', 'rodada', 'inicio', 'criada', 'desafios', 'revanche'])
+          && nova().host == request.auth.uid && nova().status == 'espera' && nova().rodada == 0
+          && nova().inicio == request.time && nova().criada == request.time
+          && nova().desafios == [] && nova().revanche == null;
+      }
+      function comecar() {
+        return host() && sala().status == 'espera'
+          && mudou().hasOnly(['status', 'desafios', 'rodada', 'inicio'])
+          && nova().status == 'jogo' && nova().rodada == 0 && nova().inicio == request.time
+          && desafiosOk(nova().desafios);
+      }
+      // próximo desafio: o anfitrião depois de 5 s; qualquer jogador depois de 60 s (se o anfitrião sumir)
+      function podeAvancar() {
+        return sala().status == 'jogo'
+          && ((host() && request.time > sala().inicio + duration.value(5, 's'))
+            || (jogador() && request.time > sala().inicio + duration.value(60, 's')));
+      }
+      function avancar() {
+        return podeAvancar() && mudou().hasOnly(['rodada', 'inicio'])
+          && nova().rodada == sala().rodada + 1 && nova().rodada < sala().desafios.size()
+          && nova().inicio == request.time;
+      }
+      function terminar() {
+        return podeAvancar() && mudou().hasOnly(['status'])
+          && sala().rodada == sala().desafios.size() - 1 && nova().status == 'fim';
+      }
+      function revanche() {
+        return jogador() && sala().status == 'fim' && sala().revanche == null
+          && mudou().hasOnly(['revanche']) && nova().revanche is string && nova().revanche.matches('[0-9]{4}');
+      }
+
+      allow get: if true;
+      allow list: if request.query.limit <= 10 && resource.data.criada < request.time - duration.value(1, 'h');
+      allow create: if request.auth != null && criar();
+      allow update: if request.auth != null && request.time < vence() && nova().criada == sala().criada
+        && nova().host == sala().host && (comecar() || avancar() || terminar() || revanche());
+      allow delete: if request.auth != null && (request.time > vence() || (host() && sala().status == 'espera'));
+
+      match /jogadores/{uid} {
+        function s() { return get(/databases/$(database)/documents/relampago/$(codigo)).data; }
+        function venceu() { return request.time > s().criada + duration.value(1, 'h'); }
+        allow read: if true;
+        allow create: if request.auth != null && request.auth.uid == uid && s().status == 'espera' && !venceu()
+          && request.resource.data.keys().hasOnly(['nick', 'avatar', 'entrou', 'visto'])
+          && nickOk(request.resource.data.nick)
+          && request.resource.data.avatar is int && request.resource.data.avatar >= 0 && request.resource.data.avatar <= 15
+          && request.resource.data.entrou == request.time && request.resource.data.visto == request.time;
+        allow update: if request.auth != null && request.auth.uid == uid && !venceu()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['visto'])
+          && request.resource.data.visto == request.time;
+        // sair da sala (ou o anfitrião fechar a sala) só antes de começar; sala vencida qualquer um limpa
+        allow delete: if request.auth != null && (venceu()
+          || (s().status == 'espera' && (request.auth.uid == uid || request.auth.uid == s().host)));
+      }
+
+      match /resultados/{id} {
+        function s() { return get(/databases/$(database)/documents/relampago/$(codigo)).data; }
+        allow read: if true;
+        allow create: if request.auth != null && s().status == 'jogo'
+          && exists(/databases/$(database)/documents/relampago/$(codigo)/jogadores/$(request.auth.uid))
+          && id == string(s().rodada) + '-' + request.auth.uid
+          && request.resource.data.keys().hasOnly(['rodada', 'valor', 'em'])
+          && request.resource.data.rodada == s().rodada
+          && request.resource.data.valor is int && request.resource.data.valor >= -2000 && request.resource.data.valor <= 3000000
+          && request.resource.data.em == request.time
+          && request.time > s().inicio + duration.value(4, 's')
+          && request.time < s().inicio + duration.value(50, 's');
+        allow delete: if request.auth != null && request.time > s().criada + duration.value(1, 'h');
+      }
+    }
+    // Infiltrado (tatame-online): jogo de palavras para 3 a 8 jogadores. O anfitrião passa as fases
+    // (ou qualquer jogador, se o anfitrião sumir por 2 minutos). Cada um só manda a própria dica, voto e chute.
+    match /infiltrado/{codigo} {
+      function sala() { return resource.data; }
+      function nova() { return request.resource.data; }
+      function mudou() { return nova().diff(sala()).affectedKeys(); }
+      function vence() { return sala().criada + duration.value(1, 'h'); }
+      function host() { return request.auth.uid == sala().host; }
+      function jogador() { return exists(/databases/$(database)/documents/infiltrado/$(codigo)/jogadores/$(request.auth.uid)); }
+      function temaOk(t) { return t in ['Comidas', 'Animais', 'Lugares', 'Profissões', 'Objetos de casa', 'Esportes']; }
+      function rodadaOk() {
+        return temaOk(nova().tema) && nova().seed is int && nova().ordem is list
+          && nova().ordem.size() >= 3 && nova().ordem.size() <= 8 && nova().historico is list && nova().historico.size() <= 8;
+      }
+      function criar() {
+        return codigo.matches('[0-9]{4}')
+          && nova().keys().hasOnly(['host', 'status', 'rodada', 'total', 'inicio', 'criada', 'tema', 'seed', 'ordem', 'historico', 'revanche'])
+          && nova().host == request.auth.uid && nova().status == 'espera' && nova().rodada == 0 && nova().total == 0
+          && nova().inicio == request.time && nova().criada == request.time
+          && nova().ordem == [] && nova().historico == [] && nova().revanche == null;
+      }
+      function comecar() {
+        return host() && sala().status == 'espera'
+          && mudou().hasOnly(['status', 'total', 'inicio', 'rodada', 'tema', 'seed', 'ordem', 'historico'])
+          && nova().status == 'dicas' && nova().rodada == 0 && nova().total in [3, 5, 7]
+          && nova().inicio == request.time && rodadaOk();
+      }
+      // dicas → votação → (chute) → placar → dicas da próxima rodada … → fim
+      function fase() {
+        return (host() || (jogador() && request.time > sala().inicio + duration.value(120, 's')))
+          && request.time > sala().inicio + duration.value(2, 's')
+          && nova().inicio == request.time
+          && ((sala().status == 'dicas' && nova().status == 'votacao' && mudou().hasOnly(['status', 'inicio']))
+            || (sala().status == 'votacao' && nova().status in ['chute', 'placar'] && mudou().hasOnly(['status', 'inicio']))
+            || (sala().status == 'chute' && nova().status == 'placar' && mudou().hasOnly(['status', 'inicio']))
+            || (sala().status == 'placar' && nova().status == 'fim' && sala().rodada == sala().total - 1 && mudou().hasOnly(['status', 'inicio']))
+            || (sala().status == 'placar' && nova().status == 'dicas' && nova().rodada == sala().rodada + 1 && nova().rodada < sala().total
+              && mudou().hasOnly(['status', 'inicio', 'rodada', 'tema', 'seed', 'ordem', 'historico']) && rodadaOk()));
+      }
+      function revanche() {
+        return jogador() && sala().status == 'fim' && sala().revanche == null
+          && mudou().hasOnly(['revanche']) && nova().revanche is string && nova().revanche.matches('[0-9]{4}');
+      }
+
+      allow get: if true;
+      allow list: if request.query.limit <= 10 && resource.data.criada < request.time - duration.value(1, 'h');
+      allow create: if request.auth != null && criar();
+      allow update: if request.auth != null && request.time < vence() && nova().criada == sala().criada
+        && nova().host == sala().host && (comecar() || fase() || revanche());
+      allow delete: if request.auth != null && (request.time > vence() || (host() && sala().status == 'espera'));
+
+      match /jogadores/{uid} {
+        function s() { return get(/databases/$(database)/documents/infiltrado/$(codigo)).data; }
+        function venceu() { return request.time > s().criada + duration.value(1, 'h'); }
+        allow read: if true;
+        allow create: if request.auth != null && request.auth.uid == uid && s().status == 'espera' && !venceu()
+          && request.resource.data.keys().hasOnly(['nick', 'avatar', 'entrou', 'visto'])
+          && nickOk(request.resource.data.nick)
+          && request.resource.data.avatar is int && request.resource.data.avatar >= 0 && request.resource.data.avatar <= 15
+          && request.resource.data.entrou == request.time && request.resource.data.visto == request.time;
+        allow update: if request.auth != null && request.auth.uid == uid && !venceu()
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['visto'])
+          && request.resource.data.visto == request.time;
+        allow delete: if request.auth != null && (venceu()
+          || (s().status == 'espera' && (request.auth.uid == uid || request.auth.uid == s().host)));
+      }
+
+      // dica: uma palavra (2 a 20 letras), sem palavrão, na fase de dicas; id = rodada-volta-uid
+      match /dicas/{id} {
+        function s() { return get(/databases/$(database)/documents/infiltrado/$(codigo)).data; }
+        function d() { return request.resource.data; }
+        allow read: if true;
+        allow create: if request.auth != null && s().status == 'dicas'
+          && request.auth.uid in s().ordem
+          && d().keys().hasOnly(['rodada', 'volta', 'texto', 'em'])
+          && d().rodada == s().rodada && d().volta in [0, 1]
+          && id == string(s().rodada) + '-' + string(d().volta) + '-' + request.auth.uid
+          && d().texto is string && d().texto.matches('[\\p{L}\\p{N} -]{2,20}')
+          && !d().texto.lower().matches('.*(caralh|bucet|arrombad|vagabund|desgraca|xoxota|punheta|siririca|piroca|cuzao|porra|merda|puta|viado|fdp|pqp|bosta|corno).*')
+          && d().em == request.time;
+        allow delete: if request.auth != null && request.time > s().criada + duration.value(1, 'h');
+      }
+
+      // voto: um por jogador e por rodada, em outra pessoa da rodada
+      match /votos/{id} {
+        function s() { return get(/databases/$(database)/documents/infiltrado/$(codigo)).data; }
+        function d() { return request.resource.data; }
+        allow read: if true;
+        allow create: if request.auth != null && s().status == 'votacao'
+          && request.auth.uid in s().ordem
+          && id == string(s().rodada) + '-' + request.auth.uid
+          && d().keys().hasOnly(['rodada', 'alvo', 'em'])
+          && d().rodada == s().rodada && d().alvo in s().ordem && d().alvo != request.auth.uid
+          && d().em == request.time;
+        allow delete: if request.auth != null && request.time > s().criada + duration.value(1, 'h');
+      }
+
+      // chute do infiltrado pego (quem é o infiltrado cada celular confere pela semente)
+      match /chutes/{id} {
+        function s() { return get(/databases/$(database)/documents/infiltrado/$(codigo)).data; }
+        function d() { return request.resource.data; }
+        allow read: if true;
+        allow create: if request.auth != null && s().status == 'chute'
+          && request.auth.uid in s().ordem && id == string(s().rodada)
+          && d().keys().hasOnly(['rodada', 'por', 'palavra', 'em'])
+          && d().rodada == s().rodada && d().por == request.auth.uid
+          && d().palavra is string && d().palavra.size() <= 30 && d().em == request.time;
+        allow delete: if request.auth != null && request.time > s().criada + duration.value(1, 'h');
       }
     }
   }
