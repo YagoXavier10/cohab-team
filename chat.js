@@ -100,8 +100,8 @@
       },
     },
     {
-      keys: ["quiz", "jogo", "jogar", "brincadeira", "teste"],
-      answer: () => `Tem um ${link("quiz.html", "Quiz de jiu-jitsu")} com 5 níveis, da faixa branca (fácil) à preta (muito difícil), com fotos de lendas e posições. Será que você chega na preta? 🥋`,
+      keys: ["quiz", "jogo", "jogos", "jogar", "brincadeira", "teste", "game", "arbitro", "mito"],
+      answer: () => `Na aba ${link("jogos.html", "Jogos")} tem o ${link("posicoes.html", "Qual é a posição?")}, em que você acerta a posição da foto contra o relógio, o ${link("caminho.html", "Caminho da finalização")}, em que você escolhe cada passo até finalizar, o ${link("arbitro.html", "Árbitro por um dia")}, o ${link("regras.html", "Regra ou mito?")} e o ${link("quiz.html", "Quiz de jiu-jitsu")} com 5 níveis, da faixa branca (fácil) à preta (muito difícil), com fotos de lendas e posições. Será que você chega na preta? 🥋`,
     },
     {
       keys: ["video", "videos", "video de", "videos de", "aula de", "aulas de", "video de aula", "videos de aula", "aprender", "youtube", "tecnica", "tecnicas", "posicao", "posicoes"],
