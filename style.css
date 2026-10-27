@@ -914,4 +914,5 @@ footer { padding: 48px 16px; font-size: .85rem; }
 @media (max-width: 480px) {
   .quiz-level { grid-template-columns: 40px 1fr auto; }
   .quiz-level .muted { display: none; }
+  .quiz-photo img { max-height: 210px; }
 }

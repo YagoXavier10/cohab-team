@@ -54,7 +54,7 @@
     const rows = videos.filter((v) =>
       (state.lang === "all" || v.lang === state.lang) &&
       (state.topic === "all" || v.topic === state.topic) &&
-      (!q || norm(`${v.title} ${v.channel}`).includes(q)));
+      (!q || norm(`${v.title} ${v.channel} ${v.topic}`).includes(q)));
     $("#v-summary").textContent = rows.length ? `${rows.length} vídeos` : "Nenhum vídeo com esses filtros.";
     const list = $("#v-list");
     list.replaceChildren(...rows.slice(0, state.limit).map(card));

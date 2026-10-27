@@ -101,7 +101,27 @@
     },
     {
       keys: ["quiz", "jogo", "jogar", "brincadeira", "teste"],
-      answer: () => `Tem um ${link("quiz.html", "Quiz da Cohab")}: 5 perguntas rápidas sobre a equipe e uma faixa no final. Será que você chega na preta? 🥋`,
+      answer: () => `Tem um ${link("quiz.html", "Quiz de jiu-jitsu")} com 5 níveis, da faixa branca (fácil) à preta (muito difícil), com fotos de lendas e posições. Será que você chega na preta? 🥋`,
+    },
+    {
+      keys: ["video", "videos", "video de", "videos de", "aula de", "aulas de", "video de aula", "videos de aula", "aprender", "youtube", "tecnica", "tecnicas", "posicao", "posicoes"],
+      answer: () => `Na aba ${link("videos.html", "Vídeos")} tem aulas de jiu-jitsu de vários canais, separadas por assunto (guarda, passagem, raspagem, finalizações, quedas) e em português ou inglês. Os vídeos novos entram sozinhos todo dia.`,
+    },
+    {
+      keys: ["historia do jiu jitsu", "historia do jiu-jitsu", "origem", "gracie", "helio", "carlos gracie", "maeda", "conde koma", "kano", "kimura", "japao", "ufc", "royce"],
+      answer: () => `O jiu-jitsu veio do Japão: o judoca Mitsuyo Maeda (Conde Koma) chegou ao Brasil em 1914 e ensinou Carlos Gracie em Belém. Hélio Gracie adaptou as técnicas para depender de alavanca, e em 1993 o Royce venceu o primeiro UFC. ${link("jiujitsu.html#historia", "Ver a linha do tempo")}`,
+    },
+    {
+      keys: ["faixa", "faixas", "graduacao", "grau", "graus", "faixa preta", "faixa azul", "faixa roxa", "faixa marrom", "coral"],
+      answer: () => `A ordem adulta é branca, azul (a partir de 16 anos), roxa, marrom (18) e preta (19). Depois vêm a coral e a vermelha, para quem dedicou décadas à arte. Crianças usam cinza, amarela, laranja e verde. ${link("jiujitsu.html#faixas", "Ver as faixas")}`,
+    },
+    {
+      keys: ["pontos", "pontuacao", "ponto", "regra", "regras", "vantagem", "vantagens", "punicao", "quanto vale", "vale", "montada", "raspagem", "passagem", "queda", "joelho na barriga"],
+      answer: () => `Queda, raspagem e joelho na barriga valem 2; passagem de guarda vale 3; montada e pegada nas costas valem 4. Finalização vence na hora. ${link("jiujitsu.html#pontos", "Ver a pontuação")}`,
+    },
+    {
+      keys: ["oss", "glossario", "significa", "significado"],
+      answer: () => `Os termos do tatame (oss, rola, drill, guarda, raspagem, berimbolo…) estão no ${link("jiujitsu.html#glossario", "glossário")}, com busca.`,
     },
     {
       keys: ["proximo campeonato", "campeonato", "campeonatos", "inscricao", "inscricoes", "calendario", "proxima competicao", "mundial"],
@@ -127,7 +147,7 @@
     },
     {
       keys: ["como funciona", "atualiza", "atualizado", "feito com", "site"],
-      answer: () => "O site é atualizado sozinho: as notícias e os campeonatos todo dia de manhã, e as conquistas da Cohab toda segunda-feira, buscadas nas federações (CBJJE, IBJJF, FPJJ e outras).",
+      answer: () => "O site é atualizado sozinho: as notícias, os campeonatos e os vídeos todo dia de manhã, e as conquistas da Cohab toda segunda-feira, buscadas nas federações (CBJJE, IBJJF, FPJJ e outras).",
     },
   ];
 
@@ -168,11 +188,11 @@
     // nome de atleta tem prioridade quando a pergunta fala de medalhas/atleta ou não bate com nenhum assunto
     if (athlete && (!best || /medalh|atleta|ouro|lutou|competi/.test(t) || score <= 4)) return athlete;
     if (best) return best.answer();
-    return `Ainda não sei responder isso 😅. Tente perguntar sobre: a história da Cohab, o Mestre Dan, os títulos, os próximos campeonatos, onde treinar ou o nome de um atleta.`;
+    return `Ainda não sei responder isso 😅. Tente perguntar sobre: a história da Cohab ou do jiu-jitsu, o Mestre Dan, os títulos, as faixas, a pontuação, os próximos campeonatos, vídeos de aula, onde treinar ou o nome de um atleta.`;
   }
 
   // ---------- interface ----------
-  const SUGGEST = ["Títulos da Cohab", "Próximo campeonato", "Onde treinar?", "Quem é o Mestre Dan?", "Último Pan-Americano"];
+  const SUGGEST = ["Títulos da Cohab", "Próximo campeonato", "História do jiu-jitsu", "Vídeos de aula", "Quem é o Mestre Dan?", "Onde treinar?"];
   const root = document.createElement("div");
   root.className = "chatbot";
   root.innerHTML = `
