@@ -5,6 +5,17 @@ rules_version = '2';
 // criar ou melhorar a própria pontuação; ninguém apaga nem mexe na dos outros.
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Nickname: 3 a 16 letras, números, espaço, ponto, _ ou -, sem palavrão (a mesma lista do ranking.js).
+    // O site já confere isso; aqui vale também para quem tenta gravar direto no banco.
+    function nickOk(n) {
+      let edge = 'porra|merda|puta|viado|fdp|pqp|bosta|corno|nazi|admin|oficial';
+      let l = n.lower();
+      return n is string && n.matches('[\\p{L}\\p{N} _.-]{3,16}')
+        && !l.matches('.*(caralh|bucet|arrombad|vagabund|desgraca|xoxota|punheta|siririca|piroca|cuzao|hitler|cohabteam).*')
+        && !l.matches('(.*[^\\p{L}\\p{N}])?(' + edge + ').*')
+        && !l.matches('.*(' + edge + ')([^\\p{L}\\p{N}].*)?');
+    }
+
     match /ranking/{game}/scores/{uid} {
       function maxScore() {
         return {
@@ -21,7 +32,7 @@ service cloud.firestore {
       function valid() {
         let d = request.resource.data;
         return d.keys().hasOnly(['nick', 'score', 'updated'])
-          && d.nick is string && d.nick.size() >= 3 && d.nick.size() <= 16
+          && nickOk(d.nick)
           && d.score is int && d.score > 0 && d.score <= maxScore()
           && d.updated == request.time;
       }
@@ -40,8 +51,16 @@ service cloud.firestore {
       function nova() { return request.resource.data; }
       function mudou() { return nova().diff(sala()).affectedKeys(); }
       function lutador() { return request.auth.uid == sala().azul || request.auth.uid == sala().branco; }
-      function nickOk(n) { return n is string && n.size() >= 3 && n.size() <= 16; }
       function vence() { return sala().criada + duration.value(1, 'h'); }
+
+      // cada pergunta é "faixa:número:ordem" do banco oficial; nunca texto livre
+      function pq(p, i, faixas) { return p[i] is string && p[i].matches('(' + faixas + '):[0-9]{1,2}:[0-3]{4}'); }
+      function perguntasOk(p) {
+        return p is list && p.size() == 10
+          && pq(p, 0, 'branca|azul') && pq(p, 1, 'branca|azul') && pq(p, 2, 'branca|azul') && pq(p, 3, 'branca|azul')
+          && pq(p, 4, 'roxa|marrom') && pq(p, 5, 'roxa|marrom') && pq(p, 6, 'roxa|marrom')
+          && pq(p, 7, 'preta') && pq(p, 8, 'preta') && pq(p, 9, 'preta');
+      }
 
       function criar() {
         return codigo.matches('[0-9]{4}')
@@ -50,17 +69,23 @@ service cloud.firestore {
           && nova().azul == request.auth.uid && nickOk(nova().nickAzul)
           && nova().branco == null && nova().nickBranco == null
           && nova().status == 'espera' && nova().rodada == 0
-          && nova().perguntas is list && nova().perguntas.size() == 10
+          && perguntasOk(nova().perguntas)
           && nova().criada == request.time && nova().inicio == request.time
           && nova().vistoAzul == request.time && nova().vistoBranco == null
           && nova().vencedor == null && nova().motivo == null && nova().revanche == null;
       }
-      // Branco entra na sala e a luta começa
+      // Branco entra na sala ("pronto")...
       function entrar() {
         return sala().status == 'espera' && sala().branco == null && request.auth.uid != sala().azul
           && mudou().hasOnly(['branco', 'nickBranco', 'status', 'inicio', 'vistoBranco'])
           && nova().branco == request.auth.uid && nickOk(nova().nickBranco)
-          && nova().status == 'luta' && nova().inicio == request.time && nova().vistoBranco == request.time;
+          && nova().status == 'pronto' && nova().inicio == request.time && nova().vistoBranco == request.time;
+      }
+      // ...e a luta só começa quando o Azul, que criou a sala, está com a página aberta
+      function comecar() {
+        return request.auth.uid == sala().azul && sala().status == 'pronto'
+          && mudou().hasOnly(['status', 'inicio', 'vistoAzul'])
+          && nova().status == 'luta' && nova().inicio == request.time && nova().vistoAzul == request.time;
       }
       // próxima pergunta (uma de cada vez e nunca antes de 3 segundos)
       function avancar() {
@@ -75,12 +100,23 @@ service cloud.firestore {
         return (request.auth.uid == sala().azul && mudou().hasOnly(['vistoAzul']) && nova().vistoAzul == request.time)
           || (request.auth.uid == sala().branco && mudou().hasOnly(['vistoBranco']) && nova().vistoBranco == request.time);
       }
+      // W.O. só vale se quem pede está desistindo ou se o outro está mesmo sem sinal há 40 s
+      function woOk() {
+        return (request.auth.uid == sala().azul && (nova().vencedor == 'branco'
+            || (nova().vencedor == 'azul' && request.time > sala().vistoBranco + duration.value(40, 's'))))
+          || (request.auth.uid == sala().branco && (nova().vencedor == 'azul'
+            || (nova().vencedor == 'branco' && request.time > sala().vistoAzul + duration.value(40, 's'))));
+      }
+      // fora o W.O., a luta só acaba na última pergunta ou por finalização
+      // (o vencedor que aparece na tela é calculado pelas respostas em cada celular)
       function terminar() {
         return lutador() && sala().status == 'luta'
           && mudou().hasOnly(['status', 'vencedor', 'motivo'])
           && nova().status == 'fim'
           && nova().vencedor in ['azul', 'branco', 'empate']
-          && nova().motivo in ['pontos', 'finalizacao', 'vantagens', 'punicoes', 'empate', 'wo'];
+          && nova().motivo in ['pontos', 'finalizacao', 'vantagens', 'punicoes', 'empate', 'wo']
+          && ((nova().motivo == 'wo' && woOk())
+            || (nova().motivo != 'wo' && (sala().rodada == 9 || nova().motivo == 'finalizacao')));
       }
       function revanche() {
         return lutador() && sala().status == 'fim' && sala().revanche == null
@@ -93,7 +129,7 @@ service cloud.firestore {
       allow list: if request.query.limit <= 10 && resource.data.criada < request.time - duration.value(1, 'h');
       allow create: if request.auth != null && criar();
       allow update: if request.auth != null && request.time < vence() && nova().criada == sala().criada
-        && (entrar() || avancar() || visto() || terminar() || revanche());
+        && (entrar() || comecar() || avancar() || visto() || terminar() || revanche());
       // sala vencida qualquer um apaga; sala esperando adversário quem criou pode cancelar
       allow delete: if request.auth != null
         && (request.time > vence() || (request.auth.uid == sala().azul && sala().status == 'espera'));
@@ -112,6 +148,7 @@ service cloud.firestore {
           && request.resource.data.escolha is int
           && request.resource.data.escolha >= 0 && request.resource.data.escolha <= 3
           && request.resource.data.em == request.time
+          && request.time > s().inicio + duration.value(1500, 'ms')
           && request.time < s().inicio + duration.value(27, 's');
         allow delete: if request.auth != null && venceu();
       }

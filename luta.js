@@ -70,17 +70,40 @@
   const salaRef = (c) => C.fs.doc(C.db, "salas", c);
   const jogadasRef = (c) => C.fs.collection(C.db, "salas", c, "jogadas");
   const nickDe = (c) => (c === "azul" ? sala.nickAzul : sala.nickBranco) || COR[c];
-  const vibrar = (p) => { try { navigator.vibrate?.(p); } catch { /* sem vibração */ } };
+  const vibrar = (p) => {
+    if (navigator.userActivation && !navigator.userActivation.hasBeenActive) return; // o navegador só deixa depois de um toque
+    try { navigator.vibrate?.(p); } catch { /* sem vibração */ }
+  };
 
   // ---------- perguntas ----------
+  // A sala guarda só "faixa:número:ordem" de cada pergunta do banco oficial (perguntas.js), nunca o texto:
+  // assim ninguém consegue mostrar uma pergunta inventada para o adversário.
+  // "ordem" diz em que posição aparece cada opção (0 é a certa).
+  const banco = () => Object.fromEntries(window.COHAB_QUIZ.LEVELS.map((l) => [l.id, l.questions]));
+  const ptsDa = (i) => (i < 4 ? 2 : i < 7 ? 3 : 4); // 4 raspagens, 3 passagens, 3 montadas
+
   function sortear() {
-    const L = Object.fromEntries(window.COHAB_QUIZ.LEVELS.map((l) => [l.id, l]));
-    return GOLPES.flatMap((g) => shuffle(g.faixas.flatMap((id) => L[id].questions.map((q) => [q, id])))
+    const B = banco();
+    return GOLPES.flatMap((g) => shuffle(g.faixas.flatMap((f) => B[f].map((_, i) => `${f}:${i}`)))
       .slice(0, g.n)
-      .map(([[q, certa, erradas, porque, img], faixa]) => {
-        const opcoes = shuffle([certa, ...erradas]);
-        return { q, opcoes, certa: opcoes.indexOf(certa), porque, img: img || null, faixa, pts: g.pts };
-      }));
+      .map((id) => `${id}:${shuffle(["0", "1", "2", "3"]).join("")}`));
+  }
+
+  // transforma os números de volta nas perguntas; null se alguma não existir no banco
+  function expandir(ids) {
+    const B = banco();
+    if (!Array.isArray(ids) || ids.length !== RODADAS) return null;
+    const ps = ids.map((id, i) => {
+      const m = /^(branca|azul|roxa|marrom|preta):(\d{1,2}):([0-3]{4})$/.exec(String(id));
+      if (!m || !GOLPES.find((g) => g.pts === ptsDa(i)).faixas.includes(m[1])) return null;
+      const item = B[m[1]][Number(m[2])];
+      if (!item || new Set(m[3]).size !== 4) return null;
+      const [q, certa, erradas, porque, img] = item;
+      const base = [certa, ...erradas];
+      const opcoes = [...m[3]].map((k) => base[Number(k)]);
+      return { q, opcoes, certa: m[3].indexOf("0"), porque, img: img || null, faixa: m[1], pts: ptsDa(i) };
+    });
+    return ps.every(Boolean) ? ps : null;
   }
 
   function foto(key) {
@@ -116,7 +139,7 @@
   function placar() {
     const p = { azul: { pts: 0, v: 0, x: 0 }, branco: { pts: 0, v: 0, x: 0 } };
     const rodadas = [];
-    const ate = sala.status === "espera" ? -1 : Math.min(sala.rodada, RODADAS - 1);
+    const ate = sala.status === "luta" || sala.status === "fim" ? Math.min(sala.rodada, RODADAS - 1) : -1;
     for (let r = 0; r <= ate; r++) {
       const res = resultado(r);
       if (!res.acabou && !res.js.length) break;
@@ -126,6 +149,16 @@
       rodadas.push(res);
     }
     return { p, rodadas };
+  }
+
+  // quem venceu sai das respostas, não do que alguém gravou na sala (só o W.O. vem da sala,
+  // e as regras só aceitam W.O. de quem desistiu ou contra quem está mesmo sem sinal)
+  function veredito(p) {
+    if (sala.motivo === "wo") return [sala.vencedor, "wo"];
+    const dif = p.azul.pts - p.branco.pts;
+    if (Math.abs(dif) >= FINALIZA) return [dif > 0 ? "azul" : "branco", "finalizacao"];
+    if (sala.rodada >= RODADAS - 1) return decidir(p);
+    return [null, "anulada"];
   }
 
   function decidir(p) {
@@ -184,12 +217,22 @@
       const d = s.data();
       if (d.azul === C.uid || d.branco === C.uid) return null;
       if (Date.now() + offset > ms(d.criada) + VALIDADE) return "Essa sala já venceu. Peça um código novo.";
+      if (d.status === "fim") return "Essa luta já terminou. Crie uma sala nova.";
       if (d.status !== "espera" || d.branco) return "Essa luta já começou com outra pessoa.";
+      // "pronto": a luta só começa quando quem criou a sala estiver com a tela aberta
       t.update(salaRef(c), {
-        branco: C.uid, nickBranco: R.nick(), status: "luta", inicio: fs.serverTimestamp(), vistoBranco: fs.serverTimestamp(),
+        branco: C.uid, nickBranco: R.nick(), status: "pronto", inicio: fs.serverTimestamp(), vistoBranco: fs.serverTimestamp(),
       });
       return null;
     });
+  }
+  // se outra pessoa entrou no mesmo instante, a primeira tentativa falha: tenta de novo para dar a mensagem certa
+  const entrarDeNovo = (c) => entrar(c).catch(() => entrar(c));
+
+  // quem criou a sala dá a largada quando vê que o adversário entrou
+  async function largar() {
+    const ts = C.fs.serverTimestamp();
+    await C.fs.updateDoc(salaRef(codigo), { status: "luta", inicio: ts, vistoAzul: ts });
   }
 
   async function responder(i) {
@@ -261,7 +304,10 @@
     let pendente = false;
     desligar.push(fs.onSnapshot(salaRef(c), { includeMetadataChanges: true }, (snap) => {
       if (!snap.exists()) { sala = null; codigo = null; history.replaceState(null, "", location.pathname); inicio("Essa sala foi fechada."); return; }
-      sala = snap.data({ serverTimestamps: "estimate" });
+      const d = snap.data({ serverTimestamps: "estimate" });
+      const perguntas = expandir(d.perguntas);
+      if (!perguntas) { parar(); codigo = null; history.replaceState(null, "", location.pathname); inicio("Essa sala tem perguntas que não existem no site. Crie uma sala nova."); return; }
+      sala = { ...d, perguntas };
       cor = sala.azul === C.uid ? "azul" : sala.branco === C.uid ? "branco" : null;
       // acerta o relógio: quando o servidor confirma o nosso sinal de presença, a hora gravada
       // é a do servidor no meio do caminho entre enviar e receber
@@ -289,6 +335,7 @@
     if (!sala) return;
     if (!cor) { inicio("Essa luta já começou com outra pessoa."); return; }
     if (sala.status === "espera") return esperar();
+    if (sala.status === "pronto") return pronto();
     if (sala.status === "luta") return lutar();
     return fim();
   }
@@ -300,8 +347,9 @@
     const res = resultado(r);
     atualizar(res);
     // W.O.: o outro sumiu
+    // conta a partir do último sinal dele, mas nunca antes de a luta aparecer nesta tela
     const dele = ms(sala[cor === "azul" ? "vistoBranco" : "vistoAzul"]);
-    const longe = dele ? agora() - dele : 0;
+    const longe = dele ? Math.min(agora() - dele, Date.now() - ui.desde) : 0;
     ui.aviso.hidden = longe < 20000;
     if (longe >= 20000) ui.aviso.textContent = `📡 ${nickDe(outra(cor))} está sem sinal… W.O. em ${Math.max(0, Math.ceil((SUMIU - longe) / 1000))} s`;
     if (longe > SUMIU && !feito.has("wo")) {
@@ -435,7 +483,7 @@
       entrarBtn.disabled = true;
       entrarBtn.textContent = "Entrando…";
       try {
-        const err = await entrar(code.value);
+        const err = await entrarDeNovo(code.value);
         if (err) { entrarMsg.textContent = err; entrarBtn.disabled = false; entrarBtn.textContent = "Entrar na luta"; return; }
         abrir(code.value);
       } catch (e) {
@@ -502,11 +550,33 @@
     box.append(wrap);
   }
 
+  // Branco entrou: a luta começa quando quem criou a sala estiver com a página aberta
+  // (ele pode estar no WhatsApp mandando o código, com o celular "dormindo" a página)
+  function pronto() {
+    if (cor === "azul" && !feito.has("largada")) {
+      feito.add("largada");
+      vibrar([80, 40, 80]);
+      largar().catch((e) => { console.warn(e); setTimeout(() => { feito.delete("largada"); desenhar(); }, 2000); });
+    }
+    if (!trocar("pronto")) return;
+    const wrap = el("div", "lt-espera");
+    if (cor === "azul") {
+      wrap.append(el("p", "eyebrow", "Adversário na área"), el("h2", "", `${nickDe("branco")} entrou! Começando…`));
+    } else {
+      wrap.append(el("p", "eyebrow", `Sala ${codigo} · você é o Branco`), el("h2", "", `Esperando ${nickDe("azul")} voltar para a sala`));
+      const esperando = el("div", "lt-aguarde");
+      esperando.append(el("span", "lt-pulso"), el("span", "", "A luta começa sozinha quando ele abrir a página."));
+      wrap.append(esperando, el("p", "muted lt-dica", "Ele pode estar no WhatsApp mandando o código. Se demorar, mande uma mensagem para ele voltar."),
+        btn("share-btn lt-cancelar", "Sair da sala", () => { codigo = null; history.replaceState(null, "", location.pathname); inicio(); }));
+    }
+    box.append(wrap);
+  }
+
   // ---------- luta ----------
   function lutar() {
     const nova = trocar("luta");
     if (nova) {
-      ui = { rodada: -1 };
+      ui = { rodada: -1, desde: Date.now() };
       ui.top = el("div", "lt-top");
       ui.board = el("div", "lt-board-wrap");
       ui.aviso = el("p", "lt-aviso");
@@ -647,24 +717,26 @@
 
   // ---------- fim ----------
   function fim() {
-    const chave = `fim-${sala.revanche || ""}`;
+    // redesenha se chegar uma resposta atrasada ou um pedido de revanche
+    const chave = `fim-${sala.revanche || ""}-${JSON.stringify(placar().p)}`;
     if (tela === chave) return;
     const primeira = !String(tela).startsWith("fim");
     trocar(chave);
     const { p, rodadas } = placar();
-    const venc = sala.vencedor;
+    const [venc, comoVenceu] = veredito(p);
     const ganhei = venc === cor;
-    const card = el("div", `lt-fim ${venc === "empate" ? "empate" : ganhei ? "ganhou" : "perdeu"}`);
-    const motivo = MOTIVO[sala.motivo] ?? "";
+    const card = el("div", `lt-fim ${venc === "empate" || !venc ? "empate" : ganhei ? "ganhou" : "perdeu"}`);
+    const motivo = MOTIVO[comoVenceu] ?? "";
     let titulo, sub;
-    if (venc === "empate") { titulo = "Empate!"; sub = "Mesmos pontos, vantagens e punições. Só uma revanche resolve."; }
-    else if (sala.motivo === "wo") {
+    if (!venc) { titulo = "Luta anulada"; sub = "A luta foi encerrada antes da hora e ninguém venceu."; }
+    else if (venc === "empate") { titulo = "Empate!"; sub = "Mesmos pontos, vantagens e punições. Só uma revanche resolve."; }
+    else if (comoVenceu === "wo") {
       titulo = ganhei ? "Vitória por W.O." : "Perdeu por W.O.";
       sub = ganhei ? `${nickDe(outra(cor))} saiu ou ficou sem sinal.` : `Você saiu ou ficou sem sinal, e ${nickDe(venc)} venceu por W.O.`;
-    } else if (ganhei) { titulo = sala.motivo === "finalizacao" ? "Finalizou! 🥋" : "Você venceu!"; sub = `Vitória ${motivo}. Oss!`; }
-    else { titulo = sala.motivo === "finalizacao" ? "Você bateu! 🫱" : "Não foi dessa vez"; sub = `${nickDe(venc)} venceu ${motivo}.`; }
+    } else if (ganhei) { titulo = comoVenceu === "finalizacao" ? "Finalizou! 🥋" : "Você venceu!"; sub = `Vitória ${motivo}. Oss!`; }
+    else { titulo = comoVenceu === "finalizacao" ? "Você bateu! 🫱" : "Não foi dessa vez"; sub = `${nickDe(venc)} venceu ${motivo}.`; }
     card.append(el("p", "eyebrow", `Sala ${codigo} · ${rodadas.length} de ${RODADAS} perguntas`), el("h2", "", titulo), el("p", "lt-sub", sub));
-    if (venc !== "empate") {
+    if (venc && venc !== "empate") {
       const braco = el("div", `lt-braco ${venc}`);
       braco.append(el("span", "", "✋"), el("strong", "", nickDe(venc)), el("small", "", `${COR[venc]} · vencedor`));
       card.append(braco);
@@ -686,7 +758,7 @@
     }
 
     // vitória entra no ranking (uma vez por sala; W.O. não conta)
-    if (ganhei && sala.motivo !== "wo") {
+    if (ganhei && comoVenceu !== "wo") {
       const contadas = store.get("lt-contadas", []);
       if (!contadas.includes(codigo + ms(sala.criada))) {
         contadas.push(codigo + ms(sala.criada));
@@ -709,6 +781,9 @@
         const contra = nickDe(outra(cor));
         try { const c = await pedirRevanche(); revancheContra = contra; irRevanche(c); } catch (e) {
           console.warn(e);
+          // pediram revanche ao mesmo tempo: entra na que ficou valendo
+          const d = (await C.fs.getDoc(salaRef(codigo)).catch(() => null))?.data();
+          if (d?.revanche) { irRevanche(d.revanche); return; }
           rev.disabled = false;
           rev.textContent = "🔁 Pedir revanche";
           window.siteToast?.("Não deu para criar a revanche agora");
@@ -720,8 +795,8 @@
       btn("share-btn", "Nova luta", () => { codigo = null; history.replaceState(null, "", location.pathname); inicio(); }),
       btn("share-btn", "Compartilhar ↗", () => window.siteShare?.({
         title: "Luta ao vivo · Cohab Team",
-        text: venc === "empate"
-          ? `Empatei com ${nickDe(outra(cor))} na Luta ao vivo de jiu-jitsu da Cohab (${p[cor].pts} × ${p[outra(cor)].pts})! Te desafio:`
+        text: !venc ? "Bora uma Luta ao vivo de jiu-jitsu no site da Cohab? Te desafio:"
+          : venc === "empate" ? `Empatei com ${nickDe(outra(cor))} na Luta ao vivo de jiu-jitsu da Cohab (${p[cor].pts} × ${p[outra(cor)].pts})! Te desafio:`
           : ganhei ? `Venci ${nickDe(outra(cor))} ${motivo} na Luta ao vivo de jiu-jitsu da Cohab (${p[cor].pts} × ${p[outra(cor)].pts})! Te desafio:`
             : `Perdi para ${nickDe(venc)} na Luta ao vivo de jiu-jitsu da Cohab, mas quero revanche! Te desafio:`,
         url: `${location.origin}${location.pathname}`,
@@ -737,7 +812,7 @@
 
   async function irRevanche(c) {
     try {
-      const err = await entrar(c);
+      const err = await entrarDeNovo(c);
       if (err) { window.siteToast?.(err); return; }
       abrir(c);
     } catch (e) { console.warn(e); window.siteToast?.("Não deu para entrar na revanche agora"); }
