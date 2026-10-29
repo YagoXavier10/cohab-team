@@ -2,9 +2,20 @@ rules_version = '2';
 
 // Regras do ranking dos jogos (Firebase > Firestore Database > Regras).
 // Todo mundo pode ler o ranking. Cada aparelho tem um login anônimo e só pode
-// criar ou melhorar a própria pontuação; ninguém apaga nem mexe na dos outros.
+// criar ou melhorar a própria pontuação; ninguém mexe na dos outros (só o admin apaga, para moderar).
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Admin do Tatame Online (painel admin.html): cole aqui o UID do usuário admin (Authentication → Users).
+    function isAdmin() {
+      return request.auth != null && request.auth.uid in ['COLE_SEU_UID_AQUI'];
+    }
+
+    // Configuração do Tatame Online (jogos ligados, destaque, aviso...): todo mundo lê, só o admin grava.
+    match /site/{doc} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
     // Nickname: 3 a 16 letras, números, espaço, ponto, _ ou -, sem palavrão (a mesma lista do ranking.js).
     // O site já confere isso; aqui vale também para quem tenta gravar direto no banco.
     function nickOk(n) {
@@ -32,7 +43,8 @@ service cloud.firestore {
           'pares': 20000,
           'deslize': 10000,
           'labirinto': 5000,
-          'alvo': 20000
+          'alvo': 20000,
+          'cartas': 10000
         }.get(game, -1);
       }
 
@@ -48,7 +60,8 @@ service cloud.firestore {
       allow create: if request.auth != null && request.auth.uid == uid && valid();
       allow update: if request.auth != null && request.auth.uid == uid && valid()
         && request.resource.data.score >= resource.data.score;
-      allow delete: if false;
+      // só o admin apaga (moderação no painel)
+      allow delete: if isAdmin();
     }
 
     // Luta ao vivo: salas com código de 4 dígitos que valem por 1 hora.
