@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T16:28:25+00:00",
+ "updated": "2026-10-29T16:41:14+00:00",
  "events": [
   {
    "name": "Nordeste Brasileiro CBJJE 2026",
@@ -48,6 +48,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/JZccFH5Y_oAe64PMzSrQtMSKmIE/5F_wKA../1784301483307-image+15944.webp",
    "url": "https://www.meucombate.com.br/cbjje/evento/96/informacoes/"
+  },
+  {
+   "name": "1º Desafio Conde Koma Jiu Jitsu Marajó",
+   "first_day": "2026-12-06",
+   "last_day": "2026-12-06",
+   "city": "Breves",
+   "state": "PA",
+   "org": "BRAZILIAN JIU-JITSU TEAM",
+   "cbjje": false,
+   "open": false,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/XxqEvPSGb0UnS7-tjXRgDixn8x4/eB9rIQ../Cartaz+Desafio+Conde+Koma+de+Jiu-Jitsu.png",
+   "url": "https://www.meucombate.com.br/brazilian jiu-jitsu team/evento/484/informacoes/"
   },
   {
    "name": "Bjj Guaruja Cbjje 2026",
