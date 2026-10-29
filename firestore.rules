@@ -5,9 +5,9 @@ rules_version = '2';
 // criar ou melhorar a própria pontuação; ninguém mexe na dos outros (só o admin apaga, para moderar).
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Admin do Tatame Online (painel admin.html): cole aqui o UID do usuário admin (Authentication → Users).
+    // Admin do Tatame Online (painel admin.html): UID do usuário admin (Authentication → Usuários).
     function isAdmin() {
-      return request.auth != null && request.auth.uid in ['COLE_SEU_UID_AQUI'];
+      return request.auth != null && request.auth.uid in ['2qiPbLHF0zNs8zq5rYXwkCLvHTL2'];
     }
 
     // Configuração do Tatame Online (jogos ligados, destaque, aviso...): todo mundo lê, só o admin grava.
