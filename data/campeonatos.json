@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T16:41:14+00:00",
+ "updated": "2026-10-30T16:33:49+00:00",
  "events": [
   {
    "name": "Nordeste Brasileiro CBJJE 2026",
@@ -55,11 +55,11 @@
    "last_day": "2026-12-06",
    "city": "Breves",
    "state": "PA",
-   "org": "BRAZILIAN JIU-JITSU TEAM",
+   "org": "ACBJJ",
    "cbjje": false,
-   "open": false,
+   "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/XxqEvPSGb0UnS7-tjXRgDixn8x4/eB9rIQ../Cartaz+Desafio+Conde+Koma+de+Jiu-Jitsu.png",
-   "url": "https://www.meucombate.com.br/brazilian jiu-jitsu team/evento/484/informacoes/"
+   "url": "https://www.meucombate.com.br/acbjj/evento/484/informacoes/"
   },
   {
    "name": "Bjj Guaruja Cbjje 2026",
