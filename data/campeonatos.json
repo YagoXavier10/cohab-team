@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T20:00:04+00:00",
+ "updated": "2026-11-03T17:36:22+00:00",
  "events": [
   {
    "name": "Nordeste Brasileiro CBJJE 2026",
@@ -96,6 +96,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/BdJBQoQCUSwY0OSd-7WrYMH2PEw/SY9j_A../44d03a17-9994-4ebb-abfd-8c95488ba653.jpeg",
    "url": "https://www.meucombate.com.br/cbjje/evento/471/informacoes/"
+  },
+  {
+   "name": "TAÇA SÃO PAULO CBJJE",
+   "first_day": "2027-01-30",
+   "last_day": "2027-01-31",
+   "city": "São Paulo",
+   "state": "SP",
+   "org": "CBJJE",
+   "cbjje": true,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/UdRAb74y1epTF2xT9aThBbDdNuw/GttqvA../WhatsApp+Image+2026-10-30+at+16.40.53.jpeg",
+   "url": "https://www.meucombate.com.br/cbjje/evento/485/informacoes/"
   },
   {
    "name": "Trial World Mundial Cbjje Rs",
