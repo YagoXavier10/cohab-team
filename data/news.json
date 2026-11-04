@@ -1,13 +1,37 @@
 {
-  "updated_at": "2026-11-03T17:36:21+00:00",
+  "updated_at": "2026-11-04T17:49:06+00:00",
   "source": "Google News",
   "topics": {
     "Jiu-Jitsu": [
+      {
+        "title": "Estudantes da Escola Ada Bogato conquistam medalhas em campeonato de jiu-jitsu",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGU4VkFkM2paUi1xOWstSXR6QXRhVVpBSHpoQUN3eThldk4wcWxsTjNKLWVHajZ1YWk0QnF3WkdLNlVzRkVxS0cwOWR6NmZFbGhqSzJVbmljZnp2VjFnQlhUcWpPNlA2UTg2dElFTjJHM05pSDZkTmY3RDUtOUx2MUZRYWtnZ0R6UGdpZjVXVzJmOE5M?oc=5",
+        "source": "Prefeitura Municipal de Barra Mansa",
+        "published": "2026-11-03T14:57:00+00:00"
+      },
+      {
+        "title": "Lutadora goiana vai decidir o cinturão no Desafio de Cidades 3 de Jiu-Jitsu em Sobradinho-DF",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNXzJvYXN2TS1jTExGQVpYTGpHRG9mUnNhSjdrWFkwaENXLW1UOXB1TnUxb3ZXak1oRUx1WWlSRTdrT1E0VFlpOXd1LUhtbVdCYmFCWXJKY3Y2d3ZCd3dROWZqMDROdG9tS0lrbi1oVlFaZGdXWnN4WlhuQUQ1NUJETU4wMGF0WnUyOERodkdOVG40WTc4eUFxb2Fkc0t2elRVSmtyaGFwOUM1OEtCcXRjN2Y3RHBJUjhGaENxYUsxMA?oc=5",
+        "source": "Mais Goiás",
+        "published": "2026-11-04T00:59:06+00:00"
+      },
+      {
+        "title": "Policial Militar De Valinhos Conquista Dois Títulos No Open Campinas De Jiu-Jitsu",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9fMmZrYXV4dnNoLUhtY1Z4dEhQRTlwLWREZUtfTWhwOXl6SWxmYWh5M0wyQlk5N3JUNjVuemtpSHhwSXhlMHQ2UTJkb0VGRTZHbmppQ0J6Q2VJWE1OeVpqdHJYRmlZNjFYNWNPX2JDTEZXb1E?oc=5",
+        "source": "Jornal Terceira Visão",
+        "published": "2026-11-04T15:01:59+00:00"
+      },
       {
         "title": "Sheizi Ribeiro conquista ouro e bronze no Europeu de Jiu-Jitsu na Itália",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZThLZE1Tc2tQSmxFNEhyaUdieWQ0dGxrMnAyZ05DYUJGQmJ6bTZjLXNHS0h6NkRMdW9WNWloTlJpdnVVdWVOZXR0cTNIM3hjc1VuUXpvZ0FBeDc2Zk1NNWhSOHd5SFMtTjdvdDB1T3YxRWpDXzBjYUlrblZEQkJPWGNfa2R5cFNGeExtVjZUTmNyRmJQdEg3Rkg0dHFvZDJZYTA4cTdnVEdqczBacXhsbFFaTFVFa1FYM0RsNTBR0gHMAUFVX3lxTE9ucVRlR0hLeU13VkdTSnEtUzFUODNaRGw5Sk1mb2xPbWh4cGxNMVhkS3ljUXJBb00xNkVrd19GaUVDNnhSMWpXTGl1YnpyN182ZHcxalF1b0xQbUZnLUxlRUYzNDY3d0t1MVplLXR1eEVFUHBWNHNURXh5SEliX3NRY21Ca3ZEUVFJUXRnLVBhUkFnMDNHeUgxLVFVakZjb2FoemlrLTFpMFo0MDYxZndWUlY2X3hoaFJFQmVPTm5SUlBhZWN3cHZfM3hSNQ?oc=5",
         "source": "ge",
         "published": "2026-11-03T13:23:41+00:00"
+      },
+      {
+        "title": "World Cup 2026 da ISBJJA movimenta o Jiu-Jitsu português com disputas em todas gerações",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQaEF1dm5sZG13YmlQbGx5ZG9DRlhKWmE0LTBVbjZHR01EVlFWOVF3b3B4bGJpNzFkU1pWNVVJaklxQkpkTmJtVEo0UXpxTkt4SFZVaTJoa3p3QXhfeURqOGQyZHExQUxlMENpMUZfNlZ5Rjhpa1BLQWJqa3RmSTlCRkNaTkkyTWRSYXJhaGpvUV9NR2xvdFNQZnhISkNUbXA5dWQxUjI1WHhva0NuQXBaVG5KeEtzZktXQnlKVTcyN2ZOT1ZFaXBFeFNJX3NZV0FXVUdpRi1tc0RsUDJiZHfSAeMBQVVfeXFMUEhWQ0Fmd2hMUlZOUW9INE16YjI5dmhXX0hQOVlCRjJRbUcwV2JiX0ZBVHZmamljVk1WNlNlTVJCYjFtS29VMlhhSnVOTEt6Rm13V1pxclQxZkMzcTBGOHdTOGxVdFdKRzBHc3QzRFpRcV9XN2RkTEdqOXpfYU41NUliYnJ3SlNwZEc2NUxzeGpIZEUxd2RfOFl4Y295RzZpbEhiMmNkRnY1WWRFWUJKMlc5NWgyazNRdVItYjJ0R0VtZTdGUEdwdVFGb1JBQmtaQUtKMDU0WUl4ZXlrN1Fza2JvUVU?oc=5",
+        "source": "O Dia",
+        "published": "2026-11-03T22:17:19+00:00"
       },
       {
         "title": "Jiu-jitsu: Aos oito anos, atleta teresopolitana coleciona medalhas e sonha com o Mundial",
@@ -16,52 +40,28 @@
         "published": "2026-11-03T12:45:16+00:00"
       },
       {
-        "title": "A memória coletiva da comunidade do jiu-jitsu amazonense mantém viva nomes que deixaram legado",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNTGE2aUhZUkR2eTQ0UmNRb3lkazFqVnYwbmFMQ0NpX2NhbFB6ZFFzcmxfaTh6aXBzbDlkSFRYUzFnR0dMZDFaUm4wVFVJWHhsdjdiOTBCNFlvNkV0YjRvREZGZ3NjcHhneFcwX0JTdnJBQlY2bWVaZzZlWXBjbERPa2R0ODRBelhidmFoLWk3bE9DVFJuT3ZDMGdmUjllWHIwUE1sSTAwNWFSdTFnNWlVWVNxMjg3aHRsTXJwODRFZDBjOGgxeWZTSDRMb2VHeUlaSDlXeVZzSGFaNHBwdjZCUUtISE5uQ291?oc=5",
-        "source": "A Crítica",
-        "published": "2026-11-03T16:28:32+00:00"
+        "title": "Alunas de Barra Mansa brilham em estreia no jiu-jitsu e conquistam medalhas",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdmNPQXNYb1JYSWlTVFc5UGV2X0FSb0dDdWNydlY1d25aSWpiM25wdlVPMEFOZ0lweF9IVEFQYWVtMGZoOU9LS0hFVWRvdmxHblItLU12QVpiWUl4NHZ5dVdGZktLLUJKOXBxQkt3aDNJbk53dnBSR21sMHBqSkxWY3NGZzdSQ2NNNmhqZVZBYXVlTE9rbUw4MTJRb1o3MGVNQXgzaWFkS3AyY1hoTHIyUG9R?oc=5",
+        "source": "Diário do Vale",
+        "published": "2026-11-03T20:39:52+00:00"
       },
       {
-        "title": "Gêmeos de Botucatu estreiam no jiu-jitsu e conquistam primeiro pódio em campeonato em São Carlos",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWjFCMUtvQWM1T3JaMV90eDNLZXhOdzN5SmU0TnRDUXhzd3AxX003NU5NNE5MR09WaHV0bzVTdGx2RE9XTl9PVE90TUdXYUdIWUk1cFZWRkNzZUtiZEVoNlBWd0pUMUhsaDlnamptWGRpSEc1eFFfSTlPT0ktM1NvSVNySFo4TEpsbjJWUUlKZGpfWG1mdmZBZEhUTWdLcnNFdWhxWW9uMXFIQmNhQ1JDbG5KZHFScHBHNU9aOEs0b01iQzMtZVdzMmhnZ0NRb2NaZ1FlcQ?oc=5",
-        "source": "Acontece Botucatu",
-        "published": "2026-11-03T12:24:36+00:00"
+        "title": "Grupo de dança e academia de jiu-jítsu são homenageados na Câmara",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT2J5ZXYxVUlBT0ZjY0ZhUVlMZl9QcFc3YUhWaTYwR05UcVJ4bFhhYm12VGtmMV9pOUJGUHhLa01lQXFZaXAzdmdoVzYzLWRLTzNZZ3FIMDVRa1dEY0JXTjZxUGpndWdxTk9GSWdWNmpHQ0NBUG01LTBkcnZicmxjZlNwR19mUXRQWmJqS2pkY3pXNEJXdGZ2REQzNlRENGY0M05J?oc=5",
+        "source": "Agora Laguna",
+        "published": "2026-11-04T00:42:01+00:00"
       },
       {
-        "title": "BJJ Clubes GP e Lutas Casadas promovem confrontos entre tradicionais equipes do jiu-jitsu",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNNDVIZ1ZhdDlSX2Z2ZUZqaUpkLVp6MUF1MDNqOFJhcDBwNlVLSlhtZGJLTnRwd25WeS0tc0hYUnpYSEVFWGRtOXpaSFRHTG5vTlVkUE51ZjFndnh6VXVxTFNWNmxSVlV4WFdqYTVCU1V5Ymt6T1Jwb3F2Y3RvQTBLdENBZkY0Z28wNWx5WkttQmdvLWpnZXg5TlU1MnU1MjdqdjJrNVM5N2k0NlNaaHd4ZjlkVy0yV2E0YXJWR1BGWUpsMk1fS2p4OUg3Um1NeTY5d1E?oc=5",
-        "source": "SportBuzz",
-        "published": "2026-11-03T16:01:44+00:00"
+        "title": "Jiu-Jitsu: Gracie Barra Centro Ponta Porã conquista 3º lugar no 1º Open de Antônio João",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeUhvTlhaSkh2dllISFI2M1d2SDhDcm1La0NRTmFIOUxieFY0b0ZzQldjVFhoUWh6aXVzR0F1TlNSWFlTUlZXamtJRGIzOFhVSzNlY1VhdENqMmtNVkU1N1Y0Ui1kSkFTc2h3dHBlTE96eHZNYkZlbnV3M0ZNZmhZSFlici1CcW5ud1lJazRKc2VMYlF6T2N5cndpaUFpMUd6anBKWkNmU1dXWk5JczdXV192R2Vic3ZlWkRFVjNqUjdKcVdESDRhZzg2bGRkY3Z1Mms0eA?oc=5",
+        "source": "www.pontaporaemdia.com.br",
+        "published": "2026-11-03T17:54:00+00:00"
       },
       {
-        "title": "Alunos de Pacajá conquistam medalhas em Mundial de Jiu-Jitsu em Belém",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWVIwT29NRUljVmNlVEEyUkpNOXBmVTZOWllpVXotdjJOLVFTTEdjRXVCYnRvdG41eTZYcnhwekg0QWZFTlFDNVEtcGxaaTcyY3o2cmpmTUdVRkZEOWhZcS1HYmtQaDdNWjNSNFBZMmhLcDc5eEF3b3dES1VDZEgxYVdLWmFzckRNTUZPemcyOFlZdF9CVzd6TlNYZmIwMGpuQ0E0dG8ydHVhVEk?oc=5",
-        "source": "Gazeta Carajás",
-        "published": "2026-11-03T14:50:00+00:00"
-      },
-      {
-        "title": "Bom Jesus recebe 2º Open Jiu-Jitsu Championship com participação de atletas e famílias",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYnpFN0U2R0RSSlhmNDlsRTg3R3NmeG4zMkJUeG9GSFN6R2RXYTZQaFNkY0JyWnJDOWlrUUU4MVlRWGVEUnBMMlVleGZ1ZnBMT1RBcW42d29QekdCM2RmZXRzMUFEOVVzR3ZIT3M2dTA3NGVuSVg3UXdhR1ZEeTI5QlRpdzdpdGZJUkJrb0RHeGhnNmZtT2kwV2FQb0hLSnVaVXJEUHdheVlFR0phZTY4UVMxQnVCVTVRTVIyRHFVdi1iLU1XU0VKdEhJMjNpYnBxZEHSAdcBQVVfeXFMT3BZQS1pT0JGMzBHWXNZdWx0dHgtc05Ba3p6dTE5YmI5ZGlJcGRtWm9yNFdJTVYzV2pNNDhoQ1hDWlo5Z0xRYVFfbUZsRmp1R3dFWTBnTkg1M2xRRlV1NkswaWFfOXF4b3Z2eWJ1M09HbDRGY3AzNEpLN0dPSVdOT1hKd19PVnFPUFRvbFJUZ1o3NDlia2ZzMnR0STlpRFdvOFRITmlTTmpRRFJwV3hRMHQyS0t3ZWJTVzFWaVV3OEJrREtKcFlaajB5TXlobm5tX05nTVFsUUk?oc=5",
-        "source": "Portal R10",
-        "published": "2026-11-03T12:41:18+00:00"
-      },
-      {
-        "title": "Rio International Cup define campeões do Circuito Mineirinho de Jiu-Jitsu nos dias 14 e 15 de novembro",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTW1ja0E3NTFGS1J2dGF0d1VQQ2N4ZHFNTERySXpBXzMwR3cwZS1lSmZ4WG9VSlY1dGg3dGtGd0ZNRHk2S1lGWnlkcUh3cVFGNThHemF6ZEpDb3JmVVpKdzFESG40VXhFWGdLeHo5NWZxSDlSNTFGOWRMNllLMDU1dVo3YlBoZUpmRkN4bG5uV1ZkMkFsdEt4SExYZHZNaV9RNnVMeDM0TmNFblVaczF2T29VbmJUS0h0bU9yS0FwWkp4cGRpcWs3aEpiVjd4ZXlRRWdmakhzV282UDNwZGlFRW5NTjU?oc=5",
-        "source": "RedeTV!",
-        "published": "2026-11-03T09:58:00+00:00"
-      },
-      {
-        "title": "Fight Fitness conquista títulos e coloca Fernandópolis em destaque no Circuito Interior de Jiu-Jitsu",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbVJOMU9RTkRjSF81ajBsM042RTUwVjZyT2RRU1VEd3RXZWwtQ2hrUGRWeXJJUlJZTVVXMk90Q01PaWJtNkRUY2k1NnFMNU13bFhObkpCbzZnM2JvNE9Ic1pUZFdwQUNGV3gyVEl0cVpubWhwZXpvNGxjdFVqZ0NVODAwZC1XanY2OE1jRzgzYVlZeFpSenBGWHNSbkVtSlJmdUJFQl80VVRVMHdSM0l1Z0RKdWlacHk1NGZRQ1VCbFY0cEE?oc=5",
-        "source": "OExtra.net",
-        "published": "2026-11-03T17:02:34+00:00"
-      },
-      {
-        "title": "Jiu jitsu de Caracol se destaca com 26 conquistas na etapa estadual em Antônio João",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWExwZDFpZHZZSlZFaXRhTDNXdmp3alo5Rko4dWRUb3hXdUdoc2tkbmxkN21xZ25Od0NuZ29WdTd2VG04NHNjUTlVcDA1TWJrT0pFelh6X3A5djdaOTBRVmg0ZDVoQ2RCWjZGN2JGTVZrY253WW9kaUJGV0hSbkU0aDlmV0JTV1hIcF9pOFFnTEpCbFFRd3hFZ0FBTTRJVDNWa21paHFuVnlTT2ZOOWc?oc=5",
-        "source": "Fronteira News",
-        "published": "2026-11-03T17:28:17+00:00"
+        "title": "3ª Copa Cidade do Aço – Jiu-Jitsu atrai mais de 500 atletas em Volta Redonda",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYVdJaFBWcGRUd1dhSzI1bFQ0TXJHUHBDTkYwTktfX3J4ajVURUtPVWJ2Q0RtYzdVVkk5QXN6eU8xNEVvRTFzMDAxZ0xfeE5VQkhvWm81djJMWXJ6WWNjR3gzZ0tSbkh6QmRjdUIxWUhod2M1NFJHRDZvLTExdTFFSGI1YWdYelRhNHpvRjJEWnE3dXBOU2JoMzBjbGppVFk2M0lFZmln?oc=5",
+        "source": "A Voz da Cidade",
+        "published": "2026-11-03T19:19:41+00:00"
       }
     ],
     "Campeonatos em SP": [
@@ -84,22 +84,16 @@
         "published": "2026-10-18T07:00:00+00:00"
       },
       {
+        "title": "São Paulo International Cup de Jiu-Jitsu terá premiação em dinheiro e vagas para Mundial de 2027",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQOGN2bEFuRXFMYUFFT3dXVkxmTnZ1M1lIMVJiSmZzTGRhMHd4WS1EdWFaVm5RdGZEWGhmUGZ0MUg3OFVkbXZHdWhqVnUtdjF6Vzg5a2NjQXFySHI4VDJhZ293SWdFbE5lR0N0Ql9CWGd5TXU2bkw4cUIwQm01ZG9JRVphbFRfaFlldmlTZlhCdVdzSmVieEFKdk0zOFBOUnlsSTZSREdNX0x2eTlWMVNrRjg0T0pGRTBaZ0tNZDF0REFfMlFzREcwM0pVTVp0emZCOWd4VE5FYW01dG1ZbDZXeTlJSdIB8gFBVV95cUxNV215N0UtUGRRM3FRT1J0S2ppVU1sWHpnSTh1SWRKMnZHQWlaWUtCYTVrWFZOem9DOUN0SUZ5N0g0ZzlkUmtWaGNSVWgtT19qaEkxRE5RWDFyZFNYMVVETGJQMFgwcktPZmk5LWl1OFlXM3ZNb2IwanJ4dDY4blhjR255clVLWGZsTjZ0a0FlTFotR3M4ZlkxdUJBUkJQTHE2OW0zOWE1VWdPMmM4b0pycGVTZFRMZ25Wbmtkc0NBbGdwOURxRTRUbV9PRHRSMXJCRl9tUmFSekhYcWRFYkFCUlJyZi1BLUVGaG5xbUcyVk45dw?oc=5",
+        "source": "Extra online",
+        "published": "2026-10-28T13:35:51+00:00"
+      },
+      {
         "title": "Notícias",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRjdYVjlPVmNPdG5QV3ZPVlAxSEN5ZE4tczVYdEY4UmxuVDF0b2dZeVo5QnBjYjlTWGZhbno5TkRGdzJENjFUOWJyeE1jMjZrV2otOUNRMTIwNEtJMXVMYWdwWEV3N1M5b25ZZU1URE16eDgtU1NQd3hSWGZJa2lIRHVidWpmb2xHbGQtWDhYdkdQUUtOWWlrSGUwcTFCdTNyT3hJczRRMVcwaVpvaDlPNFVGQnBZbjlVX3NoNA?oc=5",
         "source": "Jornal de Barretos",
         "published": "2026-10-20T07:00:00+00:00"
-      },
-      {
-        "title": "Maranhenses se destacam no Campeonato Sul-Americano de Jiu-Jitsu",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPdkNBd0s2V3RyQTU0Q1BrczZkS0NsOGF4Q05JcUJoUmRfd2xLSlk4eS1BS3BuNXZDOUhJRVVHQVZSc1VBRUNhWDFFSUNGNEFPRTVOSkNMbXM5azJFSnZ4ZU9TV2VtZVFoMG1sNUVORk5pT0V4RW9TZWpJdTJkcGhtVmNXbldJLW9qRXVvMFlHYmNZcm9zdGctZFN2M0VYSlB1LU5KMXpzN0stVU1lY2JNdTFIY3djdmYxMnM2VkF5YjhPdFlVQ2EtZnZZRHI1dHhQSnZRWFFCX2nSAecBQVVfeXFMTkNKVkZqNTd6d21Bdmg5VkZIUEtIeFJkOHpRazhLUEkzcDlQSTY1ZG1NWlprSGJfdXp1ck9YZTBmWWFsR0RRUnRBY2k3TVo1OE5XeEk2V3pPc3I1Mm9VQnRFY0dqMTI4NmhtX1ZZQjRNRDBVd0lORF9oSmpBQ3VhTmNwRmd6dGp5WFhibDhCdld4Zmx6ZjFkWElfQ3pBUlo2RTBfOHJyR1h5aXRoV290WFNWM3l6b0l2X2wxVGVZRXYxaHhNUWVmTXJQeHhhT05lLXN2dVJzczZYODh1N0ZuV2lHa3AyRlFN?oc=5",
-        "source": "G1",
-        "published": "2026-10-23T07:00:00+00:00"
-      },
-      {
-        "title": "São Paulo International Cup de Jiu-Jitsu terá premiação em dinheiro e vagas para Mundial de 2027",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQd0ZTVDNzQW9zTmg2YlZrcDdEbkllQkhVdjc0c3MzMktsZjBjdUtScmthYU5GNXBYNWNDZWhvb2tKUWpSa1VIdWFYWmVYaFlHTHFFQlliMGh3cnc4V3JGZ3NFLVEzWXBhdllJUU9IZkNtckV2bGRPUjNQSW9YZXRTTVYwRk5oZEZSaDVsTUh3LU0tWmpXNWlrbjliN0VYNFJlZnoyYk1ZZTBwal9FQndkTmVfa1FKUWVBR3NRYUJTNnlVMmJjWWxDY1ZBWC1sWElWT2Q0Uzc0cHpfVTNG?oc=5",
-        "source": "RedeTV!",
-        "published": "2026-10-28T13:35:00+00:00"
       },
       {
         "title": "Agente de trânsito de São Vicente conquista título de jiu-jitsu em Portugal",
@@ -108,16 +102,22 @@
         "published": "2026-10-16T07:00:00+00:00"
       },
       {
+        "title": "São Paulo International Cup oferece premiações especiais e encerra inscrições em breve",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPek5FN0daRDFxR0VXUGJjaFRIdXVpd3BpRE1oWTBjVVJXcm1FZDN0b0MwcWNES3BDQ01HQTVPVnpEOFdfUW93QXFzYTd3YVJ6djVaY2lGT1JMVThtMFZfQzBUZWtKWUxoNkpSQWQ2dHJFUndZOTVaT0VCbU5FU3BSTDlRMFdPeXhrdGN2Yk5GcHhHYUhIVG1TVG5oU2xyWDNxMzlEa3E0Uzc3dUNkU1cyajNHWGlScTdsMlk1ZTM0bmRzVzRzXzh4WUNMaFVCVjhKbUFUcDBwaXpMbmY30gHiAUFVX3lxTFBoNGEwRUdSSUZjU3RzcmVEeHFMUDVzOGxublMwdFZKS0RXbmZqdU5XWDRZVGdub1Y2MUJaam9FWjNLQ3JCMlhWeGNBbWcxeGRHbno1aXZBX2lNOHZaNWFyX1NmbVRXd2taVXZ6ZFZNV3lla2Nqd0l0X3MtYWlXclJuSVB6QkpLeTNsWDRsMnRiUnpMVlFnRHFuMVN1OGtFVUg3UWRFbjhOUl9OaUJHenNDb1Y0NDFLLTdXQUk5anh3Q2V0b2FBNFRHM0gtSnVqbWI2NDF5ZXhoTndTZDZwT041WXc?oc=5",
+        "source": "O Dia",
+        "published": "2026-10-28T12:00:00+00:00"
+      },
+      {
         "title": "Equipe Dominium Jiu-Jitsu de Nova Mutum conquista vagas para o Mundial em São Paulo",
         "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOS1JT0dxMmlTdjkwVmRpeWVKTmZPc0t1SEVvZkFDLXVsd3cxVGlOQjZQR00xbUY5cWY5eE80VThUUWNnVzFsRVJEc0RrNW1TMmN3TGlfREwyRTJMc3lqSUZHTmo2LVBtOVpodTA1SDNIRjRsNFZCdnZIcnBxM3VEdjAxUUpTTURGX21pNVlLQWtNSnBJbVRVVWMwUFFBSXVjNWpYS3R3bEtadWhybHBFT2Z3OEtUeGpuU2lZQ2s0ZV9Gdw?oc=5",
         "source": "MT Esporte",
         "published": "2026-10-28T20:51:28+00:00"
       },
       {
-        "title": "Hortolandense campeão paulista de jiu-jitsu comemora conquista",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS3hmSW5JeHBjUWJnQ0ZFclV4b0ExTnBfQlUyRThpYnVkZEF2bDE5TFhuOUw0aE5jQUR0THhtQ0dMTUlFODl6ZTN3cGstem1TU2F4eDBiV3R5ZFJWLW4tckRhRlNZUFd1VEtjUzhPRU41WE5sUExYWVBlYUx5TkZub3RtOVhXRHQzblI0cml5bE5qX25Ma094V1FJaGFqcW1SbmxTRjNRMGc?oc=5",
-        "source": "Tribuna Liberal",
-        "published": "2026-10-25T10:34:00+00:00"
+        "title": "Policial paulista de 57 anos leva ouro no Desafio Bope de Jiu-Jitsu",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNGlXSWw3dlVNM0NsT1FSNXE5WjZsNTZWb0Rxal8xd1o4ZzJwLTZxcUg1aG9UTmc5cFNaakhLNmloa250ak5Za19ESlc4aXMzd2FfRjFjb0s0TG1jYXdUMVJWRmpXOU45ZkF6Z0xwYUZ5cHlsTDc2X0M5cURkWm9UQkYzOXdpVF8tYW5ES3lVX1cwTU5sMWw5d2tYVmdMcW5EWldFM2F1VEpja003WWVF?oc=5",
+        "source": "bra1.com.br",
+        "published": "2026-10-22T21:14:00+00:00"
       },
       {
         "title": "Tatame do Bem conquista oito medalhas no Pan-Americano de Jiu-Jitsu em São Paulo",
@@ -128,22 +128,16 @@
     ],
     "CBJJE, IBJJF e ADCC": [
       {
+        "title": "IBJJF The Crown 2026: Confira as chaves do torneio",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2JNdFlHU1Jld3d1WVlNZEh3d3AzelFTZUdfdDdvaTRhd1NKYkgxczJ0Y29RaEJYVWswWVFTQ1NMUk4tdWlSNjQxWE1QSnBnazh5dnhObkpabmE5dFNyU0o2cTFIdVpUdHdCYXBKSGl0QWpta2pzd2x5dG5WWjFxNE5QSndkdkFoTmphNlA2cDZlbDI0SzR6a194X1A?oc=5",
+        "source": "FloGrappling",
+        "published": "2026-10-27T07:00:00+00:00"
+      },
+      {
         "title": "Atleta de Antônio Prado disputa Mundial de Jiu-Jitsu nos Emirados Árabes Unidos",
         "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOaFlrbHBiajRLa0xvNmdqSktlRFp3bmRLbldYbElxUHJaWXFqcTAwNmJyc1Vxc3haQ0pJU2ZMNmNHSVNHWFhsUS0zWk1oWjNUeWpYV2l1LXgxeXpRbXJQRm1NTkRqcnVsUW1jMF9VRzZGeVB0U2xGQjNDSXF5M2NVall0YXdNNVVvazJCaG9sZXJ3SXJDanhTUGVMZWJUUGlwX3FKb1kzdVZuMGJkbk1VdHJQcEpJMVljZnlGdHVJZFN6QWJsQlNGUEowbUlpOGpIaXJJeFFVbzZVbmZRZXVqcC1wX1VDeExRYVlrWXdORUhjRS1MUkxfMWEtRHlzVWRqXzg0TldDVQ?oc=5",
         "source": "GZH",
         "published": "2026-10-27T19:02:43+00:00"
-      },
-      {
-        "title": "IBJJF The Crown 2026: Confira as chaves do torneio",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM2JNdFlHU1Jld3d1WVlNZEh3d3AzelFTZUdfdDdvaTRhd1NKYkgxczJ0Y29RaEJYVWswWVFTQ1NMUk4tdWlSNjQxWE1QSnBnazh5dnhObkpabmE5dFNyU0o2cTFIdVpUdHdCYXBKSGl0QWpta2pzd2x5dG5WWjFxNE5QSndkdkFoTmphNlA2cDZlbDI0SzR6a194X1A?oc=5",
-        "source": "FloGrappling",
-        "published": "2026-10-27T20:24:18+00:00"
-      },
-      {
-        "title": "Atletas de Teresópolis brilham no IBJJF Open em Miami e conquistam cinco medalhas na faixa-preta",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSGVIcDlia2JoWGFSQngyOEM4NmZoMDRyTVNIZmhWLUJydXdYNnFtdnF3cnhkbjdEWHRhOUxSUWROVk9oZm1OQTdydlVHODVZRWhocHBCcFBoMnBwMkRiek5kNGFnUWtxWHpZZ25jMFIxODNGdHRxRkJWTUlsWkJzeWsybGZKU3FlQi1lc0Foa2pyMTJ6eW4wUnV1c0plVjdVclBFQ2JDb09aV25FSzRxVTlJdHUxSnduaXotcDNxSjJpZjN6Mm9kV3M2WQ?oc=5",
-        "source": "O Diário de Teresópolis",
-        "published": "2026-10-26T13:33:44+00:00"
       },
       {
         "title": "Tatame do Bem conquista oito medalhas no Pan-Americano de Jiu-Jitsu em São Paulo",
@@ -152,54 +146,60 @@
         "published": "2026-10-26T15:14:00+00:00"
       },
       {
+        "title": "Atletas de Teresópolis brilham no IBJJF Open em Miami e conquistam cinco medalhas na faixa-preta",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSGVIcDlia2JoWGFSQngyOEM4NmZoMDRyTVNIZmhWLUJydXdYNnFtdnF3cnhkbjdEWHRhOUxSUWROVk9oZm1OQTdydlVHODVZRWhocHBCcFBoMnBwMkRiek5kNGFnUWtxWHpZZ25jMFIxODNGdHRxRkJWTUlsWkJzeWsybGZKU3FlQi1lc0Foa2pyMTJ6eW4wUnV1c0plVjdVclBFQ2JDb09aV25FSzRxVTlJdHUxSnduaXotcDNxSjJpZjN6Mm9kV3M2WQ?oc=5",
+        "source": "O Diário de Teresópolis",
+        "published": "2026-10-26T07:00:00+00:00"
+      },
+      {
+        "title": "Ele se tornou campeão mundial de jiu-jitsu após perder o movimento das pernas em um acidente",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUlBYbUpyNzBPWjRfeEpnN0tnenJLZl9TVXZzQ1hqWjlxN0dwY21FdTBJeTZqZk1zVldlOGNKWXVMOTBVU3Y5bG9nYklCLXZpVDRzN2VJMG02Tzl4MVNFbTQ0REZaRTFCY1dBM2FJNVdzMVdPVWhSc3ByNkNueUh1VXd6Vl9yclZsc2RzcDAtRHhkSGIwcTRDdk5PcnN6LVRxbWRwM3lyMFJ3LXZzS1NQQVJMSjdFQ3ViR0JZWVFMYXp3aHpUakpnMHlEaHppeGo0Vnc?oc=5",
+        "source": "Ultima Hora Online",
+        "published": "2026-11-01T20:22:18+00:00"
+      },
+      {
         "title": "Projeto Campeões da Zona Norte conquista 5 medalhas no Mundial de Jiu-jitsu",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVFE0em9GWlpvVVFobzBSNlQxa0tSblJFeWNxbEhvUnhiZlhBanRTV3NQZ0pmRi1zUXlMRjNUS3NjOUVOTXVUYlRFaFpWUE0yYVpRS3BQalh1cGNMemRENEItdFMtLWdIR0ZfNnRDa2lBUklOcFI0cjlzTENJWnFLMUdrNF9fcGZrSHdDS1N1cTI5OElpN05ZY213U2RLNGU3Mzk5eTR2S1owT1JqaVd3TFZGSlhuMmhwZDFMRtIBywFBVV95cUxOYTRCSl9JUlJIZ0Z2LTdNdVhQNXRDU255N3pQU3hKcUQxX1Z4QUpsQ2U4ZVNPdVZOWE9pS0xSbW9CbVEwald5UkVzb3JRdEM1alB6NjN3cVNqeERUZ1pZNFJYTk1vbHpnTi1MeTBqUERtYUk2TTNHQ1daS3hkS3JQSnQwQUxBV1BCMVl4clNtVjZLRTI0cThGRGY4WFdhX1FUN2NqYlhIMWdBSjFUTncwTHRtQWhaRDkzS0R5Yk9UZUxLTzV2dFowRVVndw?oc=5",
         "source": "ge",
         "published": "2026-10-26T16:45:51+00:00"
-      },
-      {
-        "title": "Professor da Sedel é campeão do Pan-Americano de Jiu-Jitsu, em São Paulo",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQb0ZuSmJ4TVpwLUxLUE91aW9LSHl5VnR6RkdGQ3lpZDZMTVIzODVJX0ZYSnJmbzEwQzUyYmNYcDRGdkxSeGdHX0plRi1WajQxWFY0NmRDUHh6emh5OURNMlJ6ajJaWFotUURxWnJIZnFLVWcxTG5jNTcyWkM4ckpqTGs4dzExN1dBTVZucm90aWxKdjNCWm5Pd2gwZk1vQlgzWEE0V1FQY1NRWEFKYVFoUmFfVVpoSUlmMUZaYlpn?oc=5",
-        "source": "Portal do Marcos Santos",
-        "published": "2026-10-26T21:12:41+00:00"
       }
     ],
     "MMA e grappling": [
       {
-        "title": "UFC 275: Embedded | Episódio 3",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9OajczY0c0QTJDTHNNUlhtT0tDWnI2bVR4aDF5RDh4YV80U3dUNU1JWTJuc3V2dk1CYjRWWUt0eHBMUVRsMl9PUmRQMEVmazkybEhnaGFnMGM?oc=5",
-        "source": "UFC.com.br",
-        "published": "2026-11-03T16:29:42+00:00"
+        "title": "Raul Rosas Jr. atropela Colby Covington em menos de um minuto no grappling",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdG9fdk5hN2p0RnRDX1Z3TWZFbmROd2Q4eVhMamJMVW5RVWR5ZkFiTmhCV2hCNE5oUzB4TXVRWlZRS1o3b2Q1akdGV01Qbmp2cVFDSkdheUpmQWRGX3JJbWtYS2RId3RuRllBUkp5VmtMNWdjcjhXWDRUcHVtNHJzem1lS29lVlVUMTVnT0dUYmQ0RjZWaXczT292eXFYeGlfV3FURFlSbjlRcHNYZWZ2ZGMxWUlmTWFWUkNaek1acjVLLTBPd2fSAdQBQVVfeXFMUC11ZTc4LTNWbm5WWWtsZldMZ3QyZ0xGOElUdUFwWUJvTEFieU9yYjhBN2pGd2I0SVViX2t6SGd3aV9pOGZYXy0xdmx0bXJhZVhVMUxPSlRtNEoyT0d3Q3dTV190cFpGSjBGU1Jxa0t0T2xaN2tEWHVqWW9rLWpNd1NtbWhQbVY1Q2hNN2Rxc0ZHT19KOVBGNmkzVDdGcUxkV3pIS1YyV3pHclZmV2JjS0ZJUlA0TVBlazkyWmx5MDJyUmVBVTFqSE12REdaUzF4eGdVcEg?oc=5",
+        "source": "ge",
+        "published": "2026-11-04T14:38:26+00:00"
       },
       {
-        "title": "Premiações em olimpíadas do IFCE passam a ser aceitas em seleção da UFC",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeUtLaG1rbDZzeHZTUTNZdVNiaGlqb1VGd3I0N3JTeHE0UkN3dmJZbzhyNWVXd1pKZDFMVEMydjJUbkNBOUR5SUQ3NDR6T01LZ2pqQUNfTXZaR1gwLURqNjlXR1IxMnR3dzJzWHRBZzBtTFhCM0tvb1Z5Z2dCYUtGZTBIWFd1cnEzM1JhakpkUDU0TWptdFdCQzVRdjhmT2s0TkhmUGJXc0Z1Ullp?oc=5",
-        "source": "Home — IFCE",
-        "published": "2026-11-03T12:29:52+00:00"
-      },
-      {
-        "title": "Com mais três lutas no UFC, Renato Moicano surpreende ao projetar futuro fora do MMA",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRHpZMWRHRnVJY0tITDZwQ1A5YUJoVExUQmJ1STIzUi1TZEhLRFRzM093dktRT0FuVzVCQk1NSktWSGR4ZU1BQTIzRUo0VTQyWk9zbzZwQ2RqeHNNbmZLUmxMOTZCa2N3QnZEOGF3TXFndkZ1d3ZWOTdiZ1UzRTZVVXZNaXRfbmhZbGVBMXpzQzJ6M3o0ckhNWWV4YnVsRF8xSjQ0NjZEeWIzSzVFeDhsWExBeHpUSUx0YlZybS0yQW5ORHk1a3UxUEVfaC00b1ZEQll6d1dkQlljcEVKMG1Fbi1DVjJYTmtMQXQ0?oc=5",
+        "title": "Vinícius LokDog retorna ao UFC em janeiro para enfrentar top 7 dos penas",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQR3lYNzFaT2N6WjlzYTJZLTZpME8ycU54OUZtd3o3R1BBVHdQTHlyWlc3QlU2d3BBVnQ2OFhwM18zUC1YdXBMNlZtcDdsR0VIZUowSnFvZ3JOTUJGdVRPeVNsbm1Zcnp3bFVzek5xQkRwYTg2UEZOSG1KZThwb2VEUjJJRS1kaFhkWHhNODZWRXQ0VjNTYUFYeXZydlp0N0pHcWVpb3duajJmVW1CUVIxSjctRTVtcnBzbHB6Q0RNTFNzdmNlZzBTR21jYlFtS1FRWXNoQkFmenRBNEZ4?oc=5",
         "source": "UOL",
-        "published": "2026-11-03T14:49:12+00:00"
+        "published": "2026-11-04T17:26:12+00:00"
       },
       {
-        "title": "Astro do UFC substitui Dillon Danis para enfrentar Colby Covington",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQY25QY2lWcEdrc2xfT3ViRWlyX21weDdzWnpTV09lSVNEUVFpTEVIMHVNN0JBdUZ6WUY4X3RGWTJKdEtfNWx6VEx4cTdtb0s0RXdvUEoycFB0T0RNYTJwNzNNUjZhQV91SUFVdjdKak55QXU0WjdaLTVWTzhTaUxVZzlmWXVSWDF6UnFXQXlXb3N1Q19jSGVwUmt0VFpRdVhybmxvbTZZOGc2R1Y5YVJnbU5iak1jQXhTdndzWkVISHZvNHZ3dHc4d2xVUE8?oc=5",
-        "source": "DAZN",
-        "published": "2026-11-03T10:29:59+00:00"
+        "title": "Denzel Bentley: 'I Couldn't Ask For More' | Zuffa Boxing 12",
+        "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBKblhQNFNhdENvUElmemtBQkktZ3hRTkFqbVdNTTA5QWh2UVpmRXhON0IxY1VSSEZPZllIMXlGTEJtQjdGMUZGVHVxcw?oc=5",
+        "source": "UFC.com.br",
+        "published": "2026-11-04T16:21:14+00:00"
       },
       {
-        "title": "De volta ao UFC? Ilia Topuria surpreende e anuncia retorno",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0ZIdk1GOUIzSHU1Q3VOQTFkT3cwOGdOR2E0U2VuckdfSGJvNUNRWUIwV0VhYWlETHgzVHdCSEVSVDZteGhGOU9OdlZNUENkLVlkZzVSV1hEOGFXakdHT3pabzBrN2JIV3VxVm1wVnhkQ0RzSzlBUEpDUWJJbjlBN3dxUHJGNGtCTDJkcGJNWS1JOWRidXc?oc=5",
+        "title": "Josh Hokit surpreende ao torcer por Alex Poatan no UFC 335",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTkd2elRNZEpCazBQaWtKT1gxNFB2b3VfTVNBRzlITXl4cVdLWmVmaldJUTNndlpmc3lON2w2SE9Samt4UldWQlg0NGt5QUxud244ZVplSjhYR01qbXpveHNCbTZ2eVM2VHJLc1g1bkhKNDhGYWZXNWswdVJrX3pGUVk5U2lFMjNTLTh5eG8zeENqdw?oc=5",
         "source": "LANCE!",
-        "published": "2026-11-03T16:26:29+00:00"
+        "published": "2026-11-04T12:02:45+00:00"
       },
       {
-        "title": "Correram! Ex-campeão afirma que lutadores recusaram enfrentá-lo no UFC: ‘Parabéns para ele’",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMl9jMDVVMFpyY3J3WVFyMmxlM2NYSTduZE82SS15Uy1XZUU4eExpcGJpb2ZvZ2JTSWNfNmk2V0ZEMW1ubWFYVXNNbnplRDZnaUNWdXpJS3M5WmtJc0ZXSldhZi1sQUhnbFJ3MlRQVFRnMEowMWdyZG5scjZVWGIyQjdsZV8xb2trdTZKVmxHaXZUMjd3bGU2MkNzUjNYXzB1Q2g4bXhTNHEyYjRJYmc?oc=5",
+        "title": "Após dispensa do UFC, Michel Pereira agenda estreia em evento de Zumbi Coreano",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSUZlN2tkNlQ1cFVvQzNoOGxKR1FjNzZiTFk2aWg1SVh3WTdXRTE1TjBhN0ktTEpLTWg5ZFJvc3lXdHpjYUlxVkhocl9NUS1FSk5IdHpFYWxVZ2xvRFlMamkwWmVxRjMyZUtMS2w1ejlDdWtNVk5sYmp1LW5BZkpYVjdDbWczUV9JcERkQ1R5VVl5bDlfY3EzanY3VF9pZ0lyQWRhem5RRkJEUVnSAbABQVVfeXFMUG9VTEt1UnFVLXN3ZHV4djdqUFNIaXpNNVVQVUItN3M5Y0pPOXZHRDZSdl9WYkxDRXJ2dktZQlhNeXhHU0RvaEtfb0g3UGtLcmphZTJwWnNWSHAwQzdqLTJ6cDNYVG44N0RqVFVvem5yXzZvQThuaEJqQVBEbEZlWWNxNGp5SEc5d0tpMnI4YV8wVmgtU0ZvaUkxUWQ1TzV5d3dRc1dIYmlfRzBuY1UtaGo?oc=5",
+        "source": "Ag. Fight",
+        "published": "2026-11-04T16:53:58+00:00"
+      },
+      {
+        "title": "Ex-campeão Do UFC Quer Enfrentar Alex Poatan: ‘Seria Divertido’",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDl2VnVLTVBUY0x0cTZpMHF2dlgwa1QtbXF3SHc5SzQ4VUFfNy03QXU3MUhSZy02ZTlTTm1fWWRrMWlTS1FTU3VoVEpRVjdvLXRIWUxFZWF0X2w2YmFfWVR3NEhOY3BvekJobFJXRkgyMi0xaUF6MFJscEZBc1hsRkJuM3BmN0dxWEZPVDA1VnZaNmY0azNpYkc3YnQ4ZVB0?oc=5",
         "source": "Super Lutas",
-        "published": "2026-11-03T16:44:44+00:00"
+        "published": "2026-11-04T16:36:45+00:00"
       }
     ]
   }

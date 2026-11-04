@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:36:22+00:00",
+ "updated": "2026-11-04T17:49:07+00:00",
  "events": [
   {
    "name": "Nordeste Brasileiro CBJJE 2026",
@@ -108,6 +108,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/UdRAb74y1epTF2xT9aThBbDdNuw/GttqvA../WhatsApp+Image+2026-10-30+at+16.40.53.jpeg",
    "url": "https://www.meucombate.com.br/cbjje/evento/485/informacoes/"
+  },
+  {
+   "name": "World Trial Paraguay Championship",
+   "first_day": "2027-02-20",
+   "last_day": "2027-02-21",
+   "city": "São Bernardo do Campo",
+   "state": "",
+   "org": "CBJJE",
+   "cbjje": true,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/HdJxZxEwCXF53kfGw1WSuUdWwIQ/63X2eg../WhatsApp+Image+2026-10-13+at+09.47.16.jpeg",
+   "url": "https://www.meucombate.com.br/cbjje/evento/467/informacoes/"
   },
   {
    "name": "Trial World Mundial Cbjje Rs",
