@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T17:31:57+00:00",
+ "updated": "2026-11-11T17:44:18+00:00",
  "events": [
   {
    "name": "Nordeste Brasileiro CBJJE 2026",
@@ -9,7 +9,7 @@
    "state": "RN",
    "org": "CBJJE",
    "cbjje": true,
-   "open": true,
+   "open": false,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/l6sAjlnNAfEf-teWl4zfbU6Se8A/_gVDWg../WhatsApp+Image+2026-09-01+at+15.59.00.jpeg",
    "url": "https://www.meucombate.com.br/cbjje/evento/466/informacoes/"
   },
