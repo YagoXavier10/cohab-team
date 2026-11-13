@@ -1,18 +1,6 @@
 {
- "updated": "2026-11-12T17:56:53+00:00",
+ "updated": "2026-11-13T17:32:29+00:00",
  "events": [
-  {
-   "name": "Nordeste Brasileiro CBJJE 2026",
-   "first_day": "2026-11-14",
-   "last_day": "2026-11-14",
-   "city": "Parnamirim",
-   "state": "RN",
-   "org": "CBJJE",
-   "cbjje": true,
-   "open": false,
-   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/l6sAjlnNAfEf-teWl4zfbU6Se8A/_gVDWg../WhatsApp+Image+2026-09-01+at+15.59.00.jpeg",
-   "url": "https://www.meucombate.com.br/cbjje/evento/466/informacoes/"
-  },
   {
    "name": "O Rei da Selva Open Gi & Nogi",
    "first_day": "2026-11-22",
@@ -48,6 +36,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/JZccFH5Y_oAe64PMzSrQtMSKmIE/5F_wKA../1784301483307-image+15944.webp",
    "url": "https://www.meucombate.com.br/cbjje/evento/96/informacoes/"
+  },
+  {
+   "name": "Nordeste Brasileiro CBJJE 2026",
+   "first_day": "2026-12-06",
+   "last_day": "2026-12-06",
+   "city": "Parnamirim",
+   "state": "RN",
+   "org": "CBJJE",
+   "cbjje": true,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/l6sAjlnNAfEf-teWl4zfbU6Se8A/_gVDWg../WhatsApp+Image+2026-09-01+at+15.59.00.jpeg",
+   "url": "https://www.meucombate.com.br/cbjje/evento/466/informacoes/"
   },
   {
    "name": "1º Desafio Conde Koma Jiu Jitsu Marajó",
