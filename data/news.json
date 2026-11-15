@@ -1,25 +1,43 @@
 {
-  "updated_at": "2026-11-14T16:24:28+00:00",
+  "updated_at": "2026-11-15T16:50:30+00:00",
   "source": "Google News",
   "topics": {
     "Jiu-Jitsu": [
+      {
+        "title": "X Force Top Fight reúne atletas de jiu-jitsu e recebe lenda das artes marciais em Macaé",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPT0t6TDBzY2VTUWVyMHlNMWpEZnBxMnNuS3BRdHNOckxHejFCMTRQU09qME10YzVJM19jbVFqZWJ2ODkzWjdVUnh4QjRPZU1WUXZ3RDFTMjdCWkVBT0hrVUs0cHc3R1oyemRlZlJmM1BpMkdickNhYWRLTFJySE1kdm1ELWRuQkpjdXdqbVZYRVJORmlJS2RKQ2xwMkVkRjk4cEFXS3RIMHpYSFNZemFQQ2FXUC1oODVwdDM0Rk5xLURSVnk3UG5tcFJBSXlmSkwteDA1X2xFSQ?oc=5",
+        "source": "Prefeitura Municipal de Macaé",
+        "published": "2026-11-15T16:16:00+00:00"
+      },
+      {
+        "title": "Copa Pódio reúne mais de 170 atletas em Palmas e movimenta o cenário do jiu-jitsu tocantinense",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZXMxNEVhUVNJMUNzVXlTNzRWY09NTkhuTDBuSVNfT3UwMVk0eGNUR1M2REFmd29weXE0cl9WQ1F1Z0RnMWRncnlfWkVTcnRTRU1oSXBfLWJ0UWZhV2VSMkFzalNjd3QycmFPcWs3aGFqNFdBa3JrcDE4Mnp1d0dqb1pFaExod1FXdER0V2p4N1VCaUVYSEE0R0VGZ0VEcTczMHJYbW5EbUdtOHJlVzRISFAwTklWeWpHaEU3WGRiR0l2Y3Fhc2d3?oc=5",
+        "source": "Atitude Tocantins",
+        "published": "2026-11-15T15:11:48+00:00"
+      },
+      {
+        "title": "Isaque quer levar o nome de MS ao Mundial de Jiu-Jitsu, mas precisa de ajuda para competir",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeDdLc2c0Qy16UUdfVkRfb0xWMHQ4U2xqWUtJT0V2XzhpRHRrSkpjQTQ0Q1ljYzktak1ldU10ZjczWDdzMHJZWTJ3X1dZZzE4STYwb0FjOE5yM3VwVzRwaklxdUwzaTRhUFJPb0UtMXdBLWhGZTRMckpxZlRRemlTSnZ1clVOZF9ZcjVoeXlLUHYxMlNkdkVGeTY4V1h0bEpCbWhSVEZwSGFDZw?oc=5",
+        "source": "Midiamax",
+        "published": "2026-11-14T21:57:00+00:00"
+      },
+      {
+        "title": "Polícia Militar aborda grupo suspeito de se passar por atletas de Jiu-Jitsu para arrecadar dinheiro em Lages",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNX2Z1TEsyR0ozb0dwQjVtcEljX3lZU205MTJBUnFhekNVQXJLRWIyYmRON2o0Ung1eHhyZVdjN2lLMVhVNjJoMFhmNi05aDlnUTJSYzJYeFcwbnpvY2l2NVozRjJNYXo1Z1kwbGRVRnp5RWQwQmdON1l4UzgxZzg3SERWc1RaSzVoN3RZcFFwQmRTa0RLclJLUm81TGNuVlR1X1dDeXNpbTBITXpjQ2hjS0F1NEM3MkJmTExPNkk5SUFNd2VWX2lJbklsSFlFaXlQWUE?oc=5",
+        "source": "Notiserra SC",
+        "published": "2026-11-15T13:02:01+00:00"
+      },
+      {
+        "title": "Grupo suspeito de fingir ser atleta de jiu-jitsu para arrecadar dinhei...",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaHpkY09VQ0hqbDhWNXJHRlpfV0ZZTElWSjNvWkhXVHV3OE9WRkRIVTZ5VkhJQ1VtbjFodFZDRkloOHFEMU9nM0JDRnpEZkZTQ182UmV3M3hxRnA1WVZ4dGVJcTE5NngtWjdvaGtrRjhRZnRTYnhjSjJqVUdsZXBaNXQweF9tRDZTam5BcXhhRlVtNTEwUW45REhOWWVjd29mcV9tcGhYRm5sMzhaVV9ZVW85dVV4QTNvd3Z6bDRJeDRzeDhJMmc?oc=5",
+        "source": "Portal Tri Notícias",
+        "published": "2026-11-14T21:54:22+00:00"
+      },
       {
         "title": "De farda e coturno: policiais lutam jiu-jitsu em arena de terra e pedras em Criciúma",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTVVTRWF3NlE4OUVaS0cxeGVXN29taDR4cGV3M1Jfalo4YUVXdm1jZlNnQzExLTEwbXgyUzZpOXNRQzl0cHRPVW54X0pZM0tWMFJuNkx5WTh6MTEtVHVPMEwtdHpvS3ZaSFJqR2NKUjM3WmxUYU5rWFE4ZHBfN1AwaG9NT1FjcmRkLVhiUUxyZFUybFhnTHh0NUJPeGNwZ1Q4S29qNjhIUnlRX0tkVXdyQ2J5elVWbGpOT0E3cEhJOA?oc=5",
         "source": "4oito",
         "published": "2026-11-14T15:50:00+00:00"
-      },
-      {
-        "title": "Grupo é suspeito de se passar por atletas de jiu-jitsu para pedir dinheiro nos semáforos",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ0tQNGQ4SFNaZ3JKNUxXbjZ5QmRZWXlSMWxObjVfRFdMY2tEckhwTXNRblJsWWhsVGRMTmZ4dkdtWXlNM0Z1dWhuY1hRQTlDbW0xU2ZEUVZtQWdPcWJicTg4SGRYWFJ3dmcxVHd2bDN6MEFtcmU3T3QwbFlJTkFLbGlBRjViaUxYSTdXRzFDa2VCdllTVEg4SDNjaUs0aG1TVm40RXpLbFF0aW00V3ZSTS1uRzdtWnBRaG1tUmlmNjNGNW1YTlhIandlbmJIbkk?oc=5",
-        "source": "Oeste Mais",
-        "published": "2026-11-14T16:16:26+00:00"
-      },
-      {
-        "title": "Atleta Ramon Rost representará Osório no Campeonato Mundial de Jiu-jitsu em Abu Dhabi",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQm5WenNXVVRlV3loX0haZFZvTXpmeTRQSjFzSkJTMklRSjZwWERIVExyY0o2cktobVZUakY3UVdoUUdHeTladllFcDJYN2hlVnYxSjZBSVZTdjZGUDhWdGNHdjZ4X1o4cmlYeHVPVlNpRUV4dlhEcVRQLUc0bWQxY3dZejlmdjhJYk13RlJnNXVnWlByNUdoNlVqSVk3RVRyTmVVVEFndGtuaWRQdzg0Mg?oc=5",
-        "source": "Jovem Pan News - Imbé FM 92,3",
-        "published": "2026-11-14T11:35:31+00:00"
       },
       {
         "title": "A Liga Alagoana de Jiu-Jitsu (LAJJ) manifestou publicamente seu repúdio às atitudes de um praticante da modalidade que se apresentava como instrutor e aparece em imagens divulgadas na imprensa aplicando técnicas de estrangulament0 em um aluno,",
@@ -28,40 +46,22 @@
         "published": "2026-11-13T19:04:16+00:00"
       },
       {
-        "title": "Santo André inaugura Arena Master gratuita no Atrium",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9tc1VLSERRc3RSOXhPSFVxYUR4cWkxN0R3MnpaQktJeGJEX3g0N0Y4alFJZUZtVGpFTWF4QWNrMElmUklITlV0eW5hZm8tTTNHZXFYRW5RUDVIY3JVbnVPVW5KamJZN01TU1RtdGt5ZGxWMVFJUGo1QTdSN0o?oc=5",
-        "source": "Portal ABC do ABC",
-        "published": "2026-11-14T15:42:50+00:00"
+        "title": "Grupo é suspeito de se passar por atletas de jiu-jitsu para pedir dinheiro nos semáforos",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ0tQNGQ4SFNaZ3JKNUxXbjZ5QmRZWXlSMWxObjVfRFdMY2tEckhwTXNRblJsWWhsVGRMTmZ4dkdtWXlNM0Z1dWhuY1hRQTlDbW0xU2ZEUVZtQWdPcWJicTg4SGRYWFJ3dmcxVHd2bDN6MEFtcmU3T3QwbFlJTkFLbGlBRjViaUxYSTdXRzFDa2VCdllTVEg4SDNjaUs0aG1TVm40RXpLbFF0aW00V3ZSTS1uRzdtWnBRaG1tUmlmNjNGNW1YTlhIandlbmJIbkk?oc=5",
+        "source": "Oeste Mais",
+        "published": "2026-11-14T16:16:26+00:00"
       },
       {
-        "title": "Liga Alagoana de Jiu-Jitsu repudia conduta de instrutor envolvido em agressões contra jovens",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNN29xazM0NVdPaXg0NElObkQyVmtEQW11NTRDZ0tZR2J5YWZweWQ5MnZBY3lmTGdFOGlua2xTNnIwaFhtY1dQcDNRZkN0aXpLZGZfeEM4S0hJR3ZPcmp4cnEzZjhLb0Q4VXYzbDB3QjJOWGltMi1iakhWQ0JlYnB4Wk5oZUpTMTNSUml2OWpjYUpDbjFKTVROeGVZRl90bVNFNHBoTmg2U21SQ1d2UEp0b09pbzA3YnpVRC1rcTQwU0UtNVhqM2NidmNBU3JTU19GVDdr?oc=5",
-        "source": "Painel Notícias",
-        "published": "2026-11-14T02:00:00+00:00"
+        "title": "Polícia detém grupo que fingia ser atleta de jiu-jitsu para arrecadar R$ 4,4 mil em Lages",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMFhBeTBQR1NTNzkxcnhXYXJOUXNIZWRWRHRMMGpBYkhqa0NOQlprUl9DSUxSUjZkUy12Snl2d0R2M1FiTUpwMktPMTFudHdBNFN0c2x0NVZZazYzU1h5b3pjUVZNbVNZT0pBYmlIUEY5a2c2SEtsQ01xSkI2blVEdFVpa0gxbzBtRmx1Mk5iUHNSWXhKblZRU1o2djJtRXJWWVJ2WlVFSEY5dktuYVVhWmxXbVhGSW9vWGdGN0NHR0FJZFJNc2VCUUh6UVZwYjdqUDFudmdB?oc=5",
+        "source": "oimagem.com.br",
+        "published": "2026-11-14T20:03:02+00:00"
       },
       {
-        "title": "Atleta de jiu-jitsu de Novo Hamburgo é bronze em Abu Dhabi e busca apoio para Mundial na Turquia",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSURya3cwZnNpYUtycEJYWVV2dUVOTVRaRHpBLURSaFVEUzhQQTlQRlNtUEx3VkhnSHZpOU9PdkpkaEhOSDR5QXdYSkNtdzB5emJ2c1JoR1BOMEFBaEJaX25ZZEtDLXVkaUt3eENyQ0ZoblkwcW5YNEd5UU04TGlfUEFOZE5DbnhpR2FwVVRwZTB1MFlZVmhjU1JDTXdPYW9ORnlzcnVsTVRINkNMdUdZOXkxVGNRWVMwaUV6aXJ2U1l0RXRVN2NKSW1TU0tPQdIB0wFBVV95cUxOcWhVbG5YR0ZQZlhTNHRKSHdXdWRka3JxMmxzN2c4LW1ETVgzNWp3Y1RRY0RRRHo4WGJSMGVEbFVLY0pqN1lZODRLYks0SHk1YW9tVUxVVjY2TkdXNGJEMzZ2VjVaNWFLbzYtOWo5QjU0S3VvNkNVbGtYR3IxTUVDWXNoZjl5S1JUaVdUTXFIRDhoaTV6eE85NUcyX0wzS1FKZ3VoSWJUYUVldmpxUmpSblF6X3dNcmZBbXhycUc3WGtzS00zbE9HUWplVkZTQ0xOMXc4?oc=5",
-        "source": "Portal Martin Behrend",
-        "published": "2026-11-13T21:47:35+00:00"
-      },
-      {
-        "title": "Ela encontrou no tatame uma nova chance e transformou sua história em um negócio que empodera outras mulheres",
-        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQSEtwMFcyTWd3RmdpVk5rNUV0bFJ2bU44SjVqWHg2OEpqZnM4WXctdXRWYUtndmJUYTloZ2QxYjZ5Z1NMbnlkTlB1dG14d0FTalRJbnZHNkhIZXZzeURWU3RybDFmOG5BWVBLNzZFWVQ4VDRObTNORENmUGhtaDRXYVhDeTRaMU4yTnNwemg3ZVd4YXpZMi1OOVZ1a2RWZnVtQnZPNk9GRHBRZWZhLU9zYXQxWWljNHhGWDVaUFk2UkM2dGdqUmJyUjNiVGgxWEFRSHQyeC1QamFrVTB6ZHBJVElrRHo?oc=5",
-        "source": "jornaltribuna.com.br",
-        "published": "2026-11-14T14:59:47+00:00"
-      },
-      {
-        "title": "Alan Lucena conquista título na 5ª Copa Centro Oeste de Jiu-Jitsu e anuncia etapa em Santo Antônio da Platina",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWXluNEZHRWNCdVBGY0JIWWZUU0kzNVlBblpmb0VQN1dIMExoTWs0RnFLZWZveUN5UHZGZkFid0RJclk2amZ2TVlSWVhxVGxKX3l2N0F1dG1fNGdBamlOck43d25PUFNmM1FjNlZ1U0ZxLUtacDJmMGRxNkFaNzV6RGRuQkkwMkZVdjRhZllQdzFXdkc4N2w0ak1sd0xTNUEzaHo3VEdST2YwbHFRVV9mUTB4ZXBwaFZJbGxfTWhPdEdkbWtKY2o0aFI3N3NjY1FiS2lIZzNnMlZCTnNranAwWGdWcjQ3MXdSbXJV?oc=5",
-        "source": "Tá No Site",
-        "published": "2026-11-13T22:12:31+00:00"
-      },
-      {
-        "title": "Federação de jiu-jitsu defende formação ética obrigatória para professores",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcVlISmRWa0JjaVlNNnprZmNSM3lhRTFQdGRKaE1kU2JVZTBvckxtbTZLZXcxZEFPVkM0cUdOcFY5cWdJU1R6LUowQjh3RFV6bm5oUUxkRXRpRUZ0M2h2cjFKbkQ1cDA0TEF6SXgwSXgtNFFGVGpxMmduUE9RcnRza3NuSkQ0c1htMXEySGVCaWt1aWdNNWRpYWU4VGN6bjY2cW15bHhxWkc2UjZJQm5fa0s3MW1UVzFiQ0FRRGY1dw?oc=5",
-        "source": "RedeTV!",
-        "published": "2026-11-13T18:30:00+00:00"
+        "title": "Homem e três adolescentes são detidos suspeitos de fingir serem atletas de jiu-jitsu para pedir dinheiro em semáforos de Lages",
+        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNZjFIR2ZFWmJsWTNHWEdFbWdEbWg5SmRZN3VpUm16Rjc3ZHFsMlBURDFMdC1uTE9jbUhnb3BON2JrcFgxSEthdkM1bXRRdERlQThOTFY0ekZkQjBpS1RzNUtocnQ3S1hIeWZ5YW9XV3JLeHozaFJfUGcwaVpDMnZtM1VKVnE3WnozTWg0VWR5LWJuR1hSdWVZWFpNb3psNEZha3EwTTIxdW1xdWpCX25CTFQ5MExRNHdOWWUtOFFyZ1JrbF9LcTVTbjJMNTJvZk1hcXlwNnc5SUNKZXp1OTAtZUd6RzJUWUNCaEd0enU1UlJOOV9ITTE0c1RiMGphaTZZN2N3N2UwQ1FxSXVraEM5THVHeGVsMUU?oc=5",
+        "source": "Diário do Iguaçu",
+        "published": "2026-11-14T19:39:00+00:00"
       }
     ],
     "Campeonatos em SP": [
@@ -90,10 +90,10 @@
         "published": "2026-10-28T20:51:28+00:00"
       },
       {
-        "title": "Hortolandense campeão paulista de jiu-jitsu comemora conquista",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS3hmSW5JeHBjUWJnQ0ZFclV4b0ExTnBfQlUyRThpYnVkZEF2bDE5TFhuOUw0aE5jQUR0THhtQ0dMTUlFODl6ZTN3cGstem1TU2F4eDBiV3R5ZFJWLW4tckRhRlNZUFd1VEtjUzhPRU41WE5sUExYWVBlYUx5TkZub3RtOVhXRHQzblI0cml5bE5qX25Ma094V1FJaGFqcW1SbmxTRjNRMGc?oc=5",
-        "source": "Tribuna Liberal",
-        "published": "2026-10-25T07:00:00+00:00"
+        "title": "Ederson Souza conquista 3º lugar no Limeira Jiu-Jitsu Ope...",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVUZnMWVZQ1YzWDhDbml0VU1PNDhMUnphNmI0RlhLRjV5YWlPX2o2Tkt4QXlkajJTSFdkb3Q0dmkyU2xCVS1laVd6TWhDRThCaFR0T2liODE5SHk4Y3pVTTkxMW54LUNRXzR0VTVKNjk1WlpFZ19vbV9YaXNtdVdMWUkwNEx2dnZMVEFFYXBrWHBVa3ExQlR6UHBGV3ZZQ1lpYzZRSGhVZ200dw?oc=5",
+        "source": "Prefeitura Municipal de Dourado",
+        "published": "2026-11-03T08:00:00+00:00"
       },
       {
         "title": "Lutador de Guarujá conquista campeonato europeu de jiu-jítsu na Itália",
@@ -108,6 +108,12 @@
         "published": "2026-10-26T07:00:00+00:00"
       },
       {
+        "title": "Sorriso participa, no domingo, do Juara Open de Jiu Jitsu",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPenR3bEFReG9MM0wyaE5hYXc4eXc2UFk5a1lVbktuNGtCN25ib3Y1dUVOV2xnNW9rem1kNzFhNk5wQm1RaFBMU2NPM3lRMWgyanVCZEZwelVzX1hUam9nMHRncndaSWpXM1cyTFNYeDJCajBkR2YwT3R1dDhjOE4xY09IcXkwTEthSnVnTG1UQTFwdkU?oc=5",
+        "source": "REDE BRASIL DE TELEVISÃO",
+        "published": "2026-11-06T14:19:16+00:00"
+      },
+      {
         "title": "Alan Lucena conquista título na 5ª Copa Centro Oeste de Jiu-Jitsu e anuncia etapa em Santo Antônio da Platina",
         "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWXluNEZHRWNCdVBGY0JIWWZUU0kzNVlBblpmb0VQN1dIMExoTWs0RnFLZWZveUN5UHZGZkFid0RJclk2amZ2TVlSWVhxVGxKX3l2N0F1dG1fNGdBamlOck43d25PUFNmM1FjNlZ1U0ZxLUtacDJmMGRxNkFaNzV6RGRuQkkwMkZVdjRhZllQdzFXdkc4N2w0ak1sd0xTNUEzaHo3VEdST2YwbHFRVV9mUTB4ZXBwaFZJbGxfTWhPdEdkbWtKY2o0aFI3N3NjY1FiS2lIZzNnMlZCTnNranAwWGdWcjQ3MXdSbXJV?oc=5",
         "source": "Tá No Site",
@@ -118,20 +124,14 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWjNTbWx5SGZpYzR5U1JHdjdzdDAya1ZaN1BQTGxLNWlMSWNwZlhPRFRha011YjdUN1hmVlREVDZReWVOWi1RZjNaVVc0XzY4bDNSZ2tVbkdIYndRb014VnY4TVJxS2xHZUpaOVdNQXlLc2E2aV93bU9nYS1JYlNQbEo2Mzhia1ROM0FCM0J5amVDS2N2Sng5VE5sQ3pSQlZOVnpvQ0tFbVAwbkYxM21fQ3Z6UFUtSF9jdEEtUXVoZ1BabndBdzJEMElzZFNaMEk?oc=5",
         "source": "Atitude Tocantins",
         "published": "2026-11-09T14:02:49+00:00"
-      },
-      {
-        "title": "Atleta de 9 anos busca apoio para representar Umuarama em mundial de jiu-jítsu",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQU1yOTZFSVNybi1JRFRwdU5zNzVSWUNnMWlESkNoUF9hSjJydFp6SFZmalpoZGVWV0FuTlVPaHJJRE1rTkpDN2E1MUZrcGFKdlhCdnItVF9IQmdkalBPTVp3Qjl6UVVLcDJkeWpjSFd1dExjb0pTNUs5dnBBX2s3ZWJDNE9xX3VYa1pqYkJKbzZlRUd0VGtESzBHRzdHZGU1OXhnNG84bw?oc=5",
-        "source": "Jornal Ilustrado",
-        "published": "2026-11-13T15:08:21+00:00"
       }
     ],
     "CBJJE, IBJJF e ADCC": [
       {
-        "title": "O que esperar do IBJJF The Crown 2026 neste domingo?",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZE1JRFhjNFlnbWJaMGkydE5MN2dWR1RSeHJnRUFJaFRGaVJtYnJXMlB5TmN6R05oeVBCbWhWUUpLamVBVHV2QXFRUlE2aTJrejNhT1B5eVFLbmtsN0tfRFJKanA0QUVyLVEwY1JGbTI4VXc2S1JyWjFjT0h0QWdKUnkwb1pPU3dQc3pOSmhvV3BxX0wxazdMY2d2akI3bTA?oc=5",
+        "title": "IBJJF The Crown 2026: Confira os resultados Ao Vivo",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY3VpVWo2NkFGbUg2RjJuTlcya2twcHdIX1NFcDNnX01EanpsT2tZeTJZRHRLRm0xYjBVNVRIYmw4c2xpYlNTZ29GS2ozb3dhWFNiWk9lSmJDcVByb2pfOFZGNjBacncxYzBsWlY1RTlZVngzOTBZcUpBdlA0aWo4cEgyRW9wQkVzVDlqeG5aaV91UG15bHpJWWFVSE54QQ?oc=5",
         "source": "FloGrappling",
-        "published": "2026-11-07T13:21:31+00:00"
+        "published": "2026-11-08T15:21:07+00:00"
       },
       {
         "title": "Sophye Vitória conquista medalha de bronze no Mundial de Jiu-Jitsu de Abu Dhabi",
@@ -152,54 +152,54 @@
         "published": "2026-11-11T18:45:23+00:00"
       },
       {
-        "title": "IBJJF The Crown 2026: Confira os resultados Ao Vivo",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOY3VpVWo2NkFGbUg2RjJuTlcya2twcHdIX1NFcDNnX01EanpsT2tZeTJZRHRLRm0xYjBVNVRIYmw4c2xpYlNTZ29GS2ozb3dhWFNiWk9lSmJDcVByb2pfOFZGNjBacncxYzBsWlY1RTlZVngzOTBZcUpBdlA0aWo4cEgyRW9wQkVzVDlqeG5aaV91UG15bHpJWWFVSE54QQ?oc=5",
-        "source": "FloGrappling",
-        "published": "2026-11-08T15:21:07+00:00"
-      },
-      {
         "title": "IBJJF divulga série de mudanças de regra para campeonatos em 2027; confira os pontos principais",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNODVCRXN4ZDVaazZlMzVpOEt4anc0WkJjdm5wN1FYQS04eHpjOVpRUDFERlNYZWUyNU1vbkhlSXZYMDFuQXgteGVpZ3B5Q3drNDNqc1FDeElfWWdXNl90TFR1ZGMtamtROG1JQ2xNQ01nczFIbEd6SFY5TFdlemh1MFg0bFBZUDE3MTB5dTNFaUI0TXI5VWFYdl9nZ2xicU0tbmZzTmFZZFhKTUVZbHl6c08tZUUtWGVTNEs3bDZ3?oc=5",
         "source": "Graciemag",
         "published": "2026-11-13T19:41:37+00:00"
+      },
+      {
+        "title": "O que esperar do IBJJF The Crown 2026 neste domingo?",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZE1JRFhjNFlnbWJaMGkydE5MN2dWR1RSeHJnRUFJaFRGaVJtYnJXMlB5TmN6R05oeVBCbWhWUUpLamVBVHV2QXFRUlE2aTJrejNhT1B5eVFLbmtsN0tfRFJKanA0QUVyLVEwY1JGbTI4VXc2S1JyWjFjT0h0QWdKUnkwb1pPU3dQc3pOSmhvV3BxX0wxazdMY2d2akI3bTA?oc=5",
+        "source": "FloGrappling",
+        "published": "2026-11-07T08:00:00+00:00"
       }
     ],
     "MMA e grappling": [
       {
-        "title": "Data UFC: informações e curiosidades sobre o UFC 334",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNVZ2Z0lQVlVTRUUwajNkM18yVE5jb3pLcEE4blZsem55SzNlWUFvOFJGeDc5Vm90YWpXeXF5bE1YUFJsVUtQSXZiQ3VwdEwyUDZzTEEyR245MzZvekttVUtKMzdUSnBKdjFMZUhMWEhTdmRfZDYyV0EzdnoyYUN6cA?oc=5",
-        "source": "UFC.com.br",
-        "published": "2026-11-14T13:41:43+00:00"
-      },
-      {
-        "title": "A volta da 'Leoa': Amanda Nunes retorna ao UFC após dois anos, descarta despedida e projeta até defesa de cinturão",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQjl3UnpHRUtnMk8zOVpaTXMzczNQMkpETTJsRmtkMWFfUHVVbTRkYUh6TzFvUGZVWVlxcjZoa3ZnZ0l1THBtcDRRa3hkeGZBZEMxTTRMN1BPMkRPcUNleUpKX2RiOWNKT2dTWDdjd2ptcU1EZ0FXNHhEV18teTQzaVpLYjlZblBtRDVDYlNORVhJUVdwM2p4dThQTllVZlc3QkpTT1RXd1lvMENiZE1OSEdXQTNTVjA0SFlBNUx3MlNienF0YUxaTTdJdWF2aUxZZG00Wm9KdGVYVm1ENWFB?oc=5",
+        "title": "Kayla Harrison faz desabafo após frustrar retorno de Amanda Nunes ao UFC e faz mistério sobre futuro",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc01GeTFZNjVnbktpRk9iRjdJMWJQTUxZVHMxRGhuaGM5QV9famVHLVgzTm8yRWYyNjZTZE5XeHZBVmh2UTlBX0k5QTJfWXRadDRBZ3RhckI0X29acnJFMktRYWtXcnFVYUJrbVJOeW9MUEhqV0g2NDB2c0VFQ3k4VmxQX3pCWVM2ZUp2dmd3U09uUFBBaC1ndEtSdVhjUEFVLVlWY0dUNm5VUUppb1NwX25FSHczcVdQTk5saUxENXl5Zl8zUDN3NXk0UnZueUE?oc=5",
         "source": "ESPN Brasil",
-        "published": "2026-11-14T13:20:00+00:00"
-      },
-      {
-        "title": "UFC: Amanda Nunes quer inspirar meninas em chance de passar Anderson Silva",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORkhqM3RLSDcwSTk1VXNoS3VzTkhyeG1PMTNYZWdFMHhiRVZkUUhudnRGX2xKOVVOaVN0MEQ3VmxDOE4xdEc1QzZaWk03dS1ydXhYZGRBMG5nVmh3RTlIUXNHWk9lT0YyX3paZ2FGTlVXbTNva3JGVmRJbG5yVXNZNEw5MktJY0xmZEc0ajQzUTVWdE9hWkZjSW1KYTNJTUZ3aHdPVDlKaUNQNVQxc1pRSUR2RWs?oc=5",
-        "source": "UOL",
-        "published": "2026-11-14T13:30:00+00:00"
+        "published": "2026-11-15T14:49:00+00:00"
       },
       {
         "title": "Conheça os lutadores brasileiros do UFC 334",
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTNHBoVGVsVml3blFBa0twX1VMTmVSUkg5UkU3NVZhQ1IzYlA3UzlRMlFsYjlnM05ueE9yRG9JUlJTWmVNRC14eUI3aVNKd2pPTWk3NUw3NnI2Q3UwdTNhNkNiUkZkUUFVbWE3OVFMWjRLS2c?oc=5",
         "source": "UFC.com.br",
-        "published": "2026-11-14T11:30:54+00:00"
+        "published": "2026-11-15T10:33:50+00:00"
       },
       {
-        "title": "Motivada por filha, Multicampeã Amanda Nunes sai de aposentadoria para aumentar legado no UFC: ‘Ganhei de todas as campeãs’",
-        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNVy1lMTM1NGdyOVZlTU1NTHZ6eTQ3eU92Tl9OSmNpd1BtZWs1clhRS1dYVGY2S2F0RDk1b21TRzRtMTlwTkNMU05CZFlmNGVpYWUzNEI1NjIzcHZySGZzODAyNnRFM3pWZ2E2YWd5Q0pldlBaUlMzT0huclYwSjFubVdQekh0dDNvR3ROWklhMkNBZmV4UlNiNGlQZVYwVnFRNXh4bXVFV1BON1Q0OTNXZ3I0MnZIV2I1c09pMEFfdlFBZUt0SlVxaUJVWmZDemF4NWNtYnd6Y3JaZkRJcVROYmxjTUlERENTbUN6Ymo1VE5tVjR6a1ZHa2dBWDBJU181Tk1kQVpyZk9HZ9IBmAJBVV95cUxOenV5RjZLUXJoM01Hc2lxNHlVRG1JMFJKOW5VX2lmckZDZC1FUTdib25BWWZUTmhNNkF5VUNqeTdhdWIxQS1ZUi13akd2clg2OC1uYXdrQmNIMV9yWng0OFVRQ3VRdm8zTWY0M2Z6bUdmaW5jYXE3UVRkU0VYdjl1VUZUbHJsdkZzUG5ja0ZvV09WdGtRcHVDal8zR1YyOXRaTjByOXZ2djR5RzNWNlozTy0wREhCb2pzZGZhS2s2T2VOdjQ3RERvWmVpdmREQXphRTlwTVg3Z1cxRHZiMHFxRDhMUk9tYklXQTd6aVNaUEtjdi1iX0lFOU5rOVBzd21FTC1GcDlFSjNrODluUTU3NkVHYmRMeWZ0?oc=5",
-        "source": "O GLOBO",
-        "published": "2026-11-14T09:00:00+00:00"
+        "title": "UFC 334: Kayla Harrison finaliza Amanda Nunes e segue campeã",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNem1JeHRFaFZvRnJtWlhsenRuOFNhNEs2LVFoVHFubllfRS1tUVYtVVU4OEVKLVVXSktOYkVxSUh1M0dEbnROZmp6YkduaG5MMlFrV1FGNkFQNlJRbmRCZG1Pb01aQzltWWZuN1FhZ1RmNDdzd1Bwa2lkNEtPX0xUTXlrdm9MajNpcmxzM1Mtc0YyMWIxNllheUNDbW5KQ0RfUVlISnlPcXc1NGwwbVkyV09uSdIBwgFBVV95cUxPdDNGakwybmMzVklzXzlmcWdFbUdrZ19BVElBR2F3MkVhZUpHN0x0cnVySkMxaE0xNmJ2WFpsd1ZWWFVEam5vcXlpcXpkeDE0d1pGSXRuaVk3bFF1NUZtVGpHTjNnaTRXQ2NKd1JScjZDV2lXT2VmQ3hvTUxaNTVxZkxtUjZFQnJ1NDZJcWxBenN6dGJnZXhkWmg3SkZ3X0VSZ2VOS084bXJiOHYzN2Z5cFc2dWNzY1RRcmxzeml2bzZ3QQ?oc=5",
+        "source": "ge",
+        "published": "2026-11-15T05:12:30+00:00"
       },
       {
-        "title": "MMA usará voto em minerais críticos para frear riscos, diz ministro Capobianco na COP31",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNkJUYWNueGZZd0tBaTJfT25UVzZtdHNhUjhWMnVGWDM0QW52dXhUaGlZUUNROHZLSm1qcVZoODZwSzdmbjlyTUpkTm16QXVhaFM2aTdqbXdtdzZxd3ZOZF95OV9MaGQ3ek9vRVhldHZvNEI2bG93Z1JKYU1BZU11NkZPM1ROLVYtSW51a3RRb00yeElLaDBtaUwyRzBlV2hpb29OTi1Ia1g0ajV1Rmc?oc=5",
-        "source": "Exame",
-        "published": "2026-11-14T15:16:07+00:00"
+        "title": "Kayla Harrison finaliza Amanda Nunes, e Brasil perde chance de feito inédito no UFC",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOXzBHYmI5WTNCaGVXYUxMQWx1ZEVEMTZHSXpwdnJBTGQ0VXI1UkJBQkVkTFZ0eDd2TWlNZ2pPVDRqamZmb0VEY3lmUGdWcFZ3ZFNabTZfcExZN09KalZwUi1tTW1hdjV0djB4dVFkLW1LaEwyaHV4RnJPWlNnQ0ZHeG1YeGdNNHJLLXBvWHBMU3NLWXFyVmtOSUVIY0lBVS1HSGY4bllnQTY1V3cyNnV1bVZIVDB0Y2pvT01CRE94UFI5SUo4cXk4dmg1RERfZzV5V2JyRUgydFFNaFZLVzNPWUZRcThWY1k4MkpETw?oc=5",
+        "source": "UOL",
+        "published": "2026-11-15T05:07:07+00:00"
+      },
+      {
+        "title": "Data UFC: informações e curiosidades sobre o UFC 334",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNVZ2Z0lQVlVTRUUwajNkM18yVE5jb3pLcEE4blZsem55SzNlWUFvOFJGeDc5Vm90YWpXeXF5bE1YUFJsVUtQSXZiQ3VwdEwyUDZzTEEyR245MzZvekttVUtKMzdUSnBKdjFMZUhMWEhTdmRfZDYyV0EzdnoyYUN6cA?oc=5",
+        "source": "UFC.com.br",
+        "published": "2026-11-15T10:55:20+00:00"
+      },
+      {
+        "title": "'Pior estratégia de todos os tempos': mundo do MMA reage após derrota de Amanda Nunes no UFC 334",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNR0lsQXF3a3VfWGFXa0VFbXg4ejNiTXd3dUQ2OGNMSkE5bGEyT2owM2NySThSeHc4akZKdTVVREoyWnJOYnRBaEl5VkNtSlJHQUF2RTJvUDlkSV9uTkV0QXVoY2dydkJiTDRwTm45dlNsWkpZRmlKWWJfWVZ4SDF4MHUyUkJOVXNtSktfZHZBR3RyRktsQkplSlVEZzdDZ21Uek5yaUVDbkhFSmdrbFIxMDdxM3VSQmdFVDF6WnJyM0dnMHUxZnpFWnN1TFlVRnlMaGZj?oc=5",
+        "source": "ESPN Brasil",
+        "published": "2026-11-15T07:29:00+00:00"
       }
     ]
   }
