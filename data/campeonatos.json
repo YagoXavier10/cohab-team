@@ -1,18 +1,6 @@
 {
- "updated": "2026-11-15T16:50:31+00:00",
+ "updated": "2026-11-16T20:02:08+00:00",
  "events": [
-  {
-   "name": "O Rei da Selva Open Gi & Nogi",
-   "first_day": "2026-11-22",
-   "last_day": "2026-11-22",
-   "city": "Belém",
-   "state": "PA",
-   "org": "FPECAM",
-   "cbjje": false,
-   "open": true,
-   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/oh2qcVufQkyV139MbMbIFnaui2U/M_JI8w../ChatGPT+Image+7+de+out.+de+2026%2C+16_54_54.png",
-   "url": "https://www.meucombate.com.br/fpecam/evento/472/informacoes/"
-  },
   {
    "name": "MUNDIAL - JUVENIL / ADULTO / MASTER - CBJJE",
    "first_day": "2026-11-26",
@@ -72,6 +60,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/XKDOFvo8KpkZBmGTkugLr1lPqyU/5pVhhA../1787256769935-WhatsApp+Image+2026-08-19+at+18.38.08.jpeg",
    "url": "https://www.meucombate.com.br/cbjje/evento/99/informacoes/"
+  },
+  {
+   "name": "O Rei da Selva Open Gi & Nogi",
+   "first_day": "2026-12-20",
+   "last_day": "2026-12-20",
+   "city": "Belém",
+   "state": "PA",
+   "org": "FPECAM",
+   "cbjje": false,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/oh2qcVufQkyV139MbMbIFnaui2U/M_JI8w../ChatGPT+Image+7+de+out.+de+2026%2C+16_54_54.png",
+   "url": "https://www.meucombate.com.br/fpecam/evento/472/informacoes/"
   },
   {
    "name": "World Trial Recife Championship 2027",
@@ -144,6 +144,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/q89nzvK4ED1fOsqNroNJya4iEqs/wzcLyA../PAN+01.jpeg",
    "url": "https://www.meucombate.com.br/fpecam/evento/480/informacoes/"
+  },
+  {
+   "name": "Evento Notis",
+   "first_day": "2027-11-10",
+   "last_day": "2027-11-10",
+   "city": "Belo Horizonte",
+   "state": "MG",
+   "org": "DERMAGEN",
+   "cbjje": false,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/YoTHLnFDyoo1KhgslahgcllzQow/d12vkg../1768246520978-7.jpg",
+   "url": "https://www.meucombate.com.br/dermagen/evento/478/informacoes/"
   }
  ]
 }
