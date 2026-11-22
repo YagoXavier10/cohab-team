@@ -1,19 +1,31 @@
 {
-  "updated_at": "2026-11-21T17:09:57+00:00",
+  "updated_at": "2026-11-22T17:38:51+00:00",
   "source": "Google News",
   "topics": {
     "Jiu-Jitsu": [
       {
-        "title": "Atleta de Içara conquista título sul-americano de Jiu-Jitsu em São Paulo",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQenNEeFhRRUljUVVKZG9iT2lmLVJvR0dmeFRJTFVuVVo1SnA5dG54cXNvRkZXSEotZWh0RWNXTEZmNk9mNU1ReUVUREZNeEZlSkpBelJ5akxPV1M2MGtIWFExZ3FpM3NodGkycHh3aUpBTHRqUFFxb3J1MTNCZFB2WVZmMENwYjZ0SWdvZXFNVzVGRGpBQmt1cktCTWFiZTJvTHFXenNTTkg3NW9tQWJHOUdBWmtmVVBLa1Rz?oc=5",
-        "source": "Canal Içara",
-        "published": "2026-11-21T11:06:00+00:00"
+        "title": "Projeto Jiu-Jitsu e Cidadania vence o UFC Ultimate Gym Upgrade",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTVBxNjBnRlNCQW4xUVQ3Ry1aRnN4Q3lfU3RXVW55bTcyMEdiWWEtUTFYa2RWbnVlTXk3UmZKRmRqZkMxQVh6RjNPakVtckkzVFR2Y1piWGthSndTcW41ZWNXT2t4Z3hlMFY2TV9MUXZZUzJxTVFGeWVPeHQzTFRwOGNVMWNlREh2QWpFMENqRQ?oc=5",
+        "source": "UFC.com.br",
+        "published": "2026-11-21T22:31:07+00:00"
+      },
+      {
+        "title": "Polícia Militar juntamente com a Equipe Brother Brazilian Jiu-Jitsu se mobilizam para arrecadação de brinquedos",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNc1E0ZVJQUkxNNkdlbHlhR2Q3azFCX2dHamhuMXpRTTEtOWdOYkwzYklZWmVhX2VESm9ac0otdDBUa1lsTnBHZzJ1dmtCdVZmSmp1SXUzNHRTc1EwUE5iNVA2REp4UHVyVnN1WHNGaktBNzhvZmJTc1JnMlhvSkFZSVZjOURaY1ducENha2h3c1dKUkJtWG9hMGZmMFRhamNJN0NfaEpKdU95V2QwQURodXdlZjEwdVZtUlY4VzE1M0FCU05lckhWdmJQZjhwTG9fbjc5UTZFTQ?oc=5",
+        "source": "Jornal S'passo",
+        "published": "2026-11-21T18:45:29+00:00"
       },
       {
         "title": "De Jaciara para o mundo: mato-grossense une jiu-jitsu, MMA e medicina em trajetória internacional",
         "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOS0JqSVdDZjlnYVRMT0Y2d0ZtWXY5aUtZOFF1YWFjVktwTDhNeXVSbUZ5NnBhRnh6clhta1NDbXlsUmpsVnhfRnRsVThYclJSVkZUcW95RVNXcVJDSC1vZUxwcmZpV3A0WkQxWmJoR0o0bkdPMzJSanNFcWFpcjNXOVI1bXpVV3JRS2dyM0RsSE5YZHhGQXViNHR2ZkV5YjVkNVA5N3dQd1pYdjZZSDVwT1RJajdEM0Zpc05mVzJrNjlkZmk2R09RdjVMWERPejJxZVpuTlVR?oc=5",
         "source": "Primeira Página",
         "published": "2026-11-20T22:08:42+00:00"
+      },
+      {
+        "title": "Atleta de Parnamirim conquista bicampeonato mundial de jiu-jítsu em Abu Dhabi",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbjlrYm9GVXFSeGFweFE4VEctSk9XbWJqT2RVclRGX1RfVlBUMjQ3eVYyVUZnaEY2Qk9GZWVwQnhJZ0RYLXA0ekJfWnk4TjFXRlRvbWZqTERBa09zTE9FS1J5WVAzMk50dGJhZHhQT2pBSEotamFwNGNjcml6ZGFYa1R1aEFjaUhMNGNtTWI1NWk1Mnc4blFPOXByLVNHSjBmN3pvQTFwZGptcDY0ekwta1hCbHN1Q3NYMVpOc2F5Vkg3dWxUSkE?oc=5",
+        "source": "Blog do Gustavo Negreiros",
+        "published": "2026-11-22T10:33:24+00:00"
       },
       {
         "title": "Justiça estende prisão de lutador de jiu-jitsu acusado de agressão e cárcere privado contra atriz",
@@ -23,45 +35,33 @@
       },
       {
         "title": "Comissão aprova proposta que declara o jiu-jitsu brasileiro como manifestação cultural",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVmhUcllRSDhWM2E0VnowdjZULWxvcE12aFBZdUxZbGNrbmFwc1AtSnpHNUxlS1RnQ3F0elo3TlBYWkNSMTM5aS1tY25wVk40bk80RHJnWk9XZHQ3SF80dXJpR0x6djFHdFd1R1dTNmltdW1LRUVtUUVaZkpoUUp5WE1CUUFRRXZWRi1vMGJQbTZONFBaVGsxcXlxeHBCejJpN1VYVnJBZ3ZlVzBETXlKWFNJeE5PSkNVdFBLdVF5c0N6VjNYeGZVTWlRS1dkU2t6SGhzdw?oc=5",
-        "source": "O Repórter Regional",
-        "published": "2026-11-20T02:41:06+00:00"
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZ2dMMTd0RDB1Q1k1Vno1dFAtb2p0VzNhdWNXNTJrV3dGdTFPRXFUdUphdzRrdDJWck9TOTNNYjVZa3BXZUwzanFTMG4yekVQVzlMbDRGSWdLa01VTHY5bEZoQUV2QXNlNEp2aS1lZEZsWmphMUp6aFNlX3VMUGotZnVSb1ZwTFJ3R0JDOUZQWmtHVkxFVTduMDhhLU50YU9tdHd2SnF1QnBTbm5qYktIQ0F2TQ?oc=5",
+        "source": "bombabomba.com.br",
+        "published": "2026-11-21T13:37:00+00:00"
       },
       {
-        "title": "Copa Prime e Copa dos Campeões terão disputas de cinturão, seminários e feira de negócios de jiu-jitsu",
-        "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQSXVaU1dCZjl1alJkd2FrSmVHc25CeUdZcGF0R1oxTlA0M3hCdDdCNzM0S3hqWjhVZFQtTkNlbUNJemctMTVqT2NzR3ZPaEdNM0JZM3dOd2tOZUdfVjZITHh4V2o3VlREZXZDTDVwN3lCU3ZZSlRkWmVMM0w1RWhxeTE2Mk9RSTdqWUN2d1M3WDZvTktZLUY1M3FJRUd1X1JRdzVNdVFMeFpzNTVJRE9GaGhKdGpxZjRja2hIZTFQdHFqMUkwRTJCbUtuTTJqVnlPVndOdWptUTdfTGtPdERoTVdrMVZad29ibU5JSm1VeE5YUFlPbUI0QdIB-AFBVV95cUxQSXVaU1dCZjl1alJkd2FrSmVHc25CeUdZcGF0R1oxTlA0M3hCdDdCNzM0S3hqWjhVZFQtTkNlbUNJemctMTVqT2NzR3ZPaEdNM0JZM3dOd2tOZUdfVjZITHh4V2o3VlREZXZDTDVwN3lCU3ZZSlRkWmVMM0w1RWhxeTE2Mk9RSTdqWUN2d1M3WDZvTktZLUY1M3FJRUd1X1JRdzVNdVFMeFpzNTVJRE9GaGhKdGpxZjRja2hIZTFQdHFqMUkwRTJCbUtuTTJqVnlPVndOdWptUTdfTGtPdERoTVdrMVZad29ibU5JSm1VeE5YUFlPbUI0QQ?oc=5",
-        "source": "Extra online",
-        "published": "2026-11-19T22:09:39+00:00"
+        "title": "Atleta de Içara conquista título sul-americano de Jiu-Jitsu em São Paulo",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQenNEeFhRRUljUVVKZG9iT2lmLVJvR0dmeFRJTFVuVVo1SnA5dG54cXNvRkZXSEotZWh0RWNXTEZmNk9mNU1ReUVUREZNeEZlSkpBelJ5akxPV1M2MGtIWFExZ3FpM3NodGkycHh3aUpBTHRqUFFxb3J1MTNCZFB2WVZmMENwYjZ0SWdvZXFNVzVGRGpBQmt1cktCTWFiZTJvTHFXenNTTkg3NW9tQWJHOUdBWmtmVVBLa1Rz?oc=5",
+        "source": "Canal Içara",
+        "published": "2026-11-21T11:06:00+00:00"
       },
       {
-        "title": "Lexcom fortalece o esporte e apoia a prática do jiu-jitsu",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMFJaUEhzNkJreUltM0JUZ20tQTRaODZnZElXUEEwU3ZDclRfOUFWZjhUYzFzZC1uMVJVamNlaTFWaDBfVHVKSEwtZDV6VWxpWUNNSHM0MzZNQlBSM2I1dVBJVkNlRFhqbzdQQTUxa09oRHJ2X1hINjlMLWd3NHhDVzdqVWZmOXhBTWJEWlVvU3dmdw?oc=5",
-        "source": "Nossa Metrópole",
-        "published": "2026-11-19T17:54:58+00:00"
+        "title": "Atriz é agredida e mantida em cárcere privado em SP por namorado advogado e lutador de jiu-jítsu",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaDY1NFcwTFRrQ2dWcEc5bnlXTEtfWFhRVExwM2V0SWZEaW1vQ3RxY3EzNjNyUThKUFdzcDhoa1JERmFrMlQwenluUEU3dno2QURlb25RbVcyZEJ2dG1KdzNZbU9KMHp5eDZsa2VHY0dmYWthb0J4Z2R4WG1LLTRDeDlFQ2hhTnJYSzMyaHl3RDV5RGYzMnBTYVpmSkFuc2RXZGJMbTBCc3BSR3Nlc1pqYnBZSWxzUUVXME1MRWxteER2TUlXQ3VLSno5Tk5ueGpXNlFGZTY5T1dzUEFs?oc=5",
+        "source": "Estadão",
+        "published": "2026-11-21T18:08:19+00:00"
       },
       {
-        "title": "Fim de semana tem vôlei, corrida e jiu-jítsu em Betim",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWDM4WmZ3V1RaQWFUWUZKdnFFbW1LaDlZcXNZQU9TbXplNFhvb21YQjBtZmE5MGN6SEMwbTB3UHBHOXZDRm9LQjIwN0kzZnhYZWJqUjlzeW1qREkzSnh2RFE0TGFqOE1hQ2hTYV9hWGJVZ0ZUbm1tZW5vZFhBWVhESENuQWNOS3JiLS1qMlRTNklwV1U5cnl4eFpMSTZTbnFCLWI1TtIBqgFBVV95cUxNR3RfRl90bjZMck1pQjFId2xRZnZUYWN3RFVNWGNEamlhRVAzZVc3U01feFh4X1dFOGFqTHMwdlJvV0c4cVRNdEwyUXFzUjB3WjVEd3BmNE1Id0xWdURvTkRac0stby1XR0pWdElHRDZDZnhFRTJUeHgwOEpqUFEzM01vSTdxOE9UNF93czB5ajFyTVdoLWh3VnNfZVNQT19pei1JRmVPVFd0UQ?oc=5",
-        "source": "O TEMPO Betim",
-        "published": "2026-11-21T13:25:36+00:00"
+        "title": "Campeonato Acreano de Jiu-Jítsu começa neste sábado com mais de 500 atletas",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcTZfQ0YwbUl1MVVNY2NYZGpDVl9zUmhfLWxoVXBCR0dueFVabkZqVTNhbVpWc1dEUkNyRmxWeXEweHNNcUItTVJXdHB6SEdwQnY4YVFIV2VvOE5QcWtSYlIwUkJQSGZwajdjYVFEWmRuRS1FWDFoOThEeEFQNGZIa3lYaHhMSXBINjBqZk1sMGNweWlzLXI4eXlwc1R0NU5UM0gtY0hQMVROQy1vRDhv?oc=5",
+        "source": "Portal Acre",
+        "published": "2026-11-21T21:53:17+00:00"
       },
       {
-        "title": "Advogado e faixa preta de jiu-jitsu é preso após espancar atriz com quem estava saindo",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbU9VeTdKZkFZQ0t5amc2eDdvY2RfYmdmU042RUxIWElpWURVY2FnQW5ENkx2UnAxbnVEdG1uWm9SYXp1eG1xT1R5a29NRWI4Tl9vcEhHUGxneksyd1R6WWZDbDdwNUZWa1dfYkw5NXBwbnlpaWpjWlZ0WjR4cEN2MjJ2OC1NdnRISDVJcVJYRTNjcE9qNTRJWEl1Nm1xckE2ZzdKUGlydUJaMHZuajhhaWg0WFpzaGZiMWRqWVlyLTZzSkhaMHR0dDk1bnVjdWRxaERzSw?oc=5",
-        "source": "R7",
-        "published": "2026-11-20T02:42:07+00:00"
-      },
-      {
-        "title": "Guaraense é destaque no jiu-jitsu",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB0am9OcmltRTBLOWhNbDljQTh5RFhBUjF3X2s4STlGc0ZTNDJ5amJJRERaaHdLNXNxQnBoWnBzSUc2aEZBWDlwR2lnYTYtNEFCYS1ySjdndFpBUDZkWU5Va0doX0JTYlhpODU2SUl3SQ?oc=5",
-        "source": "DELIO ANDRADE",
-        "published": "2026-11-20T17:04:49+00:00"
-      },
-      {
-        "title": "CCJ da Câmara dos Deputados reconhece jiu-jitsu brasileiro como cultura",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeS0wenpYWDVhc2R2dC14cW92azROakE0NHp2eEcxUmNiMFdvWHRQZ25KZjR2a19oNE4tSGZVbF9iN0lQcG5ILW5xNDJicmtLSzVyOTExa1ZFMmlkMm9TN0l0Qmc0Ukc4MzRkTzlZTFdSS1RpX2lIWHF5ME1tLWlFdDJUS09ZUDBMeVd6VzJadTVIY1dpTnhJdW1lek1teDVJSGZFZVVzbHVxVEJfSjFtbm1QWUo?oc=5",
-        "source": "Portal Sertão da Paraíba",
-        "published": "2026-11-19T19:20:00+00:00"
+        "title": "Jiu-jítsu e violência contra mulheres: alerta de Luiz Fux",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOXzJJWktnZ3lnMFI0bERSZlBTUXN2YXhjRWg0MkczZUJtTFUtaEtueWRsVmV1SV94ZXVFY2wyWlJ0SGM2VUlmSFZsd3FTSzR0WXVVcTFxamxJMGpXZkprNVRpTGQwNWdnYzdTcjhWYmZJQjJfUlhRUjlGUjFkRHE5c2dITHdYUUEzcDFTSWlyUG84VGpGbzFjZEJ1dkRvTWl1d1NWOTJkTDJLMWZxMGEw?oc=5",
+        "source": "Correio do Povo Penedo",
+        "published": "2026-11-21T18:24:03+00:00"
       }
     ],
     "Campeonatos em SP": [
@@ -78,10 +78,16 @@
         "published": "2026-11-06T17:00:51+00:00"
       },
       {
-        "title": "Sheizi Ribeiro conquista ouro e bronze no Europeu de Jiu-Jitsu na Itália",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZThLZE1Tc2tQSmxFNEhyaUdieWQ0dGxrMnAyZ05DYUJGQmJ6bTZjLXNHS0h6NkRMdW9WNWloTlJpdnVVdWVOZXR0cTNIM3hjc1VuUXpvZ0FBeDc2Zk1NNWhSOHd5SFMtTjdvdDB1T3YxRWpDXzBjYUlrblZEQkJPWGNfa2R5cFNGeExtVjZUTmNyRmJQdEg3Rkg0dHFvZDJZYTA4cTdnVEdqczBacXhsbFFaTFVFa1FYM0RsNTBR0gHMAUFVX3lxTE9ucVRlR0hLeU13VkdTSnEtUzFUODNaRGw5Sk1mb2xPbWh4cGxNMVhkS3ljUXJBb00xNkVrd19GaUVDNnhSMWpXTGl1YnpyN182ZHcxalF1b0xQbUZnLUxlRUYzNDY3d0t1MVplLXR1eEVFUHBWNHNURXh5SEliX3NRY21Ca3ZEUVFJUXRnLVBhUkFnMDNHeUgxLVFVakZjb2FoemlrLTFpMFo0MDYxZndWUlY2X3hoaFJFQmVPTm5SUlBhZWN3cHZfM3hSNQ?oc=5",
-        "source": "ge",
-        "published": "2026-11-03T08:00:00+00:00"
+        "title": "2º Campeonato de Jiu-Jitsu: Monte Alegre recebe atletas do infantil ao adulto",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOU3hXQUI1d1JVRHU0TEFMc0dyejBrd2FncmRXMWNENHBVQ0YtM2JRb2FYSjFDYndhVW1rQlpMaVZGNm1iYzFJVk9wbUl5emM3bnZ4MHdaTFZIRDY1MEpSWk5uRFBmVmowUndscjlMRFhYNjhMYnJoV2sxc2hWT0VEZS15TVdxcEtnTFNka0lYQnJKd25iM2ZadTAyd2VvdVNaWjgyeUdxV0xTZjRJekpOQ0RLeHlFeTFhc3cyV2FCZWxWclJQSEJRWnAwdkRKUUpxT0ZGN2FLX1c0eHNlVmxFOThvekVBbTBIblhBcDdTNlg3d9IBgAJBVV95cUxPLXlTbmI4RWFJRjZwd0s1cG90RDlwUFlFM0NKUDlHdFBsWVRocmFNaHJwUmRDQ1Y5ZDk4TWstX1FfeTBWMjNkclEyS2QzWGt5YkNlSU1hS3VRbzU2SmhTLUhPc3liM2taX2plN1o4d1FONHVqSXFGTWNEdWg2ZmtGTVJ6c3NSUV95YTN2eU1lUk01MTdndDRqMHFveWtWQ1F0OXkwc3RxaHJkcnJwaWtocmRnM09GQmF6U25PYjV2cTF2QzFIN3FhY3ktMno3UTBlT2hhMWZYUXBsNHdOdDhoa3MxWTl4YmdsRXU2Y1FrNHZ2elZObXdyNWVLQjRTM0xf?oc=5",
+        "source": "G1",
+        "published": "2026-11-16T12:39:34+00:00"
+      },
+      {
+        "title": "Arena Peniel leva 20 atletas à 13ª Etapa da Copa Londrina de Jiu-Jitsu e conquista 18 medalhas",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLVY4Y0RGZzlaX0VwM2tZd0FHYm9QREFpVndMTHFhMlBUWG4wLW9TSGEwdENEdFl1UjBQcHl4aGQxWmV1QlIxT21IVGhHWFNfdmd4XzltT2dyelJxbmRLcllvNTZYY0lfSllBRDF4MzEzYVBQak1LdjVLUl9hRGh4NWFQdzlsREdual9fZUNfZFlMVHhqQkZ4YXJnM0hzTGZfOTktcXZHZHZ2aEZJdTdzbmo2U21QRjQwMW9IclY4a0RlNVg3cUw5TTVjRGdMNWh1aDQ0c04xSQ?oc=5",
+        "source": "Tá No Site",
+        "published": "2026-11-09T08:00:00+00:00"
       },
       {
         "title": "Lutador de Guarujá conquista campeonato europeu de jiu-jítsu na Itália",
@@ -102,6 +108,12 @@
         "published": "2026-11-09T14:02:49+00:00"
       },
       {
+        "title": "Copa Samurai Warriors premia campeões em Vera Cruz",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE45UDBQc0h2Vm1vYlVDWWtwdk1lTkVtTXZqdnFYa1BvZFFNelFzUzVsTEFXSEpDcUZfb3ZrWVpBb3pwdlFQdExjMmlCU2k1cVZBMHJzdkYwT3VibWVRVWdMT0hTbkkyT2wxeVE4VU50dC1rRUxBRmZoSndjUUZmYWM?oc=5",
+        "source": "GAZ",
+        "published": "2026-11-18T18:51:00+00:00"
+      },
+      {
         "title": "Atleta de Içara conquista título sul-americano de Jiu-Jitsu em São Paulo",
         "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQenNEeFhRRUljUVVKZG9iT2lmLVJvR0dmeFRJTFVuVVo1SnA5dG54cXNvRkZXSEotZWh0RWNXTEZmNk9mNU1ReUVUREZNeEZlSkpBelJ5akxPV1M2MGtIWFExZ3FpM3NodGkycHh3aUpBTHRqUFFxb3J1MTNCZFB2WVZmMENwYjZ0SWdvZXFNVzVGRGpBQmt1cktCTWFiZTJvTHFXenNTTkg3NW9tQWJHOUdBWmtmVVBLa1Rz?oc=5",
         "source": "Canal Içara",
@@ -112,18 +124,6 @@
         "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT19seF91U01hOUIycWRVSmdXVXpGUWRqRk9mRGp1Y2lEMHlMazlocGlXcjliaHljblplZktoNXVSZWdvRW4xT01yRnFtVDh5V1Z5RzRhTE1yTWZLeXl0VGJwTHQ1dXBUNXd1ZkpYY1pfLXp5eThmUnZzVFBwVGhsUk04OTktWjZQc005VFA5cU5UOGkzUHRlRnBILWlSdGN1V0ZwX3RrQnUyS1BWaTdR?oc=5",
         "source": "Folha BV",
         "published": "2026-11-09T08:00:00+00:00"
-      },
-      {
-        "title": "De promessa à realidade: Davi Lucas chega ao topo do Jiu-Jitsu",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQX1BMZ29zbVZSSzlXNXBycFFwR0ZNRFNkOGt2ZEhtSlRZQ204SFBtT0UzNzVCcGhYMDJ4NGdWUkV3ZjROZXBJWWM2OHh0Nmxhb1FFLXJwdjU3SVNvWjY2cEg2WjNKZGE1YW9PX01EY3AxRlQtQTE4Zm0ycGhRZkNfdzY5bkNLNXJPcDloV0M2Vlpna0cwOU55dE1mNzNXX1VfbmtHaTFNNTgyUFZLUlV2eEs5dGFoTjg5dWtQVGg1N0Nua01vSUpJM0EtY0lDa2dnTXZOQTNn?oc=5",
-        "source": "www.correiodamanha.com.br",
-        "published": "2026-11-16T03:01:00+00:00"
-      },
-      {
-        "title": "Campeonato Interno da D32 Jiu-Jitsu fortalece o esporte e valoriza atletas em Araioses",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcGE1UlpDLTd1VThDTURDS21oVUc5VnBGemFCTFdhSjBQZ2RwTTVKR2pzUGFZcTAySEJlUzZZc2pHM3ZMazJqUnMzNDhwdUR2dldlSUhFaGtUVC0tRzhxOFRNX0R2WHBLOXBjUGhHY09YWTB5b1ZPaW1CdHZKSFJac2hzUlJISnlKOE5FX0NhRl9jajNOekFGWUNFRWdWYlNtc2hCM3c2eDZoQjM0Q0ctajN3X2xFYk9INmlSVEc4ZHViVVhsdkI0?oc=5",
-        "source": "Cidadesnanet.com",
-        "published": "2026-11-02T08:00:00+00:00"
       }
     ],
     "CBJJE, IBJJF e ADCC": [
@@ -132,6 +132,12 @@
         "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQkliM0FHa0tfVFRjOTFEV2RfQTNJUTg5akN0M3dxN05DakpKcU80bDJHSnBMWEoybGtnZ1NCZ0Y5VnRYeVFJeS1FMEM0R3U0c0lIWVBrbnN0WWxDbExOZkcwRGthWThLaGVlZU1SbENMNnRGX0lUTTcwWUxndzJBM2R4TXFFMnBOV010SVE0UC1xbW5FejJLdEktdFdVYVpHNjg3YjlKOW1ZYnotWHBHQnlrVjh6c2E3R2ZZYVhIaXFmS0Y4cnJGZw?oc=5",
         "source": "Prefeitura de Lages",
         "published": "2026-11-16T12:07:20+00:00"
+      },
+      {
+        "title": "Atleta condense Jeferson Santos apoiado por programa da prefeitura conquista título Mundial de Jiu-jitsu em Dubai",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVl9ZekxMTjVGX3ZJNmdHbWl4b0Z4MGw3UHR2SHU2T0lONTR3by1yLXhTX0Uwb25zcDUwLTZNa1BaejdmUDJpM04wcHlTZHVEMld5TERqM29xc0VrelZQNmt0OHd2SjJuTHZma3hoWlh2a3pIbjBuQzR4T2dMb0l2ampvN2Zxc0pnZlo0aDM3TG1maU1iWTlGMzNxNWhMcGt4MGQyNW93?oc=5",
+        "source": "Prefeitura de Conde - PB",
+        "published": "2026-11-18T08:00:00+00:00"
       },
       {
         "title": "Sophye Vitória conquista medalha de bronze no Mundial de Jiu-Jitsu de Abu Dhabi",
@@ -152,16 +158,10 @@
         "published": "2026-11-11T18:45:23+00:00"
       },
       {
-        "title": "ACBJJ 23: André Galvão e Rousimar Toquinho fazem revanche histórica 15 anos após final do ADCC",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYm1UMHdIaVIzbzRuSDY2S0ZJLXBuYmN5Z3FHQTdNbm00bDhxOVpSVVVKWDhpTU1wWmkwUkpMb21iT3BxSVA3a1M5Z1Z5UnZXUHJfbHRNbTZ3NVJDTWQ3RTdKWm9OZ0Jhdzg4REx4d3VTa25qaVozSHVRYmZROVRRVnQyUUpzYjNhNVFhOHJQNGM2UmlOZ1ZmLUpidGxPR0hTYjBjbnR6NWF2ZnNuVWxTYTNRMVdacnZuVW0xdg?oc=5",
+        "title": "IBJJF divulga série de mudanças de regra para campeonatos em 2027; confira os pontos principais",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNODVCRXN4ZDVaazZlMzVpOEt4anc0WkJjdm5wN1FYQS04eHpjOVpRUDFERlNYZWUyNU1vbkhlSXZYMDFuQXgteGVpZ3B5Q3drNDNqc1FDeElfWWdXNl90TFR1ZGMtamtROG1JQ2xNQ01nczFIbEd6SFY5TFdlemh1MFg0bFBZUDE3MTB5dTNFaUI0TXI5VWFYdl9nZ2xicU0tbmZzTmFZZFhKTUVZbHl6c08tZUUtWGVTNEs3bDZ3?oc=5",
         "source": "Graciemag",
-        "published": "2026-11-11T08:00:00+00:00"
-      },
-      {
-        "title": "Isaque quer levar o nome de MS ao Mundial de Jiu-Jitsu, mas precisa de ajuda para competir",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeDdLc2c0Qy16UUdfVkRfb0xWMHQ4U2xqWUtJT0V2XzhpRHRrSkpjQTQ0Q1ljYzktak1ldU10ZjczWDdzMHJZWTJ3X1dZZzE4STYwb0FjOE5yM3VwVzRwaklxdUwzaTRhUFJPb0UtMXdBLWhGZTRMckpxZlRRemlTSnZ1clVOZF9ZcjVoeXlLUHYxMlNkdkVGeTY4V1h0bEpCbWhSVEZwSGFDZw?oc=5",
-        "source": "Midiamax",
-        "published": "2026-11-14T21:57:00+00:00"
+        "published": "2026-11-13T08:00:00+00:00"
       }
     ],
     "MMA e grappling": [
@@ -169,37 +169,37 @@
         "title": "UFC Qatar: Prochazka x Stirling | Card completo, horário e onde assistir",
         "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNzliaHpPOHlpb3g2eEl6ZVNrT2lzT281cmdjSlRMYXJzaGdwTk9JVVh0djVkQkUtV0ozYjhFSGNad2lXT3FDTzJoSDdkYU1iOXREOVR4SmwxQk91akoxUE9iaWV6MGlkelNkN3JlM0lKUzYxeTgtNDBwSmJWVTBpVUxQbWpISjgxeDJoMDMxbw?oc=5",
         "source": "UFC.com.br",
-        "published": "2026-11-21T15:44:41+00:00"
+        "published": "2026-11-22T09:39:46+00:00"
       },
       {
-        "title": "UFC Fight Night: Procházka vs. Stirling Ao Vivo",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UckpiMkdxYVMxQ2IzRm1zNGVRR2IxUWgxcTY4MHBaQTVIN0xqZkxEMVNRTU9hZFQ2em5rX29zWGZrMVV3ZE1yX2lPZjZPZE1oMFQ4YkhqdkpobWJ6ellqVzZVWXdwSTdiTEJnbFA2SHo?oc=5",
-        "source": "ESPN Brasil",
-        "published": "2026-11-21T14:44:07+00:00"
+        "title": "Abalado, Prochazka se pronuncia após sofrer nocaute brutal na luta principal do UFC",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRVcyMzZhTFd4Z1pZbXc0QzBYR3p4TUk2SGtINy1tWWt6bjBJaVZqQkM3dFlXTFE2NWRPcXktS2tWckpIcnE2dlJwRS1COUFVc2xGSE4td2R6dE8tWTV1dUdZN25kZ0xKdWZlZEROZ3pJdDd1R1RObzhoT0dCZEhTNDhnaEFIbFBzSDdFb2N5NEY4OEZBRHloMEpLdHlWWVltX2ltcGpOcU11YXdDYzBMeHBPbk55bjB0amdUcEFtNDBmQ0VmUXVTaVhtZzBGOE5SVHfSAeABQVVfeXFMTmtEZlZuS1Y5MHJHUHNWY2Nkd1dVZTFneG9aS2R6SFZjREVMT1ZKeWxNd2JRYzRqa1FIQnp1UlNuRWFLR2IzMUpublZoTkNnZXNtdHljeWFVb1BJSmhNOTFvY2JPX0tHSG1manVJdm9FTFpMSS1zNzZGdEI3NHNZV1NuWG8teUpqQTFOT3AxWjEyOEh6eS0wWS1JNEhfaVNqZFdxX0tyVXN3dDZNZTRFLVlCTm1ESlNZZVRVNDNYZUlSbVpfTERCbUY5NGU2M1VfcVIzbnIyMkYtVG9JUlhXQkU?oc=5",
+        "source": "ge",
+        "published": "2026-11-22T16:40:07+00:00"
+      },
+      {
+        "title": "Polêmica? Josh Hokit sugere regra ousada para disputas de título no UFC",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVFhPVkszUkpweEpwTXJNMTl4Si11blRCWTVKMF90MU9xZnFCTnk0LVhvUkVfdldhZHkweWp0ZDlrMjlPM2FTQU1XMFZmT0xyckkxOHFwUDdJc24xZ1JLOE5ORTRGSnE1WlBJQ3I5RE5vaUJPd2xwUlN1d0d5M1ltTEl1b25DbURza1pJX3Fra3FnakxDZVJHYnZfOVl5N2E3OVl3ZlQxTVE5bnZRZjR1X0tETExfQXJXSWxfQ3VkVjg1UHhZaEVIdWNxMEM2Mk4xRDhtbExSWE9fUQ?oc=5",
+        "source": "UOL",
+        "published": "2026-11-22T10:45:00+00:00"
       },
       {
         "title": "Resultados da Pesagem | UFC Qatar: Prochazka x Stirling",
         "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xRTJDSHNjYmhrQ0NNRk4xeUxfeHlJMkV5UWFCT3pTVWdoM1NfbVlqSjlYWkRrZE5LQzVyR0N2THo3bGVCRG9CYlR6NlVqX09FNEJraDI2eUxBQ0ZxUFcxSS1sV2JoSkZnVzBER0tn?oc=5",
         "source": "UFC.com.br",
-        "published": "2026-11-21T15:17:34+00:00"
+        "published": "2026-11-22T04:52:07+00:00"
       },
       {
-        "title": "Amanda Nunes sofre derrota em retorno ao UFC e vê Kayla Harrison manter cinturão",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMGxob2JKcUpMWFlTaUV3LVNRZmxQS3FtWUxoZ2szMEo5NUw5MlFQSnBSbEFxMTRaZUR6dnBWYkpXOXBMSHR6S2lpWWJqV2JpRWNEOFZOZHJrOUFRZ3JHTW5mWC11dkN5XzNKZk05cU9Yd2ZiREkwbXhIVjJTcDVqa3F3RERVZVpLWHVYN1dyc2YyaFIwTmpBUURsTWJZMGc1bjZzaFVwOVQ4WHFEQ3FPVTBfcWhDV1hvRGM2U2xTZTZpdDBtcXAzXw?oc=5",
-        "source": "Estadão",
-        "published": "2026-11-21T08:45:57+00:00"
+        "title": "UFC Qatar termina em noite insana que teve brasileiro desfigurado e Prochazka apagado; VEJA",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE92Qm4yVUdVRmhWdjhDbU9NNXdDNDRqSU13WV9BVUI3anZfN1gySml4Z1dZR3JWZEUwa252eUdpZEN0aFhNRkZ4M3VFd3NRY3lyakNCTEE0dllKNW50WWc?oc=5",
+        "source": "ESPN Brasil",
+        "published": "2026-11-21T21:22:58+00:00"
       },
       {
-        "title": "BKFC tem hematoma gigante, vitória de brasileiro e estreia com nocaute de ex-UFC",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOVRFd0RXTE5oQWFnTlF6d3dwM0U3QjEtdTkwNmo2UWloRC0wSjFMLWRyUWpEM0I5UWNGc1ViZDlqN0UyaHdEa0RBc1Rpc2Vkd05EOHpZNVRBdVRTbHFueWdmeTkzMm1nUW5hTXdFemF4RDAtb0wyLXBpNjFiZzZkX1hfT18tMzNwbkhOc2tpUVZ6c0JBS2xHcWFXOHAtVlFzUHFHMXkyemVIUXZFMER5QlpMRDdkYU5SQVJQcUhCdERTeG4tSGtuX0J4VWRZUdIB3AFBVV95cUxOR1dWWmJiVkR6bTBPeFNtVXI3blIwNmxjT1IzT05nV2xsU1JCWmFhQ2hodjktUkxmZmdPd3Y3UjZfMEs5X05FTF9Ca0IwdU4yd0JXZHF1ZmE3eUtncFBqWTBCSFZQZ2FNUEdnQU5sNmNQVnctOFpBT0J6YWJubUZ5TlByX0JVdWtjaWFOSENjYkxzNTJJWWthWGRpM1F1MkhyS19qOGNHTjk4elhoQ2RzN1hvaTJLSXBNWmd6NEpyMWN6MkQ1QU5iUDk3UnJmOTdRNmcwVWdsRlp5WmZ0?oc=5",
-        "source": "ge",
-        "published": "2026-11-21T12:46:43+00:00"
-      },
-      {
-        "title": "Presidente do UFC monta 'card dos sonhos' e luta entre Alex Poatan e Josh Hokit",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSzRkNFlkZHp2WS1FYlNIVlZXUTZSNVJYVi0yTmRBTUlNSENNY1VtU0ZhdXJCcGVLemMzV0l1UWxuMDE3bWJRWjJyWGNkb3c0ZDVZWUZyUDBNUmZWVUhDQlc0S2d5cm1ZRlpOckVRd1Rzc3lOaFEySnFQT0lQazc3bjNKS0UzOVY5SlE5U0FFTWI0d2FiOWVhQktCRFpzV21UcGMzbVA5MkltRGQtV0tOOEx6aFYxdTh4UTVIWFhySUg2WV85YUNFRnhPSVRUbWRw0gHWAUFVX3lxTFA1czdfMUVDdFVsYVlIeWZta211aHl2VmQydjBESmlTajJrVXhmYmw3UnNETFpKUk96TXRoOEh1bHJOQWlpRkhHaG1LbGo1bENuY0EzU3VvTGJtZFhoblB3NENqeDNtY1M0Vl9pOHlrOVVzcTRLMXpEbmRsdVBlbmhGZERfWFFsdDhJc3B6YXBtWWJ4c3M0dmZ6NnE0VFR1UUFiZ1FOSXdkcUxHeFBoYm5FRmsyeFVkTVV0TVhSLUxlRmQ0Y1ZXdXBXZV9PeEpQVXlmWjZGNUE?oc=5",
-        "source": "O Dia",
-        "published": "2026-11-21T15:00:00+00:00"
+        "title": "Cogumelo pode ser aliado contra úlcera gástrica, indica estudo da UFC",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQjRGTjZDYlBRT2I0OHVka19tUUhYektxZkk1UVlkYThtajVjU3k5cEVFZ0RqcDZpUnVXOGhLbHBmeW1xVkFCQTAzcTJkNDdmR01qYkdnQ1pXLThETXdRRWk3LW5FOGNHb1oweTZQMW96bnhUMDljZkp2RFZPME5KeUlreWFNTHFFMkpKcFJySHo4UjNlUEJ5bVdqSU1hUEVTdVVGWEZMOHVBaHc1ai11eG9IUm5ZT05TTzFEYTlLYnBEWTJXVnF3?oc=5",
+        "source": "Diário do Nordeste",
+        "published": "2026-11-22T14:09:00+00:00"
       }
     ]
   }
