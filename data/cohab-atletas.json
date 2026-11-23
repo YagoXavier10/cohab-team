@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "cbjje": [
   {
    "year": 2026,
@@ -10157,17 +10157,6 @@
   {
    "year": 2025,
    "place": 1,
-   "event": "Sul-Americano de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 2 / Roxa / Meio-Pesado",
-   "athlete": "Fernando Costa de Oliveira",
-   "kids": false,
-   "alone": true,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1409/1"
-  },
-  {
-   "year": 2025,
-   "place": 1,
    "event": "BJJ Internacional CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 2 / Roxa / Pesado",
@@ -10179,12 +10168,12 @@
   {
    "year": 2025,
    "place": 1,
-   "event": "Pan-Americano CBJJE - Juvenil, Adulto e Master",
+   "event": "Sul-Americano de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 2 / Roxa / Meio-Pesado",
    "athlete": "Fernando Costa de Oliveira",
    "kids": false,
-   "alone": false,
+   "alone": true,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1409/1"
   },
   {
@@ -10196,6 +10185,17 @@
    "athlete": "Fernando Costa de Oliveira",
    "kids": false,
    "alone": true,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1409/1"
+  },
+  {
+   "year": 2025,
+   "place": 1,
+   "event": "Pan-Americano CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 2 / Roxa / Meio-Pesado",
+   "athlete": "Fernando Costa de Oliveira",
+   "kids": false,
+   "alone": false,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1409/1"
   },
   {
@@ -11642,9 +11642,9 @@
   {
    "year": 2025,
    "place": 1,
-   "event": "Sul-Americano de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "BJJ Internacional CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Super-Pesado",
+   "cat": "Masculino / Master 5 / Preta / Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -11653,9 +11653,9 @@
   {
    "year": 2025,
    "place": 1,
-   "event": "BJJ Internacional CBJJE - Juvenil, Adulto e Master",
+   "event": "Sul-Americano de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Pesado",
+   "cat": "Masculino / Master 5 / Preta / Super-Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -14194,7 +14194,7 @@
   {
    "year": 2025,
    "place": 2,
-   "event": "Festival de Verão de Jiu-Jitsu CBJJE",
+   "event": "BJJ Paulista GI e No GI CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Adulto / Roxa / Meio-Pesado",
    "athlete": "Maia Macarena Mansilla",
@@ -14205,7 +14205,7 @@
   {
    "year": 2025,
    "place": 2,
-   "event": "BJJ Paulista GI e No GI CBJJE",
+   "event": "Festival de Verão de Jiu-Jitsu CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Adulto / Roxa / Meio-Pesado",
    "athlete": "Maia Macarena Mansilla",
@@ -16834,6 +16834,17 @@
   {
    "year": 2024,
    "place": 1,
+   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Feminino / Master 3 / Marrom / Médio",
+   "athlete": "Antonia Cynthia dos Reis Souza",
+   "kids": false,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
+  },
+  {
+   "year": 2024,
+   "place": 1,
    "event": "BJJ Nacional CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Master 3 / Marrom / Médio",
@@ -16851,17 +16862,6 @@
    "athlete": "Antonia Cynthia dos Reis Souza",
    "kids": false,
    "alone": true,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
-  },
-  {
-   "year": 2024,
-   "place": 1,
-   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
-   "circuit": "CBJJE / FESP",
-   "cat": "Feminino / Master 3 / Marrom / Médio",
-   "athlete": "Antonia Cynthia dos Reis Souza",
-   "kids": false,
-   "alone": false,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
   },
   {
@@ -17582,7 +17582,7 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "Mundial Kids CBJJE",
+   "event": "Internacional São Paulo Open CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infanto-Juvenil B / Branca / Pesado",
    "athlete": "G. Meneses",
@@ -17593,7 +17593,7 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "Internacional São Paulo Open CBJJE",
+   "event": "Mundial Kids CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infanto-Juvenil B / Branca / Pesado",
    "athlete": "G. Meneses",
@@ -17780,9 +17780,9 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "Internacional São Paulo Open CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Adulto / Azul / Pesado",
+   "cat": "Masculino / Adulto / Azul / Super-Pesado",
    "athlete": "Guilherme Silva Souza",
    "kids": false,
    "alone": false,
@@ -17791,9 +17791,9 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "Internacional São Paulo Open CBJJE",
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Adulto / Azul / Super-Pesado",
+   "cat": "Masculino / Adulto / Azul / Pesado",
    "athlete": "Guilherme Silva Souza",
    "kids": false,
    "alone": false,
@@ -18055,6 +18055,17 @@
   {
    "year": 2024,
    "place": 1,
+   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 4 / Marrom / Leve",
+   "athlete": "Jose Luciano Carvalho da Conceicao",
+   "kids": false,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
+  },
+  {
+   "year": 2024,
+   "place": 1,
    "event": "BJJ Nacional CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 3 / Marrom / Leve",
@@ -18067,17 +18078,6 @@
    "year": 2024,
    "place": 1,
    "event": "Internacional São Paulo Open CBJJE",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Marrom / Leve",
-   "athlete": "Jose Luciano Carvalho da Conceicao",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
-  },
-  {
-   "year": 2024,
-   "place": 1,
-   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 4 / Marrom / Leve",
    "athlete": "Jose Luciano Carvalho da Conceicao",
@@ -18539,7 +18539,18 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "BJJ Paulista GI e No GI",
+   "event": "Internacional São Paulo Open CBJJE",
+   "circuit": "CBJJE / FESP",
+   "cat": "Feminino / Infanto-Juvenil B / Laranja / Médio",
+   "athlete": "M. Souza",
+   "kids": true,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
+  },
+  {
+   "year": 2024,
+   "place": 1,
+   "event": "Brasileiro Kids - CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infanto-Juvenil B / Laranja / Médio",
    "athlete": "M. Souza",
@@ -18572,18 +18583,7 @@
   {
    "year": 2024,
    "place": 1,
-   "event": "Internacional São Paulo Open CBJJE",
-   "circuit": "CBJJE / FESP",
-   "cat": "Feminino / Infanto-Juvenil B / Laranja / Médio",
-   "athlete": "M. Souza",
-   "kids": true,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
-  },
-  {
-   "year": 2024,
-   "place": 1,
-   "event": "Brasileiro Kids - CBJJE",
+   "event": "BJJ Paulista GI e No GI",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infanto-Juvenil B / Laranja / Médio",
    "athlete": "M. Souza",
@@ -18627,6 +18627,17 @@
   {
    "year": 2024,
    "place": 1,
+   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 5 / Preta / Meio-Pesado",
+   "athlete": "Marcelo Goncalves da Silva",
+   "kids": false,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
+  },
+  {
+   "year": 2024,
+   "place": 1,
    "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 5 / Preta / Pesado",
@@ -18652,17 +18663,6 @@
    "event": "BJJ Paulista GI e No GI",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
-   "athlete": "Marcelo Goncalves da Silva",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/1067/1"
-  },
-  {
-   "year": 2024,
-   "place": 1,
-   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Meio-Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -19837,7 +19837,7 @@
   {
    "year": 2024,
    "place": 2,
-   "event": "Mundial Kids CBJJE",
+   "event": "Internacional São Paulo Open CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infantil B / Cinza/Amarela / Médio",
    "athlete": "E. Mizukami",
@@ -19848,7 +19848,7 @@
   {
    "year": 2024,
    "place": 2,
-   "event": "Internacional São Paulo Open CBJJE",
+   "event": "Mundial Kids CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Infantil B / Cinza/Amarela / Médio",
    "athlete": "E. Mizukami",
@@ -22455,7 +22455,7 @@
   {
    "year": 2024,
    "place": 3,
-   "event": "BJJ Nacional CBJJE",
+   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Adulto / Roxa / Leve",
    "athlete": "Maryana Reis Souza",
@@ -22466,7 +22466,7 @@
   {
    "year": 2024,
    "place": 3,
-   "event": "Mundial de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "BJJ Nacional CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Adulto / Roxa / Leve",
    "athlete": "Maryana Reis Souza",
@@ -23247,6 +23247,17 @@
   {
    "year": 2023,
    "place": 1,
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 3+4 NoGi / Preta / Leve",
+   "athlete": "Edevair Roni da Silva",
+   "kids": false,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/850/1"
+  },
+  {
+   "year": 2023,
+   "place": 1,
    "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 3+4 NoGi / Preta / Leve",
@@ -23261,17 +23272,6 @@
    "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 3+4 Abs Cruzador NoGi / Preta / Absoluto Cruzador",
-   "athlete": "Edevair Roni da Silva",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/850/1"
-  },
-  {
-   "year": 2023,
-   "place": 1,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3+4 NoGi / Preta / Leve",
    "athlete": "Edevair Roni da Silva",
    "kids": false,
    "alone": false,
@@ -23731,7 +23731,7 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Mundial Juvenil, Adulto e Master CBJJE",
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Juvenil / Branca / Pesadíssimo",
    "athlete": "Larissa Leniel Goncalves Carvalho Silva",
@@ -23742,7 +23742,7 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "Mundial Juvenil, Adulto e Master CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Feminino / Juvenil / Branca / Pesadíssimo",
    "athlete": "Larissa Leniel Goncalves Carvalho Silva",
@@ -23940,9 +23940,9 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Internacional Taça São Paulo - CBJJE",
+   "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
+   "cat": "Masculino / Master 5 / Preta / Médio",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -23951,12 +23951,12 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "BJJ Paulista GI e No GI",
+   "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Médio",
+   "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
-   "alone": true,
+   "alone": false,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
   },
   {
@@ -23973,20 +23973,9 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Pan-Americano CBJJE",
+   "event": "Internacional Taça São Paulo - CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
-   "athlete": "Marcelo Goncalves da Silva",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
-  },
-  {
-   "year": 2023,
-   "place": 1,
-   "event": "Pan-Americano CBJJE",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Meio-Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -24017,9 +24006,9 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Sul-Americano GI e NoGi CBJJE",
+   "event": "Pan-Americano CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5 / Preta / Médio",
+   "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -24028,12 +24017,23 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Sul-Americano GI e NoGi CBJJE",
+   "event": "Pan-Americano CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 5+6 Abs / Preta / Absoluto",
+   "cat": "Masculino / Master 5 / Preta / Meio-Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
+  },
+  {
+   "year": 2023,
+   "place": 1,
+   "event": "BJJ Paulista GI e No GI",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 5 / Preta / Médio",
+   "athlete": "Marcelo Goncalves da Silva",
+   "kids": false,
+   "alone": true,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
   },
   {
@@ -24061,7 +24061,7 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Pan-Americano CBJJE",
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Adulto NoGi / Roxa / Meio-Pesado",
    "athlete": "Martin Ortega",
@@ -24072,7 +24072,7 @@
   {
    "year": 2023,
    "place": 1,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "Pan-Americano CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Adulto NoGi / Roxa / Meio-Pesado",
    "athlete": "Martin Ortega",
@@ -25095,6 +25095,17 @@
   {
    "year": 2023,
    "place": 2,
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 4 / Branca / Meio-Pesado",
+   "athlete": "Roberto Ferreira Junior",
+   "kids": false,
+   "alone": false,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
+  },
+  {
+   "year": 2023,
+   "place": 2,
    "event": "BJJ Internacional - CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 3 / Branca / Meio-Pesado",
@@ -25107,17 +25118,6 @@
    "year": 2023,
    "place": 2,
    "event": "Internacional São Paulo Open Sports CBJJE",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Branca / Meio-Pesado",
-   "athlete": "Roberto Ferreira Junior",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/849/1"
-  },
-  {
-   "year": 2023,
-   "place": 2,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 4 / Branca / Meio-Pesado",
    "athlete": "Roberto Ferreira Junior",
@@ -25678,9 +25678,9 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Pan-Americano CBJJE",
+   "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Mirim / Cinza/Amarela / Meio-Pesado",
+   "cat": "Masculino / Mirim / Cinza/Amarela / Médio",
    "athlete": "H. Silva",
    "kids": true,
    "alone": false,
@@ -25689,9 +25689,9 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Sul-Americano GI e NoGi CBJJE",
+   "event": "Pan-Americano CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Mirim / Cinza/Amarela / Médio",
+   "cat": "Masculino / Mirim / Cinza/Amarela / Meio-Pesado",
    "athlete": "H. Silva",
    "kids": true,
    "alone": false,
@@ -25865,7 +25865,7 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Mundial Juvenil, Adulto e Master CBJJE",
+   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 4 / Branca / Pesado",
    "athlete": "Kleber Barbosa Fernandes",
@@ -25876,7 +25876,7 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Brasileiro de Jiu-Jitsu CBJJE - Juvenil, Adulto e Master",
+   "event": "Mundial Juvenil, Adulto e Master CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 4 / Branca / Pesado",
    "athlete": "Kleber Barbosa Fernandes",
@@ -26030,9 +26030,9 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Internacional Taça São Paulo - CBJJE",
+   "event": "Mundial Juvenil, Adulto e Master CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Adulto Abs / Marrom / Absoluto",
+   "cat": "Masculino / Master 3 / Marrom / Pesadíssimo",
    "athlete": "Marcos Fernando da Conceicao Ferreira",
    "kids": false,
    "alone": false,
@@ -26041,9 +26041,9 @@
   {
    "year": 2023,
    "place": 3,
-   "event": "Mundial Juvenil, Adulto e Master CBJJE",
+   "event": "Internacional Taça São Paulo - CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3 / Marrom / Pesadíssimo",
+   "cat": "Masculino / Adulto Abs / Marrom / Absoluto",
    "athlete": "Marcos Fernando da Conceicao Ferreira",
    "kids": false,
    "alone": false,
@@ -26492,9 +26492,9 @@
   {
    "year": 2022,
    "place": 1,
-   "event": "Pan-Americano Jiu-Jitsu Esportivo",
+   "event": "Final Estadual FESP",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Mirim / Branca / Pluma",
+   "cat": "Masculino / Mirim / Branca / Leve",
    "athlete": "L. Santos",
    "kids": true,
    "alone": false,
@@ -26503,9 +26503,9 @@
   {
    "year": 2022,
    "place": 1,
-   "event": "Final Estadual FESP",
+   "event": "Pan-Americano Jiu-Jitsu Esportivo",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Mirim / Branca / Leve",
+   "cat": "Masculino / Mirim / Branca / Pluma",
    "athlete": "L. Santos",
    "kids": true,
    "alone": false,
@@ -26536,20 +26536,9 @@
   {
    "year": 2022,
    "place": 1,
-   "event": "Pan-Americano Jiu-Jitsu Esportivo",
+   "event": "Final Estadual FESP",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Preta / Pesado",
-   "athlete": "Marcelo Goncalves da Silva",
-   "kids": false,
-   "alone": false,
-   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/628/1"
-  },
-  {
-   "year": 2022,
-   "place": 1,
-   "event": "Sul-Americano GI e NoGi CBJJE",
-   "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Preta / Médio",
+   "cat": "Masculino / Master 4 / Preta / Meio-Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": true,
@@ -26569,9 +26558,20 @@
   {
    "year": 2022,
    "place": 1,
-   "event": "BJJ Paulista GI e No GI",
+   "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
    "cat": "Masculino / Master 4 / Preta / Médio",
+   "athlete": "Marcelo Goncalves da Silva",
+   "kids": false,
+   "alone": true,
+   "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/628/1"
+  },
+  {
+   "year": 2022,
+   "place": 1,
+   "event": "Pan-Americano Jiu-Jitsu Esportivo",
+   "circuit": "CBJJE / FESP",
+   "cat": "Masculino / Master 4 / Preta / Pesado",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -26580,12 +26580,12 @@
   {
    "year": 2022,
    "place": 1,
-   "event": "Final Estadual FESP",
+   "event": "BJJ Paulista GI e No GI",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Preta / Meio-Pesado",
+   "cat": "Masculino / Master 4 / Preta / Médio",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
-   "alone": true,
+   "alone": false,
    "url": "https://soucompetidor.com.br/pt-br/ranking/ranking-idade/628/1"
   },
   {
@@ -26866,9 +26866,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "Mundial de Jiu-Jitsu Esportivo",
+   "event": "Campeonato Brasileiro de Jiu-Jitsu Esportivo",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3+4 Abs / Marrom / Absoluto",
+   "cat": "Masculino / Master 3 / Marrom / Pesadíssimo",
    "athlete": "Fabio Anderson Pavarini",
    "kids": false,
    "alone": false,
@@ -26877,9 +26877,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "Campeonato Brasileiro de Jiu-Jitsu Esportivo",
+   "event": "Mundial de Jiu-Jitsu Esportivo",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3 / Marrom / Pesadíssimo",
+   "cat": "Masculino / Master 3+4 Abs / Marrom / Absoluto",
    "athlete": "Fabio Anderson Pavarini",
    "kids": false,
    "alone": false,
@@ -26943,9 +26943,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "Internacional Taça São Paulo CBJJE",
+   "event": "Final Estadual FESP",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 4 / Preta / Médio",
+   "cat": "Masculino / Master 3+4 Abs / Preta / Absoluto",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -26965,9 +26965,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "Final Estadual FESP",
+   "event": "Internacional Taça São Paulo CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3+4 Abs / Preta / Absoluto",
+   "cat": "Masculino / Master 4 / Preta / Médio",
    "athlete": "Marcelo Goncalves da Silva",
    "kids": false,
    "alone": false,
@@ -27042,9 +27042,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "São Paulo Open",
+   "event": "BJJ Internacional - CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 1 / Preta / Pesadíssimo",
+   "cat": "Masculino / Master 3 / Preta / Pesadíssimo",
    "athlete": "Stefan Chinem",
    "kids": false,
    "alone": false,
@@ -27053,9 +27053,9 @@
   {
    "year": 2022,
    "place": 3,
-   "event": "BJJ Internacional - CBJJE",
+   "event": "São Paulo Open",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Master 3 / Preta / Pesadíssimo",
+   "cat": "Masculino / Master 1 / Preta / Pesadíssimo",
    "athlete": "Stefan Chinem",
    "kids": false,
    "alone": false,
@@ -27119,9 +27119,9 @@
   {
    "year": 2021,
    "place": 1,
-   "event": "BJJ Região Campinas GI",
+   "event": "Mundial NoGi Natural Submission Fight",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Infanto-juvenil a / Laranja+verde / Pesado",
+   "cat": "Masculino / Infanto-Juvenil a NoGi / Laranja+verde / Pesado",
    "athlete": "E. Sangali",
    "kids": true,
    "alone": true,
@@ -27130,9 +27130,9 @@
   {
    "year": 2021,
    "place": 1,
-   "event": "Mundial NoGi Natural Submission Fight",
+   "event": "BJJ Região Campinas GI",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Infanto-Juvenil a NoGi / Laranja+verde / Pesado",
+   "cat": "Masculino / Infanto-juvenil a / Laranja+verde / Pesado",
    "athlete": "E. Sangali",
    "kids": true,
    "alone": true,
@@ -27713,9 +27713,9 @@
   {
    "year": 2020,
    "place": 1,
-   "event": "BJJ Paulista GI e No GI",
+   "event": "Sul-Americano GI e NoGi CBJJE",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Infanto-Juvenil a / Laranja+verde / Meio-Pesado",
+   "cat": "Masculino / Infanto-Juvenil a / Laranja+verde / Super-Pesado",
    "athlete": "E. Sangali",
    "kids": true,
    "alone": false,
@@ -27724,9 +27724,9 @@
   {
    "year": 2020,
    "place": 1,
-   "event": "Sul-Americano GI e NoGi CBJJE",
+   "event": "BJJ Paulista GI e No GI",
    "circuit": "CBJJE / FESP",
-   "cat": "Masculino / Infanto-Juvenil a / Laranja+verde / Super-Pesado",
+   "cat": "Masculino / Infanto-Juvenil a / Laranja+verde / Meio-Pesado",
    "athlete": "E. Sangali",
    "kids": true,
    "alone": false,
