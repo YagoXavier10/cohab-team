@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T21:55:23+00:00",
+ "updated": "2026-11-24T20:30:37+00:00",
  "events": [
   {
    "name": "MUNDIAL - JUVENIL / ADULTO / MASTER - CBJJE",
@@ -156,6 +156,18 @@
    "open": true,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/YoTHLnFDyoo1KhgslahgcllzQow/d12vkg../1768246520978-7.jpg",
    "url": "https://www.meucombate.com.br/dermagen/evento/478/informacoes/"
+  },
+  {
+   "name": "Evento Não Filiado 12/01",
+   "first_day": "2027-11-10",
+   "last_day": "2027-11-10",
+   "city": "Belo Horizonte",
+   "state": "MG",
+   "org": "DERMAGEN",
+   "cbjje": false,
+   "open": true,
+   "banner": "https://api.meucombate.com.br/vault/kFusmTbI/lU7dp6vAVmfm_OuFbchovUUFQgA/10u0rg../1768246343517-2.png",
+   "url": "https://www.meucombate.com.br/dermagen/evento/53/informacoes/"
   }
  ]
 }
