@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T20:30:37+00:00",
+ "updated": "2026-11-25T19:47:59+00:00",
  "events": [
   {
    "name": "MUNDIAL - JUVENIL / ADULTO / MASTER - CBJJE",
@@ -9,7 +9,7 @@
    "state": "SP",
    "org": "CBJJE",
    "cbjje": true,
-   "open": true,
+   "open": false,
    "banner": "https://api.meucombate.com.br/vault/kFusmTbI/DD0maXRyQgcf28CBRt2iBVDUgAE/ykunUQ../1784301526229-image+15943.webp",
    "url": "https://www.meucombate.com.br/cbjje/evento/95/informacoes/"
   },
