@@ -1,8 +1,44 @@
 {
-  "updated_at": "2026-11-26T19:26:22+00:00",
+  "updated_at": "2026-11-27T19:22:31+00:00",
   "source": "Google News",
   "topics": {
     "Jiu-Jitsu": [
+      {
+        "title": "Professor de jiu-jitsu suspeito de estuprar e ameaçar ex-namorada continuará preso",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRFJOOWNDUXNnYURHcEtnMmh4aTZWWDJ5Ymxha3RCM2JqZ3h2eG13VFJvd3RzQWpibHZVRC1vazZQWnVoVm9rOV9xUF9pZzJWeUFxRDhFeWs0UXF1Y1Bzc3NZRWVoZ1NySXk4SFdwX2xQaEVaM0s5QUExYVBTZkhMRFhNbEhGTm1wVWlUWVlMUElrWFo4YWV2bEZBbFktbjJ4cHlGdHBEWWJ4LVNqY0lQT05mS1lpcElNb2Fndi0td1lCYzdNY1FyRGNLMA?oc=5",
+        "source": "Portal TJMG",
+        "published": "2026-11-27T16:27:30+00:00"
+      },
+      {
+        "title": "Campeonato de jiu-jitsu reúne mais de 870 atletas em Brasília neste domingo (29)",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORXN6R3h0UmpOQXB2V1haT01DY1Q3UVBpcW5BSGpGOFkzLXRtWlNXRkVnbFhCckw4eFlHaWNUWEV1S0p1bjRsTmxVc3c3YnY5NWRUSDFGNkktUEVQV2JJdHZZWGJhd2lZWnR2YjY2TWRNbHBWSktlODZOVTd5Z0hiWVVpU1NacDdMVUhhTUJFc0JDVEFSamtESXBsTklLY29TRmFpZ0pIVWdRSGhvYldjcFc4VEZhYjQ0?oc=5",
+        "source": "Visite Brasília",
+        "published": "2026-11-27T16:58:29+00:00"
+      },
+      {
+        "title": "Carina Santi transforma jiu-jitsu em negócio de defesa pessoal feminina",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYk1OeE9BNWtpRVBwbjNyX09janB6LXVWbmMxV1lHQlVvU3lRVjZoS0NBSTUyMkQ2akdzUHJPSGVsWE1ETnBPajdPdXZJTWdUbHlhODFOTzJ4QlFKaEhzNUxfU1ozVjZpSTl3NVdRQUxhT29nejByb250czYybEVwOWFPMEVOaURtR2Mw?oc=5",
+        "source": "Times Brasil | CNBC",
+        "published": "2026-11-27T19:10:00+00:00"
+      },
+      {
+        "title": "Veja o que se sabe sobre o caso do professor de jiu-jitsu preso suspeito de estuprar e ameaçar a ex em BH",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQbjhoUVl1aTBWSExTSHBkTFdwTmNJaFhLM2o2SG5KTENUN3daa2dtMk4wQzhfQTlRX211MUhWeVMtcmRRMGFZdi1XdnBGZWZkZU8yY25TQ1Q3TkQ1ZlM1RElRUFZuM0ZqUFVRWFNsSURZWUx6MEh6SWZKUzVwY3pmT21SMUo3aU14X3M5dWR6bnBqaW41bEdCVTBEb3ZoSUJCUG14T1Rhb3FmUWtTYVRyZTkxZkdWZ1A0X0lTeWhKYVZyX3JxUVExVFVSeXFQM0RfNU9HVm9vaFJJZFZLRFlYZ0ZOdFlNUkFxMVpwb24yMjluYTdHZ013dERWMNIBigJBVV95cUxOUXVIT0xtRS1UbkJEUWRwVjlfb29TTGpaUE5qTWNPZC1ZMDVUeklnZk9NR043cFRsVXJHTE56dUdmVHVRVFlrNno4ZUxrLUlrNjZiV2lRWkhHU3Q2d3ZVR1dITmhCT3FfcTNwTzRJcG5vSWlSQWIzNlBNSm83SE1nc1g4WXJpWHFJWmItRmVzMGZlSE1tME5GandWcXJnM2dWZWUxbmMyOGxPN1pGaGVTTW8tSHo4cl9Pa0RMNWYwUWcxLWFoSmg0OFdyck5DMTJfN0ZRVkdGVks0alJHZXRqNERTbldmVlJBeWRET09TOUxnMWYxUUV0TUpLUzBfWGFHSFNkMEpodHJidw?oc=5",
+        "source": "G1",
+        "published": "2026-11-27T07:00:01+00:00"
+      },
+      {
+        "title": "Projeto Diego Lemos Superação conquista 18 medalhas na Copa Sul de Jiu-Jitsu em Pelotas",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQnk5TGZiUWZqY2Q3dkhmeVh2NGN2eHlWTm4yZU13Z21BQXg4VVRlbkZQNGpDdlZ5ZjlSZW44RUN1WTVrcUVjWTVxYnV3QWJGQWQwOUxfMlpOOEtRdVlqWFg4NHZzMDVjbGVOT1BYdDVfd1lWN2pYZUNjSVpEQU1vMUV5M3dxQm81VXNRc2FLcjBkdnQwQjNqWndhRUtUSmNCRGlVX1E4VmR4bWJSU0JjVjJFR2Zrb1F4RGxydVJyeXNyYkFTZnpzVFZZS2Z6SkNaUGc?oc=5",
+        "source": "Jornal Tradição Regional",
+        "published": "2026-11-27T14:10:21+00:00"
+      },
+      {
+        "title": "PMDF LANÇA OPEN DE JIU-JITSU E COMANDANTE-GERAL É GRADUADO À FAIXA PRETA",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBEMGw1cnpMSE0zenNLdnFtSFByRVlrU3ZVcVNjLVpsWkRRMU85SEdFWUdKZ3NXTDU4WjFKQkVieVE3MlVnYmNXX21fX2VRNFRhYlhBMTlmOV8xdzJiRkVsMkF1V0c4TFFZc0hucUt2bjZ5b1pOWk1z?oc=5",
+        "source": "Polícia Militar do Distrito Federal",
+        "published": "2026-11-26T23:54:00+00:00"
+      },
       {
         "title": "Programação esportiva conta com futsal, futebol, jiu-jitsu, vôlei e outras opções",
         "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYUNtYndSdlJUMEQ2YXh1U09Sb3BSOHUxSTVrVlQwQTBtelE5Q1JmdXhlb202aDZrM0lMODA0bXBnMHBCWnh5Vll6cnpBb0t1ellHdVlRbW16bmxRay1aSmVKVHNpc1RxSkFrZ2xMVDl0ZnlPSWFMZG85UTdITFRtZWY4SXhlVkdlZC1Vamo4ZGdSM0NUaUhnc2I4VGtUcXR4UE5V?oc=5",
@@ -10,64 +46,28 @@
         "published": "2026-11-26T13:19:18+00:00"
       },
       {
-        "title": "Lutador paralisado após golpe em competição de jiu-jitsu no Paraná mostra movimento dos braços e fala sobre recuperação: 'Altos e baixos'",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVnpYNHJTNzdwbHNIWE1fNzI4cG9vck45UlRWamFKWmhHZTJyVUZiZjFKdnVTZzJmV3E2bmtJeHd3Qmg2eTVVLUZhMWZQcWk3UThzMFpRaVBzSjZMQjZhdWFpQ0dhdzBaZTRhR2c0dk1LU1BWVGhoSldXeXozbS1oZUVRVVJpUnFNTHRCZXJOUXFkVVRkQzZ3RmpmTjR4X1F6SGZLTTd0M2HSAbcBQVVfeXFMUHZhcTJ0d3lkcnVsMTkycDNURFpSbzJPQldtZUM1a0VNMnhVQUoyZTU4NWVlQVhLV1I4aUV6QmExNjRyeHdwTHlSaThSbTR1dmJpdTBJLUFLRlV1Y21QRHZWLWdzYk5ITmNYa1pwbWNhZjJmWjdqanpoT0lXTDVvMlFZRkk5MGZVaFpvRmRRcm85ZER0RUtHRGU0MDJoc3k1WDJkZWFBTjdwMjQzel83MlJqV2RWSW5n?oc=5",
-        "source": "G1",
-        "published": "2026-11-26T14:50:12+00:00"
+        "title": "Alunos da Academia Buriti celebram conquistas em cerimônias de graduação de jiu-jítsu e karatê",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNcWNxUUNKYXFBenhYMDNSSXVQbHBCZlRqUVlGb3JteVNKNEt0OWJCUWZSZW9OR0swc1RQOHN0akNac2JIa3RZTGU5QjFibWpya2J4bzFnTjBGYlpKVExFWVBlVmRMUGNrSWxCU2lvazduZHpfNUxYRTVSbFRkaFpsUTRvTS11Wld0T280ZjRTU0t6N01BcHVvTTBBd05YQmZfWG0xVkpvbzJmREVHa3E2ZGdIeEg4d0g0Yk5zOE9kcWNYOFkydWtlNU8wVlViWUpWbC1yLWJ1M3Y2WERLeUE1WnkzMjYyaW5uempRQVZUdw?oc=5",
+        "source": "Agência Brasília",
+        "published": "2026-11-27T18:58:00+00:00"
       },
       {
-        "title": "Jovem sapiranguense conquista título nos Emirados Árabes",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMEFwNUtsR0pFclJiUEphRy1jdjM1VlZ0b0tYNTVGMlA2TUc5MVc3Nl9WUFRhRG1FQUJCc0ZNV213MkUzSktjc04xWEhfQnNCanJaakNWVUdSZmNTcEtUU1ZITlVSUWVyWGNPVVBtZjdJaVZSZnk4UkhBNjFjRXpSUnhZTW5rUjM4UmcwV2p0aTlhZUU?oc=5",
-        "source": "Prefeitura de Sapiranga",
-        "published": "2026-11-26T17:34:00+00:00"
+        "title": "Academia Buriti gradua 20 praticantes de jiu-jítsu e karatê",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX1JQRmw1ZlFNdFhWTG1BZTFMU3FUdmJYc3A5Qm5Ha3dqbWJxdzNWZ3ZOU3JCbTVlWEdkSU5WREt3UmM5UkJqVGgtUG9McmRPSHBmV0tYa3ZveTFrdFVWd3ctQUJRQTRNWlFVb2hjemg5S1A1QS1RblN2blBpT2tkTndaQ0g1dFZjLWVSMDZlcVZPZG5ySENsX2JRSGZWYXpRaHRv?oc=5",
+        "source": "Jornal de Brasília",
+        "published": "2026-11-27T19:10:55+00:00"
       },
       {
-        "title": "Lutador de jiu-jitsu no Paraná mostra avanços na recuperação",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWWFzalcyb0FTWFdOdUg2QWJHZVdHSF9GNjVNZEcwR1c5OTViakVfU3M2eFZSMXVQWmxvanYtalRfUTB4UWUzUmdXaVVsZE5TMzRHU2gxSV9Dak1QNTVURnl2cUpNQUpMcnVBV2RiUXk2amExVGM3WXQxeFVWdXcyZm5iamxYRkRqcjVYbkMtMkVKc2xPVmdZdm82Ukx1Q2hmTDhuVWhzdVN3ZzE5Q2RYSWIzSXk?oc=5",
-        "source": "Correio do Povo Penedo",
-        "published": "2026-11-26T16:40:04+00:00"
-      },
-      {
-        "title": "Projeto Força e Honra gradua 42 alunos de jiu-jitsu em Rio Branco",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX0pFRlRFZlAtVUluM0xUcXhyb016YWRwMi1vRVEwMDhpLW4tMFk5SXpZYlJ3WUVrWVhjb2JRbHUtMklTSG1XOUx1Y1M4WGhiMlhwOHBQU1pkTUdrNGVYb0FmT2JUVnJPRmxHQ1pmblB2NWdqTTZqVVVCampqZUlQdmF5M3pYZFNiOWdEQTB5MU5Ma2UtbWJZazBDbDFCWVRrNWc?oc=5",
-        "source": "Portal Acre",
-        "published": "2026-11-26T18:30:39+00:00"
-      },
-      {
-        "title": "BH: professor de jiu-jitsu é preso suspeito de estupro e ameças contra a ex",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUUNUWVpwejZhWC1PYXVkcGdEdkROYmdOUjEtSmE4dzdZa3VObTE0NEUtb0xrdjhmM2k3aWtwbkZabzFzLVlZdGxRWks3Y1ltSERfMlJJdnNsOUhJcUFkOEFxV0pmYUlWUzZKUl95a2NuR05vVmdDU1FNcE5LaktUQk44WGVCODhpVHdLOEpXNnZFMGtPV2YwbmFJLUpHcnFMSjZmWGZhdUtuaEtHUTltM05OR2g?oc=5",
-        "source": "Metrópoles",
-        "published": "2026-11-26T15:20:00+00:00"
-      },
-      {
-        "title": "Associação Balboa transforma vidas por meio do karatê e do jiu-jitsu em Umuarama",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamRUbGctRHdoR1h1NVNvSFhXbUljdmtMQlFYRDFoUWsxSFAtckxPWnQ2cmFkQjY3MS1rYW9pZXVhR1RtZDZiWUIxeWlMUDUtZ0l0X2JsaTgtc2lKQTM0RXBucVFpLWdiVDJ2cHpCYXZuc3BQV0IwQ0FrZVd3dGpXbExOU0NDS1U2NGRaOFRWNEk4SGViSGVrSnJxQjJqdzdFR0tBRS1rVklVZw?oc=5",
-        "source": "Jornal Ilustrado",
-        "published": "2026-11-26T11:56:53+00:00"
-      },
-      {
-        "title": "Natal recebe segunda edição de evento dedicado ao judô e ao jiu-jitsu nesta sexta-feira (27)",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRGx5Q0V3dklxcXJNNXhwemJid3VhUkY0NmtDNm9nSk5OZHRTRFdnNjEyMkw3Sk0xQ0hkcklyRVBOSGVva3lOVDdtZ1FLTkcwWEgyXzYxS1U3QTE2cEpBUDdsSjFPa2hhT1NSOFVSRlFVRy1CY19RUmlONVd6eE0yak5QS3BrN2dPSFNJbFF5c3N0cC1SdFdaN3ZITVBVcTF5NmMwa0hRbVo5LUcxMW53N21IdzNaRFFjdlJRX0VrZThmQUF5UDU2eWFFQi1wT1Fxa29NbXAwTQ?oc=5",
-        "source": "Portal 98 FM Natal",
-        "published": "2026-11-26T12:06:01+00:00"
-      },
-      {
-        "title": "Professor de jiu-jitsu é preso suspeito de estupro e violência psicológica em BH",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQjctMU9xSldrOEhfbG50eE9WWXcwajQyM2doNms0dFM0SmNLVnBROFFYLTBnNVJMTUlVbjB2Z21yd0NEa3MtdjQ0Z3dkVUxXTExtekN3MHppYTN1WVJlenJkeUdQUlFFNW9STXVyZ0hlQkpGS0tHQjUxNDM1OXo4eVBVaFJfZnJEQnBycmd2S1Jjdk5wSVVPbHN3NTNOR2tSRnFiQ3gwZ3VOUWJPNXVkY1I5NmxaQ3Q1NTlFRHBpbU80Vl9xTXc?oc=5",
-        "source": "R7",
-        "published": "2026-11-26T16:35:18+00:00"
-      },
-      {
-        "title": "Instrutor de jiu-jitsu é preso por estuprar e perseguir ex em BH",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRWlJbzM3Nm85X2FaZ3Y0LWlIdG9HajU2QlY2VVFla3Z1ZlRVQ0Z2WE9Jb0dKMHhyQ3VaYXNkQ3VTM0RkNHBzXzdmTUVKWGVEdnlXTEJxZXRqcWExMnZmamtXeEJTcmUtQXlhWjczNjM0WDZFWjBURkhuN0JKbC1nd3g1YXBaUnFsY04tVnhSQ1JKbFBLVUVKLVNUOXduZ9IBpAFBVV95cUxNZDRRa0J5MGFmRkFFUXkyS0F4WXhwVURvSWpXUk1EYkNreWpzQjZqa1pUcWdnYWhsRkdtYzhLMF9jaFAwRUdSR1dEM3V2cmtnemhlNWt0ZmhkMS1kOXU4bVBEZFI5YWtETVRmRThjOXR0Yjhla09FNVFQRHg2dnRrU1djOVNrOTBYMkFQTzlkcC1Hb2ppa2t1a1dWZmpOcTl6RmRTQw?oc=5",
-        "source": "Portal UAI",
-        "published": "2026-11-26T17:39:40+00:00"
+        "title": "Professor de jiu-jitsu é preso após denúncia de perseguição e violência contra ex",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQVnRFOHowbmQxU0FFekF5cXJmcUdyU3BmXzBhbGtEM3BRbU1jbmlqOF96QThidS1SWi1LcWpxblloX1gyZV9wVkhQWXBkaWlmcGlTNjA1YkJYd29JdUdYWGhiXzVRYkcyYURqekwxSE9yS1BTSi1Md1AxUFhNVUpoMjZ2YzVFUXUzSm9wUHkyeVVkVXhkQU9rWDVMazhnVEVjUmluUVV3TDNFZXh0LTNYVmVWUXRWRk12ejNOXzJwMGdCWGYwckhGeEVucHgyRU9ISHVONVFHbzdmVURYVmlDbW9JTDNhUEU?oc=5",
+        "source": "Jornal Gazeta de Varginha",
+        "published": "2026-11-27T11:11:59+00:00"
       }
     ],
     "Campeonatos em SP": [
       {
         "title": "Limeira",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQXUxY2RrR1BBeHI4UDMtbUdfbkhCUk5iT3ZfV1lZN2RFWTRsMHFBSENYdjJMQW1RM1dfYXJmLWM3cVlZNDNPZlRvc2djMEx5YWNkOF95LWJNclVPcnZTbFkwaWVBZEhoUzluUDFYNjY2UkNYS3QzSjFaNVEtck5BOXN5ZjNSTFAtMGFUOEFwd2thenpWUzZPb1lHS25yQXZ0T1NuYUVJX2lhYUI0VklFaDBtcXNYRjViN1ZIT3hrblVIeFRUbVZGdmJSX0hJNGlRZmVYZEVlb3g5RUJnLTFjWi1SUVBjdw?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNclBmYUI1QmhKRWRVV0MxVkNaVExPMWVzU3VzN2x4WXdPRlVIYllvdi10YXB1elJ5a1lPT25sa1dKRGY4ME5LTDBndDYzRnZOTVRiTVkzem44UTVkS3FiTjZfVlkzU0RzRGFzdlM0ajdFYWo2aXlSa09VQkZCSlR3dkFaTFJCMDJIN0Yxd0JGck0xYURoLVNuS3FBcGFMTmlIRU1NTktGd2VERkxBY0pxVUc4Y0lRUTMtcmJsaklzWEVjMWpJd1doZlRKTW1vVTNZZVljT0ZvVFZGMmJqUHhMcQ?oc=5",
         "source": "Gazeta de Limeira",
         "published": "2026-11-25T18:38:26+00:00"
       },
@@ -78,16 +78,22 @@
         "published": "2026-11-11T08:00:00+00:00"
       },
       {
+        "title": "Atleta de Piracicaba, aos 15 anos, se prepara para disputar o Mundial Kids de Jiu-Jitsu em São Paulo",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQR3NadjEwR1NnZVpvSFpRVlduam81NkdWQ0dGOHRFTk9ZazU0cWdBNXJOY3J2NUVxZmFrY3M3U3NIaTlnQl9Za2R5V09tV0I0cXlQeURpMm55LXFEMEVRdXV3dDBnbEIzRDBNQzZ1ekVHSzhyY3NmamlSaVJjVmh3UFcySFJwUDRPaFdqMmdMRWt6c3lXa21NVDB5dEtKMTVpMFY2UzRjQmw0M3gzUV9YYzRkaHFNYzRQSFVHZHpRUXlqdV9LNjFkV0dacjFtZnlrWmVlOURwVGRzdXUt?oc=5",
+        "source": "Engenho da Notícia",
+        "published": "2026-11-25T12:29:48+00:00"
+      },
+      {
+        "title": "Agente da Lei Seca e campeão de parajiu-jítsu; conheça o lutador brasileiro que busca o bi mundial",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPcVh2bDhoZTA1am5CZXptTVRMTVBNVlJfMGZ0UmRWUVI5b1dTa2pzZTZwLXlEMnNSU2NwVE43SEx5Q1hZVk5CZTRROVh6ZmlueUxvZ1lleUs2MFdVeG5md3dPSmFZZDRsWkRld2FSOWtKN3FaSF9JbW5OcllvN01JdUE4SU1FYkU1Zjc3ck9PUWtsRkxxNU1zQUFQa0JXd2c0NkxxM0kyV200Y2tZbUpYZkVfcmlYUkVfMjZudzlvQzhYR0RjQXo3VkhTMW1CdnRrUDB1aVZlellzSTBYRUtWdmIzc01Cd9IB9AFBVV95cUxNN1lwTThHRkRjbkhxbGpLWXZYU3d1UWsyT1ZSaW5GZ2djOTVMWFpNWWhJNEROTEhnMjE5UDQ4a016M3h2VzZMUUI4blA3NElSN2k1X0oxRHBUM25YMUV0ZHRXRVl1ZmkxcGNfa1hGNFJlTTZlUG9GNl9oR05JLWRtd1JQN2JtTFc0Sm9xMzdGemp6WjZWdk5ZWUoycVdFVFNSdGxKOGl6NVh3ankybkVaZEFrajVOVy1oV0pfeWZud0VHSG90ZkFjRnoxUms1Zk1iX19FekRNLTd5WFZvaGc4MkVoQWpTbW5uUzdNbzcydVNlOS1p?oc=5",
+        "source": "ge",
+        "published": "2026-11-10T08:00:00+00:00"
+      },
+      {
         "title": "Seis atletas de Nova Mutum buscam título mundial de jiu-jitsu em São Paulo",
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbTBrUmM5STY4NGdUZDlHYW9aOW9QR2NZdERscDhhWDl3Tm1Rd1RvSUNiZW50T29WYlVBWThLazVBakxHTkhJNnRMQzJ1MER5MnFRQlA5R0JzcjZpSUJNNGlhQWZteVR5TUlnRkpqRllCb3d6Y2VHTlJMODJjWFRpZlhoR1JFdTdfUVQxcFBUS1Fldy0tc2dkUVNXcEpmVTF3OHlxSXRLbUdneWE1?oc=5",
         "source": "MT Esporte",
         "published": "2026-11-23T00:14:15+00:00"
-      },
-      {
-        "title": "2º Campeonato de Jiu-Jitsu: Monte Alegre recebe atletas do infantil ao adulto",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOU3hXQUI1d1JVRHU0TEFMc0dyejBrd2FncmRXMWNENHBVQ0YtM2JRb2FYSjFDYndhVW1rQlpMaVZGNm1iYzFJVk9wbUl5emM3bnZ4MHdaTFZIRDY1MEpSWk5uRFBmVmowUndscjlMRFhYNjhMYnJoV2sxc2hWT0VEZS15TVdxcEtnTFNka0lYQnJKd25iM2ZadTAyd2VvdVNaWjgyeUdxV0xTZjRJekpOQ0RLeHlFeTFhc3cyV2FCZWxWclJQSEJRWnAwdkRKUUpxT0ZGN2FLX1c0eHNlVmxFOThvekVBbTBIblhBcDdTNlg3d9IBgAJBVV95cUxPLXlTbmI4RWFJRjZwd0s1cG90RDlwUFlFM0NKUDlHdFBsWVRocmFNaHJwUmRDQ1Y5ZDk4TWstX1FfeTBWMjNkclEyS2QzWGt5YkNlSU1hS3VRbzU2SmhTLUhPc3liM2taX2plN1o4d1FONHVqSXFGTWNEdWg2ZmtGTVJ6c3NSUV95YTN2eU1lUk01MTdndDRqMHFveWtWQ1F0OXkwc3RxaHJkcnJwaWtocmRnM09GQmF6U25PYjV2cTF2QzFIN3FhY3ktMno3UTBlT2hhMWZYUXBsNHdOdDhoa3MxWTl4YmdsRXU2Y1FrNHZ2elZObXdyNWVLQjRTM0xf?oc=5",
-        "source": "G1",
-        "published": "2026-11-16T12:39:34+00:00"
       },
       {
         "title": "Lutadora pernambucana conquista mundial de jiu-jitsu em Abu Dhabi",
@@ -96,10 +102,10 @@
         "published": "2026-11-14T08:00:00+00:00"
       },
       {
-        "title": "Davi Tomaz, atleta de São Roque, conquista bicampeonato internacional de Jiu-Jitsu",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5GakJnSDJKRGhHS2FlR1pzTXp4RGxrMmdpRWZDVEJLaDE5YzlqLXViejloRmdqOXdYejBOZm5QU2JfMXBFZFdpTEdMNW5GTmt2UnBjNGYyXzk1bUJ0SFBXVUtxbmJreVNoY0gzc01FSkdCVGR5NjlJ?oc=5",
-        "source": "JE Online",
-        "published": "2026-11-23T12:50:38+00:00"
+        "title": "Filha de jogador do GAS conquista primeiro título no jiu-jitsu aos 10 anos",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPT19seF91U01hOUIycWRVSmdXVXpGUWRqRk9mRGp1Y2lEMHlMazlocGlXcjliaHljblplZktoNXVSZWdvRW4xT01yRnFtVDh5V1Z5RzRhTE1yTWZLeXl0VGJwTHQ1dXBUNXd1ZkpYY1pfLXp5eThmUnZzVFBwVGhsUk04OTktWjZQc005VFA5cU5UOGkzUHRlRnBILWlSdGN1V0ZwX3RrQnUyS1BWaTdR?oc=5",
+        "source": "Folha BV",
+        "published": "2026-11-09T08:00:00+00:00"
       },
       {
         "title": "Alan Lucena conquista título na 5ª Copa Centro Oeste de Jiu-Jitsu e anuncia etapa em Santo Antônio da Platina",
@@ -108,22 +114,16 @@
         "published": "2026-11-13T22:12:31+00:00"
       },
       {
+        "title": "Davi Tomaz, atleta de São Roque, conquista bicampeonato internacional de Jiu-Jitsu",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5GakJnSDJKRGhHS2FlR1pzTXp4RGxrMmdpRWZDVEJLaDE5YzlqLXViejloRmdqOXdYejBOZm5QU2JfMXBFZFdpTEdMNW5GTmt2UnBjNGYyXzk1bUJ0SFBXVUtxbmJreVNoY0gzc01FSkdCVGR5NjlJ?oc=5",
+        "source": "JE Online",
+        "published": "2026-11-23T12:50:38+00:00"
+      },
+      {
         "title": "Iarinho conquista ouro no Open Internacional de Jiu-Jitsu e garante título para Franca",
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUUJxUzhHRUs1MC03MENtLU13eDFOSzcwNjNUUkg3Zy04Z3hPd0dyVUl4SmdtUmVURmF3SmFaMWNBSFhnS25USXdPTG1wTGExRWRLZ1c5SGZtUmtCaXRHSzR5YXpnYUJDenJqNnllcTIxdVUtVTc3Qk9nMEgwZHFya1ZiUWt0dk5BOS03QS1rODZQVTNMR0FSNWZrVWhXbG9XckhYbmYxemEzcE80eFNfRHUyT2l3MXhXUWlIaWpleEhGSXUzbEx4VjZR?oc=5",
         "source": "VerdadeOn",
         "published": "2026-11-16T16:40:53+00:00"
-      },
-      {
-        "title": "Jovem atleta de 9 anos de Palmas conquista títulos no jiu-jitsu e se prepara para campeonato mundial",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWjNTbWx5SGZpYzR5U1JHdjdzdDAya1ZaN1BQTGxLNWlMSWNwZlhPRFRha011YjdUN1hmVlREVDZReWVOWi1RZjNaVVc0XzY4bDNSZ2tVbkdIYndRb014VnY4TVJxS2xHZUpaOVdNQXlLc2E2aV93bU9nYS1JYlNQbEo2Mzhia1ROM0FCM0J5amVDS2N2Sng5VE5sQ3pSQlZOVnpvQ0tFbVAwbkYxM21fQ3Z6UFUtSF9jdEEtUXVoZ1BabndBdzJEMElzZFNaMEk?oc=5",
-        "source": "Atitude Tocantins",
-        "published": "2026-11-09T08:00:00+00:00"
-      },
-      {
-        "title": "Isaque quer levar o nome de MS ao Mundial de Jiu-Jitsu, mas precisa de ajuda para competir",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeDdLc2c0Qy16UUdfVkRfb0xWMHQ4U2xqWUtJT0V2XzhpRHRrSkpjQTQ0Q1ljYzktak1ldU10ZjczWDdzMHJZWTJ3X1dZZzE4STYwb0FjOE5yM3VwVzRwaklxdUwzaTRhUFJPb0UtMXdBLWhGZTRMckpxZlRRemlTSnZ1clVOZF9ZcjVoeXlLUHYxMlNkdkVGeTY4V1h0bEpCbWhSVEZwSGFDZw?oc=5",
-        "source": "Midiamax",
-        "published": "2026-11-14T08:00:00+00:00"
       }
     ],
     "CBJJE, IBJJF e ADCC": [
@@ -140,10 +140,10 @@
         "published": "2026-11-18T08:00:00+00:00"
       },
       {
-        "title": "Amapaense Liandra Costa conquista bronze no Mundial de Jiu-Jitsu em Abu Dhabi",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZFZfalNTWC1YVTRlVjJBS0tRek9BaWRlSE5YclZYbWFuTnNJQ2dQUzZ4R0xEZDgzcDVaUS1JOVIwMjdVdTRtbXhGV3FhTFQyb2Z4NXFOVmZ4QTltclhDZlUzWVYwUHZGTUNaaUVqR0Z4cmtSclBnYUJ4ZWZtdmo1UUJ1YzBzZmxxTFZfU3RrWUhvRG9NUTl5WG9sa3dPV041SEkySUlOMVN1RmNNb1FiQVJ0VzFOTkFEcTlkVnJyb1pzMFVhY1B1Zw?oc=5",
-        "source": "Diário do Amapá",
-        "published": "2026-11-24T20:13:00+00:00"
+        "title": "Liandra Costa conquista bronze no Mundial de Jiu-Jitsu em Abu Dhabi",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPc0JGZU8yVnVtM1dhdThPUnRKTzJQVmJqVS12a3lFcnViN3BLQ0tMd21BUElZdEZ1bDJ4dzUwQjVUSm5CQ29RTG5DOEhKUHRTQkEzSnBlS0xpUHlNT3lnbVl4VTA4aUFvM2ZjRUJxb2pZczRma3pZLVhORkdNV1BtQVlIMEl0UGhUa3pYSklPYmpLUDR0UERZTmNaaFF3RUpCam1ic21aSVpveEdIYzhWY3Y1WXNaLTTSAcYBQVVfeXFMTy1hMWpwdTFvR1RPTWhIZFIzSHFiMkJMcnNHTWpHT2paY0FURG1PTm44OFNkUFp3Y2JnUlNGV2lEWUo0TDVWTUp0WmM1ZXJnV0N3VnlNMDBGMF9jZ2FaSnY5S19jY3prVTdRU0lPSEV2WlFLb0FLWndwdW9hUVJNZUptWV9QWE5wUlJmRVdlQzhJdTZOTFhvVDVwWWdCdlhacXhCY2VFbkN2NUxlRkhiamRRVWxEQmNOaEhQOVRMNVFsa29ZYmRn?oc=5",
+        "source": "ge",
+        "published": "2026-11-24T13:51:39+00:00"
       },
       {
         "title": "Lutadora pernambucana conquista mundial de jiu-jitsu em Abu Dhabi",
@@ -152,10 +152,10 @@
         "published": "2026-11-14T08:00:00+00:00"
       },
       {
-        "title": "IBJJF divulga série de mudanças de regra para campeonatos em 2027; confira os pontos principais",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNODVCRXN4ZDVaazZlMzVpOEt4anc0WkJjdm5wN1FYQS04eHpjOVpRUDFERlNYZWUyNU1vbkhlSXZYMDFuQXgteGVpZ3B5Q3drNDNqc1FDeElfWWdXNl90TFR1ZGMtamtROG1JQ2xNQ01nczFIbEd6SFY5TFdlemh1MFg0bFBZUDE3MTB5dTNFaUI0TXI5VWFYdl9nZ2xicU0tbmZzTmFZZFhKTUVZbHl6c08tZUUtWGVTNEs3bDZ3?oc=5",
-        "source": "Graciemag",
-        "published": "2026-11-13T08:00:00+00:00"
+        "title": "Amapaense Liandra Costa conquista bronze no Mundial de Jiu-Jitsu em Abu Dhabi",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZFZfalNTWC1YVTRlVjJBS0tRek9BaWRlSE5YclZYbWFuTnNJQ2dQUzZ4R0xEZDgzcDVaUS1JOVIwMjdVdTRtbXhGV3FhTFQyb2Z4NXFOVmZ4QTltclhDZlUzWVYwUHZGTUNaaUVqR0Z4cmtSclBnYUJ4ZWZtdmo1UUJ1YzBzZmxxTFZfU3RrWUhvRG9NUTl5WG9sa3dPV041SEkySUlOMVN1RmNNb1FiQVJ0VzFOTkFEcTlkVnJyb1pzMFVhY1B1Zw?oc=5",
+        "source": "Diário do Amapá",
+        "published": "2026-11-24T20:13:00+00:00"
       },
       {
         "title": "Isaque quer levar o nome de MS ao Mundial de Jiu-Jitsu, mas precisa de ajuda para competir",
@@ -166,40 +166,40 @@
     ],
     "MMA e grappling": [
       {
-        "title": "Carlos Prates aponta pontos fracos de Michael Morales às vésperas de luta pelo cinturão no UFC 336",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWFZTV1VyS3c0dGlGVzR1OVFza3Uxa0tvYkdibVpybEJHbmJia05OZzAwb183NU1sSk9hRk5ZUnAzVGhwX3lpYXhpR0F2dU1OaVEtekZPcmF5azlmMFF2Qm1iR2IwbDVSanJQN05UVHVOUFlkQ0tRb3Fma0hMVld0Q3QxM0ExamZXZnlfMDl6dDNMaHJXbXRIMU9UZFZUcU5D?oc=5",
-        "source": "ESPN Brasil",
-        "published": "2026-11-26T17:31:29+00:00"
+        "title": "IFCE e UFC realizam I Fórum de Pesquisas em Produção e Gestão Cultural em Artes",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMUtGZ1BDUWNoSGJBdUJNMnN2OVNMc0gwTWM5cGNaalpLd2NmZ3NxbGlfWWxaUk5RQXQ0LTB6QUt5cUZiWC1meW0yTFRlMXN5Z0t6MzQ2VkNSQnNZbnprNzRUMk1FNzFIcG8tWmdwS1dhLTVrUTFVcmg1MmdER0NzY183WXdfamM5cDQ2dFI2LVJqaGpCaXliQVAyTV8xM2haZmVKS0xsLUpJYjRnNkJTTTg5LW1wWFB4S29IOUJLQk8yMXI5V3c2NGpSdThvdw?oc=5",
+        "source": "Home — IFCE",
+        "published": "2026-11-27T15:53:13+00:00"
       },
       {
-        "title": "FIEC participa de assinatura de memorando de cooperação entre UFC e ITA em Fortaleza",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONlFVdWctU2cwZVdTQ0RZbjFjUWhQejZvX24wQUh3SDJiRDk3SDhOZHFZcDQ0ZzVxa3psQ00wTlcwSmw1MzBJUVVMSUtuVE9DSkdVaTVDSUluQkF5RlZGNnNrdnc5YjF3Z3pDR3RhQ2RRWVdnMmdFaHlCd3lPaHZBa1k2b2FJbUxBdFVEQ01DWjZXS0RMdjBQcXpRMGFTeGVpc0NWbmREWFl6ZFJ1QWJIZFJrODlnSUpnSy1UWWxzc1FRV1pKMmgtV1NnSQ?oc=5",
-        "source": "FIEC - Federação das Indústrias do Estado do Ceará",
-        "published": "2026-11-26T16:11:00+00:00"
+        "title": "Governo do Brasil detalha ações de enfrentamento aos incêndios florestais no Amazonas",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZWJsT09uUEtxWm4xM3lsVkREaHBBLUNPZHpyenlWV1ZPRnRzUW1LYVAtTkcyTXNGSV9xYjZET0ktakRrM0RZc3A5Rk1XaUc0eDRaMlROeXhIdEM0eDRZWENHWldMZmZTTGpqZUxnSWFxYXpMb3YzSGFjamo1UjJsbzVuZW1uZGFUSm9MbktqNU91ejlRNHVrejQ3QkhTeThhR0lhZ19SdW9JWVV4N3Y4dENZOWZJbDBhTFpMNTFibEY?oc=5",
+        "source": "www.gov.br",
+        "published": "2026-11-27T15:23:49+00:00"
       },
       {
-        "title": "Diego Lopes celebra oportunidade contra Charles Do Bronx no UFC 335: \"Honra\"",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNM1RJZnZrUHpaZXlGMXZvV3ExVnRfUWhFcEFYaTVqTVdaMTlpZW9YMk9YRlM3MUZCVWNYY1F5MVh1SUxLUUlQOEJBSG92RG5LTzVrU0FRVkxFTmVRZlNVdU5mWHRDMmNRalpVY2ZGT1dJN1l3SmExT3RkQ1BwYmpLV2lBTU9TM2FzZjlSQVR5VEZCc1Z3NWhNT1JVVjduTWNwWTFMRkRqZHFPU044aEtLM2lEOWRBYjZYTmxYRjFPSC00TzVUU01ycEhfUHc0U3dIVDZvbHVJUE56VEowLVE?oc=5",
-        "source": "UOL",
-        "published": "2026-11-26T17:32:10+00:00"
+        "title": "Charles do Bronx preocupa antes do UFC 335 por cinturão BMF",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYm1QS2haZW81MmZJcENkdGZtRVBCUjV3V0hNVFNPNTlSS19xSjRiN0ZqbjlJaVpLaGxSdGRGbHhWR2hKVnUzZWVOR1hHM3ZZOG9UNFVZWk4tdnVSSjhfYVU5SjdBX0xIZXdDUEJjaHRwMTFTZmVCNkNXUmZsdHd5OXB1VFo2el93c21wQ1B1VlhRbWhqTHpQR1VOdw?oc=5",
+        "source": "LANCE!",
+        "published": "2026-11-27T17:26:22+00:00"
       },
       {
-        "title": "Valter Walker atinge José Aldo em briga durante promoção do Hype no Chile; assista",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTUtmVElUbmEzQnMzMWV0R0JpZlFya1ZnM3Q2RV82Qkh4bjZ5bldPYjFNbktLdDNBOERmWjNNN21ubUpBc2lIWHBCR1lMNDM2b2hJLVhwX0lXLXpnOGx4QTFTZlZuQ2w1d1Z2Z216UWhSOFg4aFZNZUFxUmpZU0Jsb254OUdXVUZfLVdiMWxmeVo3X1RWTTE2YUZQbk85cVBKWmJJZmgzeUtaZmVNaDY4NHJ2X2pkTXIwN1dOS0hvN1JUa1F1My1iMlVfWU45Nnd60gHfAUFVX3lxTE9HQ09WQVJCT1BweGs2d2tVUWQyWmh3VS1CQjFUbnNReWpQZFVBdXpicEFEclpJcXlkWVhFVENBdVBmaG12RDlKYmdvZzRaWk40aUF4NUtVb2VZR3B6WERndjd1SnhfeXBFd2FvcXU5SXFUbWxZbVdhZnplZFJQbjRqZDdQMVJ4QnZZVkJ4V1ZmQXVXVU5EMUVHaGN5OU1fX0NfRWdsTzl6cWNxVUhMcGtPeGt3TDBYTFF0WjJVQWhnNC05YUpXWmc1c2NfdGVsRmpiZ0NCUXF1ZVRJSmZ4VzA?oc=5",
-        "source": "ge",
-        "published": "2026-11-26T13:42:13+00:00"
+        "title": "Casas de Cultura da UFC ofertam mais de mil vagas para cursos de idiomas",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVUk0UjdxcWFmV0tvV0RacUJ5S3RvdmVHQmU0WURoSmZCeE8wMUVLYzh2MVBpaWZ2T001RU5PSGVnQ2xldmViTEs1UlBzQTlxa0IyWU5yUGtzbXRnUDhyRzZ3YU1zY0NiaGR2azczUngyMEVMRFo5ZnpGX0REdmFsMnFUVC1INTBSVzJuYjM2ZFVVM1ZBWVdlcG9MNG5tUEd3Wl9YTUxvWQ?oc=5",
+        "source": "A Notícia do Ceará",
+        "published": "2026-11-27T11:48:51+00:00"
       },
       {
-        "title": "Ex-campeão do UFC detona rival de Jon Jones e chama Josh Hokit de 'Rei da Vergonha Alheia'",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOUpuTUJKY1R4VER6YTlEa2pvUDE4dm9TZkh5RVBPcENlVHZPanlQbjJyYlFnSU5rSllPUk53YVJQbzZiQnkwLWZXYlVHeVMyQXR4a05KWmE3VjZZdGFrcHVPLV9ILTNiSXR4VDVOaUp3SHRNcklzeTQ4Q2RHbk5WQXRNV1B2ZTBLYkdVQ05vcllWdUxOUmlsQXoyQ3NoRW1BSF91S1dGaUs2QjVZdnBqeEc2WGtna0Vub2pqeVdR?oc=5",
-        "source": "DAZN",
-        "published": "2026-11-26T15:07:11+00:00"
+        "title": "Polícia faz operação em residência de lutador de MMA investigado por maus-tratos",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNldtcGU0eDd3dXJxY1VMOFNnMGJvRGdiXzdXN3hrYlZ6Y3lBa0hlRVdXY0k0aEw3TDhFaldZcDZVQncwaElNNWYyMGY2VUJMdTRpbU1TaXJzTC02amRjSUxoU2M4Q3dhOEhWOGF1aXdNenVkVWt4ci1Vbk9hVUtIODJJYXlneDJhUFQwX0phNmh3dk5DZnNwUVBEa1FaRHVLMTJZaUpFZ1VvT0FNQUlFdWVic3R1UXluX2Q1cnUyOHBSZDA1blR2aGtBcnVfOTRRVTJIRQ?oc=5",
+        "source": "R7",
+        "published": "2026-11-27T11:46:26+00:00"
       },
       {
-        "title": "MMA apresenta resultados de avaliações globais sobre os recifes de coral e discute estratégias de conservação em Tamandaré (PE)",
-        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONjAyUnhRX0Q5T05CTW9oWS1BeWFqVzVsb2hjWGI0dmtNTFhJT0VtRzNoUE5oNGo1MlJVOG1FZVNxc2VTcm1DNTlxbDFTSjhVWUNzUFpQYjY5MUZwbTUydVVBMEZyeFdZMC1VSDMwOXp2eFdUOWRyYTZJVTZhVWNfelRZX1FsUXlzUVBhMkl3YlVWWkFfUzZRRFM0dmwxeUxfaTkzRTNJcXJhSTNuUXRvN3Y0bkh1NlRFRHMwaXFvNEQzeDROTmI3UUx6N2ZfWG1PazVZaDQ0N0lORmVNaUFoOGN0N0JkNUhSOFV1UTBmLVV2Rm1wMlE?oc=5",
-        "source": "Governo Federal",
-        "published": "2026-11-26T00:08:22+00:00"
+        "title": "SINTUFCE acompanha tramitação dos processos de RSC na UFC e solicita medidas para dar celeridade às análises",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQT3FTTnhhREYzZ3dTZUpBeEtzaDZ0M2F1Y0dOR2pBUXk4Tmx2VmRmZXBXLTBFT2JDeGg1WG12cGlWYUdXZVAyRXVXU21pMkE5UTJ6bDBQV2NjVlMySWNkUUFFd1lWTFFGbjlqenNrR3NSQ2VnbGlHb3Rld0syeFNGdmZFamZLbUpBOXExRExsTE5rVXAyVjVTblVDbGxfOFBXdkZIc3RBS2FDcGREbXZLNHFuUUJiaVk1Q1pHMzQ3eEY3RnBkS1BCYTJRVzZyN0ZyU0w4?oc=5",
+        "source": "SINTUFCE",
+        "published": "2026-11-27T01:45:30+00:00"
       }
     ]
   }
